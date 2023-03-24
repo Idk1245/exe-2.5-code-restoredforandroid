@@ -14,6 +14,7 @@ class CharSongList
       "xterion" => ["substantial", "digitalized"],
       "needlemouse" => ["round-a-bout"],
       "hog" => ["hedge", "manual-blast"],
+      "scorched" => ["manual-blast"],
       "sunky" => ["milk"],
       "sanic" => ["too-fest"],
       "coldsteel" => ["personel"]
@@ -31,6 +32,7 @@ class CharSongList
       "xterion",
       "needlemouse",
       "hog",
+      "scorched",
       "sunky",
       "sanic",
       "coldsteel"
