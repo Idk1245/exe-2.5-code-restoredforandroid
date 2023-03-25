@@ -18,7 +18,7 @@ class CharSongList
       "sunky" => ["milk"],
       "sanic" => ["too-fest"],
       "coldsteel" => ["personel"],
-      "devoid" => ["hollow"],
+      "devoid" => ["hollow"]
     ];
 
     public static var characters:Array<String> = [ // just for ordering
