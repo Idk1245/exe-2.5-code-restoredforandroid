@@ -17,8 +17,8 @@ class CharSongList
       "scorched" => ["manual-blast"],
       "sunky" => ["milk"],
       "sanic" => ["too-fest"],
-      "coldsteel" => ["personel"]
-      "devoid" => ["hollow"]
+      "coldsteel" => ["personel"],
+      "devoid" => ["hollow"],
     ];
 
     public static var characters:Array<String> = [ // just for ordering
