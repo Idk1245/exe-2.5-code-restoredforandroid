@@ -36,7 +36,7 @@ class CharSongList
       "scorched",
       "sunky",
       "sanic",
-      "coldsteel"
+      "coldsteel",
       "devoid"
     ];
 
