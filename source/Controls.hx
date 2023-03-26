@@ -85,7 +85,6 @@ abstract Action(String) to String from String
 	var BACK = "back";
 	var PAUSE = "pause";
 	var RESET = "reset";
-	
 	var NOTE_SPACE = "note_space"; //hiiiiiii
 	var NOTE_SPACE_P = "note_space-press";
 	var NOTE_SPACE_R = "note_space-release";
@@ -850,9 +849,7 @@ class Controls extends FlxActionSet
 				inline bindKeys(Control.NOTE_DOWN, keysMap.get('note_down'));
 				inline bindKeys(Control.NOTE_LEFT, keysMap.get('note_left'));
 				inline bindKeys(Control.NOTE_RIGHT, keysMap.get('note_right'));
-				
 				inline bindKeys(Control.NOTE_SPACE, keysMap.get('note_space'));
-
 				inline bindKeys(Control.ACCEPT, keysMap.get('accept'));
 				inline bindKeys(Control.BACK, keysMap.get('back'));
 				inline bindKeys(Control.PAUSE, keysMap.get('pause'));
@@ -1010,6 +1007,7 @@ class Controls extends FlxActionSet
 			Control.NOTE_LEFT => [DPAD_LEFT, LEFT_STICK_DIGITAL_LEFT],
 			Control.NOTE_RIGHT => [DPAD_RIGHT, LEFT_STICK_DIGITAL_RIGHT],
 			Control.PAUSE => [START],
+			Control.NOTE_SPACE => [X],
 			Control.RESET => [Y]
 		]);
 		#else
@@ -1027,6 +1025,7 @@ class Controls extends FlxActionSet
 			Control.NOTE_RIGHT => [DPAD_RIGHT, LEFT_STICK_DIGITAL_RIGHT, RIGHT_STICK_DIGITAL_RIGHT],
 			Control.PAUSE => [START],
 			//Swap Y and X for switch
+			Control.NOTE_SPACE => [X],
 			Control.RESET => [Y],
 		]);
 		#end

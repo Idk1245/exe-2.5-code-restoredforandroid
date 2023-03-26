@@ -66,7 +66,9 @@ import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
 import flixel.tweens.FlxTween.FlxTweenManager;
 import flixel.system.scaleModes.StageSizeScaleMode;
 import flixel.system.scaleModes.BaseScaleMode;
-import mobile.flixel.FlxHitbox;
+
+/*import mobile.flixel.FlxHitbox;
+import mobile.MobileControls;*/
 
 using StringTools;
 
@@ -88,8 +90,6 @@ typedef BasicSpeedChange = {
 
 class PlayState extends MusicBeatState
 {
-	var _hitbox:FlxHitbox;
-
 	var modchartedSongs:Array<String> = ['perdition', 'hedge']; // PUT THE SONG NAME HERE IF YOU WANT TO USE THE ANDROMEDA MODIFIER SYSTEM!!
 
 	// THEN GOTO MODCHARTSHIT.HX TO DEFINE MODIFIERS ETC
@@ -2174,19 +2174,15 @@ class PlayState extends MusicBeatState
 		blackFuck.cameras = [camOther];
 		topBar.cameras = [camOther];
 		bottomBar.cameras = [camOther];
-
+		
 		#if mobile
-		var curcontrol:FlxHitboxType = DEFAULT;
-
-		if (SONG.isRing) {
-			curcontrol = SPACE;
-		} else {
-			curcontrol = DEFAULT;
-		}
-		_hitbox = new FlxHitbox(curcontrol);
-
-		addMobileControls(false);
-    mobileControls.visible = false;
+			if (SONG.song.toLowerCase()=='triple-trouble') {
+				addHitbox(true);
+				hitbox.visible = false;
+			} else {
+				addMobileControls(false);  
+				mobileControls.visible = false;
+			}
 		#end
 
 		var centerP = new FlxSprite(0, 0);
@@ -2876,9 +2872,13 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-                #if mobile
-                mobileControls.visible = true;
-                #end
+		#if mobile
+			if (SONG.song.toLowerCase()=='triple-trouble') {
+				hitbox.visible = true;
+			} else {
+				mobileControls.visible = true;
+			}
+		#end
 
 		inCutscene = false;
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
@@ -4745,7 +4745,11 @@ class PlayState extends MusicBeatState
 			var left = controls.NOTE_LEFT;
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
-				holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
+				#if mobile
+					holdControls = [left, down, hitbox.buttonDodge.pressed, up, right];
+				#else
+					holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
+				#end
 	       if(ClientPrefs.mariomaster) //dont ask, thanks
 		{
 			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
@@ -5837,9 +5841,14 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}
-                #if mobile
-                mobileControls.visible = false;
-                #end
+		#if mobile
+			if (SONG.song.toLowerCase()=='triple-trouble') {
+				hitbox.visible = false;
+			} else {
+				mobileControls.visible = false;
+			}
+		#end
+
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;

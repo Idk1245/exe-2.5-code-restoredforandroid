@@ -6,6 +6,7 @@ import flixel.FlxSubState;
 import flixel.FlxBasic;
 import flixel.FlxSprite;
 #if mobile
+import mobile.flixel.FlxHitbox;
 import mobile.flixel.FlxVirtualPad;
 import flixel.FlxCamera;
 import flixel.input.actions.FlxActionInput;
@@ -29,9 +30,13 @@ class MusicBeatSubstate extends FlxSubState
 	inline function get_controls():Controls
 		return PlayerSettings.player1.controls;
 
-		#if mobile
+	#if mobile
+	var hitbox:FlxHitbox;
 	var virtualPad:FlxVirtualPad;
+	var trackedInputsHitbox:Array<FlxActionInput> = [];
 	var trackedInputsVirtualPad:Array<FlxActionInput> = [];
+
+	var hitboxDiff:Dynamic;
 
 	public function addVirtualPad(DPad:FlxDPadMode, Action:FlxActionMode)
 	{
@@ -65,11 +70,58 @@ class MusicBeatSubstate extends FlxSubState
 			virtualPad.cameras = [camControls];
 		}
 	}
+
+	public function addHitbox(?usesDodge = false):Void
+	{
+		if (hitbox != null)
+			removeHitbox();
+
+		if (hitbox != null)
+			removeHitbox();
+
+		if (usesDodge) {
+			hitbox = new FlxHitbox(SPACE);
+			hitbox.visible = visible;
+			add(hitbox);
+			hitboxDiff = SPACE;
+		} else {
+			hitbox = new FlxHitbox(DEFAULT);
+			hitbox.visible = visible;
+			hitboxDiff = DEFAULT;
+		}
+
+		controls.setHitBox(hitbox, hitboxDiff);
+		trackedInputsHitbox = controls.trackedInputsNOTES;
+		controls.trackedInputsNOTES = [];
+	}
+
+	public function addHitboxCamera(DefaultDrawTarget:Bool = true):Void
+	{
+		if (hitbox != null)
+		{
+			var camControls:FlxCamera = new FlxCamera();
+			FlxG.cameras.add(camControls, DefaultDrawTarget);
+			camControls.bgColor.alpha = 0;
+			hitbox.cameras = [camControls];
+		}
+	}
+
+	public function removeHitbox():Void
+	{
+		if (trackedInputsHitbox.length > 0)
+			controls.removeVirtualControlsInput(trackedInputsHitbox);
+
+		if (hitbox != null)
+			remove(hitbox);
+	}
 	#end
 
 	override function destroy()
 	{
 		#if mobile
+		if (trackedInputsHitbox.length > 0)
+			controls.removeVirtualControlsInput(trackedInputsHitbox);
+
 		if (trackedInputsVirtualPad.length > 0)
 			controls.removeVirtualControlsInput(trackedInputsVirtualPad);
 		#end
@@ -79,6 +131,8 @@ class MusicBeatSubstate extends FlxSubState
 		#if mobile
 		if (virtualPad != null)
 			virtualPad = FlxDestroyUtil.destroy(virtualPad);
+		if (hitbox != null)
+			hitbox = FlxDestroyUtil.destroy(hitbox);
 		#end
 	}
 

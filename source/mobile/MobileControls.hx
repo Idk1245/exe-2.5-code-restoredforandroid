@@ -18,6 +18,8 @@ class MobileControls extends FlxSpriteGroup
 	public var virtualPad:FlxVirtualPad;
 	public var hitbox:FlxHitbox;
 
+	//public var shutYoAss = FlxHitbox.buttonDodge;
+
 	public function new(usesDodge:Bool = false)
 	{
 		super();
@@ -37,7 +39,11 @@ class MobileControls extends FlxSpriteGroup
 				virtualPad = new FlxVirtualPad(BOTH_FULL, NONE);
 				add(virtualPad);
 			case 'Hitbox':
-				hitbox = new FlxHitbox(usesDodge ? SPACE : DEFAULT);
+			if(usesDodge){
+				hitbox = new FlxHitbox(SPACE);
+			}else{
+			  hitbox = new FlxHitbox(DEFAULT);
+			}
 				add(hitbox);
 			case 'Keyboard': // do nothing
 		}
