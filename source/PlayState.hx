@@ -4748,42 +4748,40 @@ class PlayState extends MusicBeatState
 			var holdControls:Array<Bool> = [left, down, up, right];
 			if (SONG.isRing)
 				holdControls = [left, down, controls.NOTE_SPACE, up, right];
-	       if(ClientPrefs.mariomaster) //dont ask, thanks
-		{
-			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
-			if(controlArray.contains(true))
+	        if(ClientPrefs.mariomaster) //dont ask, thanks
 			{
-				for (i in 0...controlArray.length)
+				var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
+				if(controlArray.contains(true))
 				{
-					if(controlArray[i])
-						onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
+					for (i in 0...controlArray.length)
+					{
+						if(controlArray[i])
+							onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
+					}
 				}
-			}
-			if (holdControls.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
-			{
-				notes.forEachAlive(function(daNote:Note)
+				if (holdControls.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
 				{
-					if ((daNote.parentNote != null && daNote.parentNote.wasGoodHit)
-						&& daNote.isSustainNote
-						&& daNote.canBeHit
-						&& daNote.mustPress
-						&& holdControls[daNote.noteData]
-						&& !daNote.tooLate)
-						goodNoteHit(daNote);
-				});
-			}
+					notes.forEachAlive(function(daNote:Note)
+					{
+						if ((daNote.parentNote != null && daNote.parentNote.wasGoodHit)
+							&& daNote.isSustainNote
+							&& daNote.canBeHit
+							&& daNote.mustPress
+							&& holdControls[daNote.noteData]
+							&& !daNote.tooLate)
+							goodNoteHit(daNote);
+					});
+				}
 
-			if ((boyfriend != null && boyfriend.animation != null)
-				&& (boyfriend.holdTimer > Conductor.stepCrochet * (4 / 1000) && (!holdControls.contains(true) || cpuControlled)))
-			{
-				if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
-					boyfriend.dance();
-			}
-			cameraDisplacement(boyfriend, true);
-			cameraDisplacement(dad, false);
-		}
-		if(ClientPrefs.mariomaster)	  
-			{
+				if ((boyfriend != null && boyfriend.animation != null)
+					&& (boyfriend.holdTimer > Conductor.stepCrochet * (4 / 1000) && (!holdControls.contains(true) || cpuControlled)))
+				{
+					if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+						boyfriend.dance();
+				}
+				cameraDisplacement(boyfriend, true);
+				cameraDisplacement(dad, false);
+
 				var controlArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
 				if(controlArray.contains(true))										  
 				{
@@ -4794,6 +4792,7 @@ class PlayState extends MusicBeatState
 					}
 				}
 			}
+		}
 		checkEventNote();
 
 		if (!inCutscene)
