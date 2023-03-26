@@ -2176,7 +2176,7 @@ class PlayState extends MusicBeatState
 		bottomBar.cameras = [camOther];
 		
 		#if mobile
-			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing) {
 				addHitbox(true);
 				addHitboxCamera();
 				hitbox.visible = false;
@@ -2875,7 +2875,7 @@ class PlayState extends MusicBeatState
 		}
 
 		#if mobile
-			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing) {
 				hitbox.visible = true;
 			} else {
 				mobileControls.visible = true;
@@ -4745,15 +4745,19 @@ class PlayState extends MusicBeatState
 			var right = controls.NOTE_RIGHT;
 			var down = controls.NOTE_DOWN;
 			var left = controls.NOTE_LEFT;
-			var spaceM = hitbox.buttonDodge.pressed;
-
-			var holdControls:Array<Bool> = [left, down, up, right]; //default keys
-			if (SONG.isRing) {
-				#if mobile
-					holdControls = [left, down, spaceM, up, right];
-				#else
-					holdControls = [left, down, FlxG.keys.pressed.SPACE, up, right];
-				#end
+			var holdControls:Array<Bool> = [left, down, up, right];
+			if (SONG.isRing)
+				holdControls = [left, down, controls.NOTE_SPACE, up, right];
+	       if(ClientPrefs.mariomaster) //dont ask, thanks
+		{
+			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
+			if(controlArray.contains(true))
+			{
+				for (i in 0...controlArray.length)
+				{
+					if(controlArray[i])
+						onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
+				}
 			}
 			if (holdControls.contains(true) && /*!boyfriend.stunned && */ generatedMusic)
 			{
@@ -4778,6 +4782,18 @@ class PlayState extends MusicBeatState
 			cameraDisplacement(boyfriend, true);
 			cameraDisplacement(dad, false);
 		}
+		if(ClientPrefs.mariomaster)	  
+			{
+				var controlArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
+				if(controlArray.contains(true))										  
+				{
+					for (i in 0...controlArray.length)
+					{
+						if(controlArray[i])
+							onKeyRelease(new KeyboardEvent(KeyboardEvent.KEY_UP, true, true, -1, keysArray[i][0]));
+					}
+				}
+			}
 		checkEventNote();
 
 		if (!inCutscene)
@@ -5822,7 +5838,7 @@ class PlayState extends MusicBeatState
 			FlxG.mouse.unload();
 		}
 		#if mobile
-			if (SONG.isRing && SONG.song.toLowerCase()=='triple-trouble') {
+			if (SONG.isRing) {
 				hitbox.visible = false;
 			} else {
 				mobileControls.visible = false;
@@ -7532,9 +7548,15 @@ class PlayState extends MusicBeatState
 					var olddy = dad.y;
 					dad = new Character(olddx, olddy, 'fatal-glitched');
 					dadGroup.add(dad);
-       #if !windows
+       #if !desktop
         case 1984:
-        fatalTransistionThingDos();
+       		fatalTransistionThingDos();
+		case 2230:
+			camGame.shake(0.02, 0.8);
+			camHUD.shake(0.02, 0.8);
+		case 2528:
+			camGame.shake(0.02, 2);
+			camHUD.shake(0.02, 2);
        #else
 				case 1984:
 					Xamount += 2;
