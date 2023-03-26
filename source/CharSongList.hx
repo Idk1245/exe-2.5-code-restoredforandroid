@@ -18,6 +18,7 @@ class CharSongList
       "sunky" => ["milk"],
       "sanic" => ["too-fest"],
       "coldsteel" => ["personel"],
+      "sonichu" => ["shocker"],
       "devoid" => ["hollow"]
     ];
 
@@ -37,6 +38,7 @@ class CharSongList
       "sunky",
       "sanic",
       "coldsteel",
+      "sonichu",
       "devoid"
     ];
 
