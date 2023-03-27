@@ -241,6 +241,7 @@ class ControlsSubstate extends MusicBeatSubstate {
 					spr.alpha = 0;
 				});
 				close();
+				//closeSubState()
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
 
@@ -614,7 +615,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
-			close();
+		  close();
+			//closeSubState()
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
