@@ -5865,13 +5865,17 @@ class PlayState extends MusicBeatState
 				ClientPrefs.noteSize == 0.7;
 			}
 		if(SONG.song.toLowerCase()=='fatality'){
-			#if windows
+			/*#if windows
 			try{
 				Sys.command('${Sys.getCwd()}\\assets\\exe\\FatalError.exe');
 			}catch(e:Dynamic){
 				trace("A fatal error has ACTUALLY occured: " + e);
 			}
-			#end
+			#end*/
+			
+			Application.current.window.alert('A FATAL ERROR HAS OCCURRED', 'Vs Sonic.exe Android');
+      Application.current.window.close();
+			
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}

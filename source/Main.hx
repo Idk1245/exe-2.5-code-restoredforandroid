@@ -45,6 +45,16 @@ class Main extends Sprite
 		"weed",
 		"youcantruncutscene2",
 	]; //better way to do this?
+	
+	static final videosdead:Array<String> = [
+		"Atomic",
+		"BfFuckingDies",
+		"Car",
+		"FastBear",
+		"g00seb4rn6",
+		"JoeManReference",
+		"Kys",
+	]; //someone kill me
 
 	public static function main():Void {
 		Lib.current.addChild(new Main());
@@ -97,9 +107,17 @@ class Main extends Sprite
 		if (!FileSystem.exists(Generic.returnPath() + 'assets/videos')) {
 			FileSystem.createDirectory(Generic.returnPath() + 'assets/videos');
 		}
+		
+		if (!FileSystem.exists(Generic.returnPath() + 'assets/videos/SanicGameOvers')) {
+			FileSystem.createDirectory(Generic.returnPath() + 'assets/videos/SanicGameOvers');
+		}
 
-               for (video in losvideos) {
-			Generic.copyContent(Paths._video(video), Paths._video(video));
+    for (video in losvideos) {
+		Generic.copyContent(Paths._video(video), Paths._video(video));
+		}
+		
+		for (dead in videosdead) {
+		Generic.copyContent(Paths._video('SanicGameOvers' + '/' + dead), Paths._video('SanicGameOvers' + '/' + dead));
 		}
 
 		#if !debug
