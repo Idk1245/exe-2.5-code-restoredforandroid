@@ -155,7 +155,7 @@ class ChartingState extends MusicBeatState
 	/*
 	 * WILL BE THE CURRENT / LAST PLACED NOTE
 	**/
-	var curSelectedNote:Array<Dynamic> = null;
+	var curSelectedNote:Array<Dynamic>;
 
 	var tempBpm:Float = 0;
 
@@ -203,6 +203,7 @@ class ChartingState extends MusicBeatState
 
 	override function create()
 	{
+		super.create();		 
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("Chart Editor", 'spooky stuff :D');
@@ -279,7 +280,7 @@ class ChartingState extends MusicBeatState
 		currentSongName = Paths.formatToSongPath(_song.song);
 		reloadGridLayer();
 		loadSong();
-		loadAudioBuffer();
+		//loadAudioBuffer();
 		Conductor.changeBPM(_song.bpm);
 		Conductor.mapBPMChanges(_song);
 
@@ -301,7 +302,7 @@ class ChartingState extends MusicBeatState
 			{name: "Section", label: 'Section'},
 			{name: "Note", label: 'Note'},
 			{name: "Events", label: 'Events'},
-			{name: "Charting", label: 'Charting'},
+			{name: "Charting", label: 'Charting'}
 		];
 
 		UI_box = new FlxUITabMenu(null, tabs, true);
@@ -363,7 +364,7 @@ class ChartingState extends MusicBeatState
 		add(zoomTxt);
 
 		updateGrid();
-		super.create();
+		
 	}
 
 	var check_mute_inst:FlxUICheckBox = null;
@@ -404,7 +405,7 @@ class ChartingState extends MusicBeatState
 		{
 			currentSongName = Paths.formatToSongPath(UI_songTitle.text);
 			loadSong();
-			loadAudioBuffer();
+			//loadAudioBuffer();
 			updateWaveform();
 		});
 
@@ -851,7 +852,7 @@ class ChartingState extends MusicBeatState
 		var tab_group_event = new FlxUI(null, UI_box);
 		tab_group_event.name = 'Events';
 
-		#if (MODS_ALLOWED && LUA_ALLOWED)
+/*		#if (MODS_ALLOWED && LUA_ALLOWED)
 		var eventPushedMap:Map<String, Bool> = new Map<String, Bool>();
 		var directories:Array<String> = [Paths.mods('custom_events/'), Paths.mods(Paths.currentModDirectory + '/custom_events/')];
 		for (i in 0...directories.length) {
@@ -872,7 +873,7 @@ class ChartingState extends MusicBeatState
 		eventPushedMap.clear();
 		eventPushedMap = null;
 		#end
-
+*/
 		descText = new FlxText(20, 200, 0, eventStuff[0][0]);
 
 		var leEvents:Array<String> = [];
@@ -1519,7 +1520,7 @@ class ChartingState extends MusicBeatState
 		zoomTxt.text = 'Zoom: ' + zoomList[curZoom] + 'x';
 		reloadGridLayer();
 	}
-
+/*
 	function loadAudioBuffer() {
 		if(audioBuffers[0] != null) {
 			audioBuffers[0].dispose();
@@ -1558,6 +1559,7 @@ class ChartingState extends MusicBeatState
 		}
 		#end
 	}
+	*/
 
 	function reloadGridLayer() {
 		gridLayer.clear();

@@ -42,7 +42,7 @@ class MobileControls extends FlxSpriteGroup
 			if(usesDodge){
 				hitbox = new FlxHitbox(SPACE);
 			}else{
-			  hitbox = new FlxHitbox(DEFAULT);
+			    hitbox = new FlxHitbox(DEFAULT);
 			}
 				add(hitbox);
 			case 'Keyboard': // do nothing

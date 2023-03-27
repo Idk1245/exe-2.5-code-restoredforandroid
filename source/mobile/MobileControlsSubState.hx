@@ -33,6 +33,7 @@ class MobileControlsSubState extends FlxSubState
 	private var buttonBinded:Bool = false;
 	private var bindButton:FlxButton;
 	private var resetButton:FlxButton;
+	private var StyleButton:FlxButton;
 
 	override function create()
 	{
@@ -60,6 +61,17 @@ class MobileControlsSubState extends FlxSubState
 			FlxColor.BLACK, true);
 		exitButton.color = FlxColor.LIME;
 		add(exitButton);
+
+		StyleButton = new FlxButton(exitButton.x, exitButton.y + 100, 'Style', function()
+			{
+				openSubState(new mobile.HitboxSettingsSubState());
+			});
+
+		StyleButton.setGraphicSize(Std.int(StyleButton.width) * 3);
+		StyleButton.label.setFormat(Assets.getFont('assets/mobile/menu/vcr.ttf').fontName, 21, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE,
+		FlxColor.BLACK, true);
+		StyleButton.color = FlxColor.BLUE;
+		add(StyleButton);
 
 		resetButton = new FlxButton(exitButton.x, exitButton.y + 100, 'Reset', function()
 		{
@@ -212,6 +224,7 @@ class MobileControlsSubState extends FlxSubState
 
 		funitext.visible = daChoice == 'Keyboard';
 		resetButton.visible = daChoice == 'Pad-Custom';
+		StyleButton.visible = daChoice == 'Hitbox';
 		upPosition.visible = daChoice == 'Pad-Custom';
 		downPosition.visible = daChoice == 'Pad-Custom';
 		leftPosition.visible = daChoice == 'Pad-Custom';
@@ -250,7 +263,7 @@ class MobileControlsSubState extends FlxSubState
 				add(virtualPad);
 			case 'Hitbox':
 				removeControls();
-				hitbox = new FlxHitbox();
+				hitbox = new FlxHitbox(DEFAULT);
 				add(hitbox);
 			default:
 				removeControls();
