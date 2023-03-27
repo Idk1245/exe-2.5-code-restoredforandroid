@@ -7,8 +7,6 @@
  • MarioMaster - Coder and porter - ( The real one, but he is good porter)
 
  • Stefan2008 - Coder and porter - ( The bad porter beacuse he didn't ported mod on source or coded, but he's want to help )
- 
- • Idk1245 - Restored the mod for android!
 
 
 ### FNF Android porting stuff maked by:
