@@ -140,7 +140,7 @@ class PlayState extends MusicBeatState
 	#end
 
 	//for fight-or-flight
-	var starvedBFX:Float = 300.0; //200 is not aligned
+	var starvedBFX:Float = 700.0; //200 is not aligned
 	var starvedBFY:Float = 0.0;
 	var dZoom:Float = 1.35; //1.0
 	var bZoom:Float = 1.0; //0.8
@@ -3873,7 +3873,7 @@ class PlayState extends MusicBeatState
 	override public function update(elapsed:Float)
 	{
 		if (SONG.song.toLowerCase() == 'fight-or-flight') {
-			zoomStarved = camGame.zoom / 0.75;
+			zoomStarved = FlxG.camera.zoom / 0.75; //camGame is not working I think
 			boyfriend.scale.set(zoomStarved, zoomStarved);
 			boyfriend.x = starvedBFX * zoomStarved;
 			boyfriend.y = starvedBFY * zoomStarved;
