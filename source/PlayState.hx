@@ -3868,12 +3868,16 @@ class PlayState extends MusicBeatState
 	var starvedSpeed:Float = 15;
 	override public function update(elapsed:Float)
 	{
-		if (SONG.song.toLowerCase() == 'fight-or-flight') {
+		//if (SONG.song.toLowerCase() == 'fight-or-flight') {
+		if (curSong == "fight-or-flight") {
 			zoomStarved = FlxG.camera.zoom / 0.75; //camGame is not working I think
-			boyfriend.scale.set(zoomStarved, zoomStarved);
+			//boyfriend.scale.set(zoomStarved, zoomStarved); // this part was wierd
+			boyfriend.scale.x = zoomStarved;
+			boyfriend.scale.y = zoomStarved;
 			boyfriend.x = starvedBFX * zoomStarved;
 			boyfriend.y = starvedBFY * zoomStarved;
 		} //from lua to source XD
+
 		if (isFixedAspectRatio)
 			FlxG.fullscreen = false;
 
