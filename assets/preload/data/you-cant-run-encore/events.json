@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "bf-encoreYCR",
+		"player1": "bf-encore",
 		"events": [
 			[
 				8571.42857142857,
@@ -10512,7 +10512,7 @@
 		"player2": "ycr",
 		"player3": "gf",
 		"song": "you-cant-run-encore",
-		"stage": "cant-run-encore",
+		"stage": "cant-run-xd",
 		"needsVoices": true,
 		"validScore": true,
 		"arrowSkin": "",
