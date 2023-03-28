@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="PixelSONIC.png">
+<SubTexture name="PixelSONIC Idle0000" x="410" y="190" width="145" height="185" frameX="-70" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0001" x="555" y="0" width="140" height="185" frameX="-70" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0002" x="410" y="0" width="145" height="190" frameX="-65" frameY="-65" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0003" x="0" y="210" width="150" height="195" frameX="-60" frameY="-60" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0004" x="150" y="210" width="150" height="195" frameX="-60" frameY="-60" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0005" x="410" y="190" width="145" height="185" frameX="-70" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0006" x="555" y="0" width="140" height="185" frameX="-70" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0007" x="410" y="0" width="145" height="190" frameX="-65" frameY="-65" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0008" x="0" y="210" width="150" height="195" frameX="-60" frameY="-60" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Idle0009" x="150" y="210" width="150" height="195" frameX="-60" frameY="-60" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Right0000" x="555" y="185" width="135" height="185" frameX="-100" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Right0001" x="0" y="405" width="125" height="185" frameX="-100" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Right0002" x="125" y="405" width="125" height="185" frameX="-100" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Left0000" x="250" y="405" width="165" height="185" frameX="-50" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Left0001" x="415" y="405" width="160" height="185" frameX="-50" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Left0002" x="695" y="0" width="160" height="185" frameX="-50" frameY="-70" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Down0000" x="0" y="590" width="150" height="160" frameX="-70" frameY="-95" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Down0001" x="695" y="185" width="150" height="175" frameX="-60" frameY="-80" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Down0002" x="695" y="360" width="150" height="175" frameX="-60" frameY="-80" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Up0000" x="270" y="0" width="140" height="205" frameX="-45" frameY="-50" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Up0001" x="0" y="0" width="135" height="210" frameX="-50" frameY="-45" frameWidth="285" frameHeight="285" />
+<SubTexture name="PixelSONIC Up0002" x="135" y="0" width="135" height="210" frameX="-50" frameY="-45" frameWidth="285" frameHeight="285" />
+</TextureAtlas>

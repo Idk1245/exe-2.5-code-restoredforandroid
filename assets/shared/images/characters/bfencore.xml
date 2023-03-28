@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bfencore.png">
+<SubTexture name="bfencore bfencoreidle0000" x="235" y="255" width="150" height="210" frameX="-55" frameY="-45" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreidle0001" x="720" y="0" width="150" height="200" frameX="-55" frameY="-55" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreidle0002" x="870" y="0" width="160" height="200" frameX="-50" frameY="-55" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreidle0003" x="870" y="200" width="150" height="200" frameX="-55" frameY="-55" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreup0000" x="240" y="0" width="240" height="250" frameX="-50" frameY="-5" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreup0001" x="0" y="255" width="235" height="240" frameX="-50" frameY="-15" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreup0002" x="0" y="0" width="240" height="255" frameX="-50" frameY="0" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreupmiss0000" x="480" y="0" width="240" height="250" frameX="-50" frameY="-5" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreright0000" x="385" y="255" width="195" height="205" frameX="-45" frameY="-50" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreright0001" x="0" y="495" width="185" height="205" frameX="-50" frameY="-50" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreright0002" x="185" y="495" width="195" height="205" frameX="-40" frameY="-50" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencorerightmiss0000" x="380" y="495" width="195" height="205" frameX="-45" frameY="-50" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoredown0000" x="175" y="700" width="175" height="195" frameX="-40" frameY="-60" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoredown0001" x="350" y="700" width="185" height="190" frameX="-30" frameY="-65" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoredown0002" x="535" y="700" width="175" height="190" frameX="-40" frameY="-65" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoredownmiss0000" x="0" y="700" width="175" height="200" frameX="-40" frameY="-55" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreleft0000" x="710" y="700" width="230" height="190" frameX="-5" frameY="-65" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreleft0001" x="1030" y="0" width="230" height="190" frameX="0" frameY="-65" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreleft0002" x="1030" y="190" width="230" height="190" frameX="-5" frameY="-65" frameWidth="290" frameHeight="255" />
+<SubTexture name="bfencore bfencoreleftmiss0000" x="1030" y="380" width="230" height="190" frameX="-5" frameY="-65" frameWidth="290" frameHeight="255" />
+</TextureAtlas>
