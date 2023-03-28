@@ -140,7 +140,7 @@ class PlayState extends MusicBeatState
 	#end
 
 	//for fight-or-flight
-	var starvedBFX:Float = 700.0; //200 is not aligned
+	var starvedBFX:Float = 200.0;
 	var starvedBFY:Float = 0.0;
 	var dZoom:Float = 1.35; //1.0
 	var bZoom:Float = 1.0; //0.8
@@ -2622,10 +2622,6 @@ class PlayState extends MusicBeatState
 		}else{
 			FadeTransitionSubstate.nextCamera = camOther;
 		}
-
-
-
-
 
 		super.create();
 	}

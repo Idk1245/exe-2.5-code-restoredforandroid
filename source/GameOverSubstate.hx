@@ -192,7 +192,12 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		var exclude:Array<Int> = [];
 
-                #if mobile addVirtualPad(NONE, A_B); #end
+	#if mobile
+		if (PlayState.SONG.song.toLowerCase() != 'fight-or-flight') {
+			addVirtualPad(NONE, A_B);
+			addVirtualPadCamera();
+		}
+	#end
 	}
 
 	override function update(elapsed:Float)
@@ -239,6 +244,12 @@ class GameOverSubstate extends MusicBeatSubstate
 			if (bf.animation.curAnim.finished)
 			{
 				coolStartDeath();
+				#if mobile
+					if (PlayState.SONG.song.toLowerCase() == 'fight-or-flight') {
+					addVirtualPad(NONE, A_B);
+					addVirtualPadCamera();
+					}
+				#end
 				bf.startedDeath = true;
 				canAction = true;
 			}
