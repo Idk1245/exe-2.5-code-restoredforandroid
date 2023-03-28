@@ -139,6 +139,13 @@ class PlayState extends MusicBeatState
 	public var gfMap:Map<String, Character> = new Map<String, Character>();
 	#end
 
+	//for fight-or-flight
+	var starvedBFX:Float = 300.0; //200 is not aligned
+	var starvedBFY:Float = 0.0;
+	var dZoom:Float = 1.35; //1.0
+	var bZoom:Float = 1.0; //0.8
+	var zoomStarved:Float = 0.0;
+
 	public var BF_X:Float = 770;
 	public var BF_Y:Float = 100;
 	public var DAD_X:Float = 100;
@@ -3828,7 +3835,7 @@ class PlayState extends MusicBeatState
 					camFollow.x += 20;
 					camFollow.y += 70;
 				case "starved":
-					FlxG.camera.zoom = FlxMath.lerp(1.35, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
+					FlxG.camera.zoom = FlxMath.lerp(dZoom, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1)); //1.35 source code zoom
 					camFollow.x += 20;
 					camFollow.y -= 70;
 				case "beast_chaotix":
@@ -3854,6 +3861,8 @@ class PlayState extends MusicBeatState
 
 			switch (char.curCharacter)
 			{
+				case "bf-tails":
+					FlxG.camera.zoom = FlxMath.lerp(bZoom, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
 				default:
 					FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125), 0, 1));
 			}
@@ -3863,7 +3872,12 @@ class PlayState extends MusicBeatState
 	var starvedSpeed:Float = 15;
 	override public function update(elapsed:Float)
 	{
-
+		if (SONG.song.toLowerCase() == 'fight-or-flight') {
+			zoomStarved = camGame.zoom / 0.75;
+			boyfriend.scale.set(zoomStarved, zoomStarved);
+			boyfriend.x = starvedBFX * zoomStarved;
+			boyfriend.y = starvedBFY * zoomStarved;
+		} //from lua to source XD
 		if (isFixedAspectRatio)
 			FlxG.fullscreen = false;
 
@@ -8850,5 +8864,4 @@ class PlayState extends MusicBeatState
 
 		return super.switchTo(state);
 	}
-
 }
