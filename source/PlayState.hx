@@ -6839,21 +6839,21 @@ class PlayState extends MusicBeatState
 	}
 
   #if VIDEOS_ALLOWED
-	function chromaVideo(name:String){
+	function chromaVideo(name:String) {
 		var video:VideoSprite = new VideoSprite(0,0);
 		video.scrollFactor.set();
 		video.cameras = [camHUD];
 		video.shader = new GreenScreenShader();
 		video.visible = false;
 		video.playVideo(Paths.video(name));
-		video.openingCallback = function(){
-		video.visible = true;
+		video.openingCallback = function() {
+			video.visible = true;
 		}
 		add(video);
 		video.finishCallback = function() {
 			//trace("video gone");
-			//remove(video);
-			//video.destroy(); //temporarily removed for some reason(will add it back later)
+			remove(video);
+			video.destroy(); //revert, hxcodec fixed ig
 		}
 	}
   #end

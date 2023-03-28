@@ -87,7 +87,7 @@ class GameOverSubstate extends MusicBeatSubstate
 				var video = new VideoHandler();
 				var file:String = Paths.video("SanicGameOvers/" + StringTools.replace(FileSystem.readDirectory(StringTools.replace(Paths.video("random"), "/random.mp4", "/SanicGameOvers"))[FlxG.random.int(0, FileSystem.readDirectory(StringTools.replace(Paths.video("random"), "/random.mp4", "/SanicGameOvers")).length)], ".mp4", ""));
 
-				trace("playing " + file);
+				//trace("playing " + file);
 				video.playVideo(file); // LONGEST FUCKING LINE EVER
 			case "prey": 
 				bf.playAnim('firstDeath');
