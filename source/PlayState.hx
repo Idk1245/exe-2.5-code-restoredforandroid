@@ -532,6 +532,12 @@ class PlayState extends MusicBeatState
 		current=this;
 		Paths.clearStoredMemory();
 
+		var testSongT:FlxText = new FlxText(12, FlxG.height - 24, 0, "SONG: " + SONG.song.toLowerCase() + " | " + curSong, 12);
+		testSongT.scrollFactor.set();
+		testSongT.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		testSongT.cameras = [camOther];
+		add(testSongT);
+
 		if (FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 
