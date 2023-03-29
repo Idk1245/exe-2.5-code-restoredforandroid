@@ -3861,8 +3861,8 @@ class PlayState extends MusicBeatState
 	var starvedSpeed:Float = 15;
 
 	//for fight-or-flight
-	var starvedBFX:Float = 900.0;
-	var starvedBFY:Float = 0.0;
+	var starvedBFX:Float = 100.0;
+	var starvedBFY:Float = 100.0;
 	var dZoom:Float = 1.35; //1.0
 	var bZoom:Float = 1.0; //0.8
 	var zoomStarved:Float = 0.0;
@@ -3891,7 +3891,7 @@ class PlayState extends MusicBeatState
 		managePopups();
 		modManager.update(elapsed);
 
-		if (canDodge && FlxG.keys.justPressed.SPACE || controls.NOTE_SPACE)
+		if (canDodge && FlxG.keys.justPressed.SPACE || canDodge && controls.NOTE_SPACE)
 		{
 			dodging = true;
 			boyfriend.playAnim('dodge', true);
@@ -4109,17 +4109,19 @@ class PlayState extends MusicBeatState
 	 switch (SONG.song.toLowerCase()) //ass code
 		{
 			case 'fight or flight':
-				scoreTxt.text = 'Sacrifices: ' + songMisses + ' | Accuracy: ';
-				if (ratingString != '?')
-					scoreTxt.text += '' + ((Math.floor(ratingPercent * 10000) / 100)) + '%';
-				if (songMisses <= 0)
-					scoreTxt.text += ratingString;
+			if (ratingString == '?'){
+				scoreTxt.text = 'Sacrifices: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Accuracy: ' + ratingString;
+			} else {
+				scoreTxt.text = 'Sacrifices: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Accuracy: ' + ((Math.floor(ratingPercent * 10000) / 100)) + '%' + ratingString;
+			}
+				
+			
 			default:
-					scoreTxt.text = 'Score: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Accuracy: ';
-				if (ratingString != '?')
-					scoreTxt.text += '' + ((Math.floor(ratingPercent * 10000) / 100)) + '%';
-				if (songMisses <= 0)
-					scoreTxt.text += ratingString;
+			if (ratingString == '?'){
+				scoreTxt.text = 'Score: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Accuracy: ' + ratingString;
+			} else {
+				scoreTxt.text = 'Score: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Accuracy: ' + ((Math.floor(ratingPercent * 10000) / 100)) + '%' + ratingString;
+			}
 		}
 		if (cpuControlled)
 			{
