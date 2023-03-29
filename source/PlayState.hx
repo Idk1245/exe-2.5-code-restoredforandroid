@@ -2178,10 +2178,11 @@ class PlayState extends MusicBeatState
 		if (SONG.isRing) {
 		addMobileControls(true, true);			
 		
-		/*if (FlxG.save.data.controlsMode != 'Hitbox' || FlxG.save.data.controlsMode != 'Keyboard') {
+		if (ClientPrefs.isvpad) {
 		addVirtualPad(NONE, DODGE);
 		addVirtualPadCamera(false);
-		virtualPad.visible = false;*/
+		virtualPad.visible = false;
+		}
 
 		}else{
 		addMobileControls(false, true);  
@@ -2875,9 +2876,9 @@ class PlayState extends MusicBeatState
 		}
 		        #if mobile
                 mobileControls.visible = true;
-				//if (FlxG.save.data.controlsMode != 'Hitbox' || FlxG.save.data.controlsMode != 'Keyboard'){
-				//virtualPad.visible = true;
-				//}
+				if (ClientPrefs.isvpad && SONG.isRing){
+				virtualPad.visible = true;
+				}
                 #end
 
 		inCutscene = false;
@@ -5896,9 +5897,9 @@ class PlayState extends MusicBeatState
 		}
 	        #if mobile
                 mobileControls.visible = false;
-				//if (FlxG.save.data.controlsMode != 'Hitbox' || FlxG.save.data.controlsMode != 'Keyboard'){
-				//virtualPad.visible = true;
-				//}
+				if (ClientPrefs.isvpad && SONG.isRing){
+			  virtualPad.visible = true;
+				}
                 #end
 
 		timeBarBG.visible = false;
