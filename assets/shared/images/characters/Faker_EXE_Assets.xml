@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Faker_EXE_assets.png">
+<SubTexture name="Faker_Encore Idle0000" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0001" x="1445" y="0" width="333" height="482" frameX="-511" frameY="-213" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0002" x="697" y="502" width="359" height="495" frameX="-489" frameY="-199" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0003" x="742" y="0" width="371" height="501" frameX="-473" frameY="-192" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0004" x="0" y="502" width="371" height="500" frameX="-470" frameY="-193" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0005" x="371" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0006" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0007" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0008" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0009" x="1445" y="0" width="333" height="482" frameX="-511" frameY="-213" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0010" x="697" y="502" width="359" height="495" frameX="-489" frameY="-199" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0011" x="742" y="0" width="371" height="501" frameX="-473" frameY="-192" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0012" x="0" y="502" width="371" height="500" frameX="-470" frameY="-193" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0013" x="371" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0014" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0015" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0016" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0017" x="1445" y="0" width="333" height="482" frameX="-511" frameY="-213" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0018" x="697" y="502" width="359" height="495" frameX="-489" frameY="-199" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0019" x="742" y="0" width="371" height="501" frameX="-473" frameY="-192" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0020" x="0" y="502" width="371" height="500" frameX="-470" frameY="-193" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0021" x="371" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0022" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0023" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Idle0024" x="0" y="0" width="371" height="502" frameX="-466" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Up0000" x="371" y="502" width="326" height="496" frameX="-496" frameY="-189" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Up0001" x="1113" y="0" width="332" height="490" frameX="-493" frameY="-196" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Up0002" x="0" y="1002" width="347" height="477" frameX="-484" frameY="-210" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Up0003" x="347" y="1002" width="349" height="473" frameX="-479" frameY="-216" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Up0004" x="696" y="1002" width="340" height="472" frameX="-479" frameY="-218" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Down0000" x="429" y="1948" width="443" height="442" frameX="-415" frameY="-262" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Down0001" x="0" y="1948" width="429" height="456" frameX="-412" frameY="-247" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Down0002" x="464" y="1479" width="421" height="467" frameX="-411" frameY="-236" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Down0003" x="885" y="1479" width="420" height="466" frameX="-412" frameY="-236" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Left0000" x="2156" y="0" width="410" height="462" frameX="-413" frameY="-252" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Left0001" x="1778" y="0" width="378" height="469" frameX="-437" frameY="-245" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Left0002" x="0" y="1479" width="464" height="469" frameX="-444" frameY="-237" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Left0003" x="1778" y="469" width="367" height="468" frameX="-451" frameY="-232" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Left0004" x="1036" y="1002" width="376" height="470" frameX="-453" frameY="-227" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Right0000" x="2156" y="1368" width="402" height="421" frameX="-528" frameY="-269" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Right0001" x="2156" y="920" width="385" height="448" frameX="-503" frameY="-259" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Right0002" x="2156" y="462" width="397" height="458" frameX="-494" frameY="-250" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Right0003" x="1706" y="1479" width="406" height="464" frameX="-490" frameY="-245" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Faker_Encore Right0004" x="1305" y="1479" width="401" height="466" frameX="-491" frameY="-243" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>
