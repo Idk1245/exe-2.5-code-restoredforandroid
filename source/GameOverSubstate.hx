@@ -193,7 +193,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		var exclude:Array<Int> = [];
 
 	#if mobile
-		if (PlayState.curSong != "fight-or-flight") {
+		if (PlayState.SONG.song.toLowerCase() == 'fight or flight') {
 			addVirtualPad(NONE, A_B);
 			addVirtualPadCamera();
 		}
@@ -245,9 +245,9 @@ class GameOverSubstate extends MusicBeatSubstate
 			{
 				coolStartDeath();
 				#if mobile
-					if (PlayState.curSong == "fight-or-flight") {
-					addVirtualPad(NONE, A_B);
-					addVirtualPadCamera();
+					if (PlayState.SONG.song.toLowerCase() == 'fight or flight') {
+						addVirtualPad(NONE, A_B);
+						addVirtualPadCamera();
 					}
 				#end
 				bf.startedDeath = true;
