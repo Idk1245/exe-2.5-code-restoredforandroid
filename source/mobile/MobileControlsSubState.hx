@@ -52,6 +52,11 @@ class MobileControlsSubState extends FlxSubState
 
 			if (controlsItems[Math.floor(curSelected)] == 'Pad-Custom')
 				MobileControls.customVirtualPad = virtualPad;
+				
+			if (controlsItems[Math.floor(curSelected)] != 'Hitbox' || controlsItems[Math.floor(curSelected)] != 'Keyboard' ){
+			  ClientPrefs.isvpad = true;
+			  ClientPrefs.saveSettings;
+			}
 
 			FlxTransitionableState.skipNextTransOut = true;
 			FlxG.resetState();
