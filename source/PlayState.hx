@@ -3862,12 +3862,12 @@ class PlayState extends MusicBeatState
 	var starvedSpeed:Float = 15;
 
 	//for fight-or-flight
-	var starvedBFX:Float = 0.0;
-	var starvedBFY:Float = 200.0;
+	var starvedBFX:Float = 200.0;
+	var starvedBFY:Float = 0.0;
 	var dZoom:Float = 1.35; //1.0
-	var bZoom:Float = 1.0; //0.8
+	var bZoom:Float = 0.8; //0.8
 	var zoomStarved:Float = 0.0;
-
+	
 	override public function update(elapsed:Float)
 	{
 		if (SONG.song.toLowerCase() == 'fight or flight') {
