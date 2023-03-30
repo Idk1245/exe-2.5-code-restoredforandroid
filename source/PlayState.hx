@@ -2178,7 +2178,7 @@ class PlayState extends MusicBeatState
 		if (SONG.isRing) {
 		addMobileControls(true, true);			
 		
-		if (ClientPrefs.isvpad) {
+		if (ClientPrefs.isvpad && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard') {
 		addVirtualPad(NONE, DODGE);
 		addVirtualPadCamera(false);
 		virtualPad.visible = false;
@@ -2876,7 +2876,7 @@ class PlayState extends MusicBeatState
 		}
 		        #if mobile
                 mobileControls.visible = true;
-				if (ClientPrefs.isvpad && SONG.isRing){
+				if (ClientPrefs.isvpad && SONG.isRing && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard'){
 				virtualPad.visible = true;
 				}
                 #end
@@ -3862,10 +3862,10 @@ class PlayState extends MusicBeatState
 	var starvedSpeed:Float = 15;
 
 	//for fight-or-flight
-	var starvedBFX:Float = 200.0;
-	var starvedBFY:Float = 0.0;
+	var starvedBFX:Float = 100.0;
+	var starvedBFY:Float = 200.0;
 	var dZoom:Float = 1.35; //1.0
-	var bZoom:Float = 0.8; //0.8
+	var bZoom:Float = 0.9; //0.8
 	var zoomStarved:Float = 0.0;
 	
 	override public function update(elapsed:Float)
@@ -5897,7 +5897,7 @@ class PlayState extends MusicBeatState
 		}
 	        #if mobile
                 mobileControls.visible = false;
-				if (ClientPrefs.isvpad && SONG.isRing){
+				if (ClientPrefs.isvpad && SONG.isRing && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard'){
 			  virtualPad.visible = true;
 				}
                 #end
@@ -7386,9 +7386,6 @@ class PlayState extends MusicBeatState
 
 					fgTree1.alpha = 0;
 					fgTree2.alpha = 0;
-
-					grassXeno.angle = -30;
-					backtreesXeno.y += 70;
 
 					backtreesXeno.visible = true;
 					grassXeno.visible = true;
