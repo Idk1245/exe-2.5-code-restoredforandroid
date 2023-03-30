@@ -3026,6 +3026,7 @@
 			}
 		],
 		"player2": "faker",
+		"player3": "FakerBG",
 		"song": "faker",
 		"needsVoices": true,
 		"sections": 0,
