@@ -1579,7 +1579,7 @@ class PlayState extends MusicBeatState
 		gf.scrollFactor.set(0.95, 0.95);
 		gfGroup.add(gf);
 
-		if (curStage == 'needle')
+		if (curSong.toLowerCase() == 'round-a-bout')
 		{
 			dad2 = new Character(0, 0, 'sarah');
 			startCharacterPos(dad2, true);
@@ -3862,10 +3862,10 @@ class PlayState extends MusicBeatState
 	var starvedSpeed:Float = 15;
 
 	//for fight-or-flight
-	var starvedBFX:Float = 100.0;
+	var starvedBFX:Float = 50.0;
 	var starvedBFY:Float = 200.0;
 	var dZoom:Float = 1.35; //1.0
-	var bZoom:Float = 0.9; //0.8
+	var bZoom:Float = 0.8; //0.8
 	var zoomStarved:Float = 0.0;
 	
 	override public function update(elapsed:Float)
@@ -5888,10 +5888,7 @@ class PlayState extends MusicBeatState
 				trace("A fatal error has ACTUALLY occured: " + e);
 			}
 			#end*/
-			
-			Application.current.window.alert('A FATAL ERROR HAS OCCURRED', 'Vs Sonic.exe Android');
-      Application.current.window.close();
-			
+
 			FlxG.mouse.visible = false;
 			FlxG.mouse.unload();
 		}

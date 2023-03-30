@@ -32,7 +32,7 @@ using StringTools;
 // TO DO: Redo the menu creation system for not being as dumb
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Controls', 'Mobile Controls', 'Preferences'];
+	var options:Array<String> = ['Mobile Controls', 'Preferences'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -63,17 +63,15 @@ class OptionsState extends MusicBeatState
 
 		changeSelection();
 
-                #if mobile
-                addVirtualPad(UP_DOWN, A_B);
-                #end
+		#if mobile
+			addVirtualPad(UP_DOWN, A_B);
+			//virtualPad.y = 22;
+		#end
 
 		super.create();
 	}
 
 	override function closeSubState() {
-	  #if mobile
-    addVirtualPad(UP_DOWN, A_B);
-    #end
 		super.closeSubState();
 		ClientPrefs.saveSettings();
 		changeSelection();
@@ -98,25 +96,16 @@ class OptionsState extends MusicBeatState
 			for (item in grpOptions.members) {
 				item.alpha = 0;
 			}
-
+			#if mobile
+				removeVirtualPad();
+			#end // Global Adding Controls
 			switch(options[curSelected]) {
 
 				case 'Controls':
-				#if mobile
-        removeVirtualPad();
-        #end
-					openSubState(new ControlsSubstate());
-
+					openSubState(new ControlsSubstate()); //cry, you're not on mobile lol
 				case 'Mobile Controls':
-				#if mobile
-        removeVirtualPad();
-        #end
-				  openSubState(new mobile.MobileControlsSubState());
-
+					openSubState(new mobile.MobileControlsSubState());
 				case 'Preferences':
-				#if mobile
-        removeVirtualPad();
-        #end
 					openSubState(new PreferencesSubstate());
 			}
 		}
@@ -213,9 +202,9 @@ class ControlsSubstate extends MusicBeatSubstate {
 			}
 		}
 
-        #if mobile
+        /*#if mobile
         addVirtualPad(UP_DOWN, A_B);
-        #end
+        #end*/ // I don't think this is necessary
 
 		changeSelection();
 	}
@@ -240,8 +229,8 @@ class ControlsSubstate extends MusicBeatSubstate {
 				grpOptions.forEachAlive(function(spr:Alphabet) {
 					spr.alpha = 0;
 				});
-				close();
-				//closeSubState()
+				//close(); wierd man
+				closeSubState(); // this can save the settings
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
 
@@ -577,9 +566,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 			}
 		}
 
-        #if mobile
-        addVirtualPad(LEFT_FULL, A_B);
-        #end
+		#if mobile
+			addVirtualPad(LEFT_FULL, A_B);
+		#end
 
 		changeSelection();
 		reloadValues();
@@ -615,8 +604,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
-		  close();
-			//closeSubState()
+			//close(); this too
+			closeSubState();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
