@@ -177,20 +177,15 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
-		var credits:FlxText = new FlxText(12, FlxG.height - 20 * 2, 320, "Android Port By MaysLastPlay, MarioMaster, Stefan2008, Ralsei", 3);
+		var credits:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 18 * 2, 300, "Android Port By MaysLastPlay, MarioMaster, Stefan2008, Ralsei", 3);
 		credits.scrollFactor.set();
 		credits.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(credits); //If you reading this, I'm putting random comments on my code cuz i feel lonely.*/
-
-		var dataerase:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 18 * 2, 300, "Hold C to erase ALL data (this doesn't include ALL options)", 3);
-		dataerase.scrollFactor.set();
-		dataerase.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(dataerase);
+		add(credits); //If you reading this, I'm putting random comments on my code cuz i feel lonely.
 
 		changeItem();
 
 		#if mobile
-			addVirtualPad(UP_DOWN, A_B_C);
+			addVirtualPad(UP_DOWN, A_B);
 			virtualPad.y = -36;
 		#end
 

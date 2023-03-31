@@ -14,5 +14,5 @@
 - **Nuno Filipe Studios** - Help with fixing bugs
 --------------------
 ### Port Update:
-- Currently on **Fixing Bugs**, it'll release soon.
+- Currently on **Fixing Bugs**, hotfix update will release soon.
  
