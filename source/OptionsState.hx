@@ -74,7 +74,7 @@ class OptionsState extends MusicBeatState
 	override function closeSubState() {
 		super.closeSubState();
 		ClientPrefs.saveSettings();
-		changeSelection();
+		//changeSelection();
 	}
 
 	override function update(elapsed:Float) {
@@ -100,7 +100,6 @@ class OptionsState extends MusicBeatState
 				removeVirtualPad();
 			#end // Global Adding Controls
 			switch(options[curSelected]) {
-
 				case 'Controls':
 					openSubState(new ControlsSubstate()); //cry, you're not on mobile lol
 				case 'Mobile Controls':
@@ -566,9 +565,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 			}
 		}
 
-		#if mobile
+		/*#if mobile
 			addVirtualPad(LEFT_FULL, A_B);
-		#end
+		#end*/
 
 		changeSelection();
 		reloadValues();
@@ -588,6 +587,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 		}
 
 		if (controls.BACK) {
+			#if mobile
+				removeVirtualPad();
+			#end
 			grpOptions.forEachAlive(function(spr:Alphabet) {
 				spr.alpha = 0;
 			});
