@@ -8386,7 +8386,7 @@
 		"needsVoices": true,
 		"stage": "cant-run-xd",
 		"arrowSkin": "",
-		"splashSkin": "Blood",
+		"splashSkin": "",
 		"validScore": true,
 		"speed": 2.8,
 		"bpm": 140,
