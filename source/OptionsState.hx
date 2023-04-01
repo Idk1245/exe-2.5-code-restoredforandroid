@@ -74,7 +74,7 @@ class OptionsState extends MusicBeatState
 	override function closeSubState() {
 		super.closeSubState();
 		ClientPrefs.saveSettings();
-		//changeSelection();
+		changeSelection();
 	}
 
 	override function update(elapsed:Float) {
@@ -96,15 +96,21 @@ class OptionsState extends MusicBeatState
 			for (item in grpOptions.members) {
 				item.alpha = 0;
 			}
-			#if mobile
-				removeVirtualPad();
-			#end // Global Adding Controls
 			switch(options[curSelected]) {
 				case 'Controls':
+					#if mobile
+						removeVirtualPad();
+					#end
 					openSubState(new ControlsSubstate()); //cry, you're not on mobile lol
 				case 'Mobile Controls':
+					#if mobile
+						removeVirtualPad();
+					#end
 					openSubState(new mobile.MobileControlsSubState());
 				case 'Preferences':
+					#if mobile
+						removeVirtualPad();
+					#end
 					openSubState(new PreferencesSubstate());
 			}
 		}
@@ -228,8 +234,8 @@ class ControlsSubstate extends MusicBeatSubstate {
 				grpOptions.forEachAlive(function(spr:Alphabet) {
 					spr.alpha = 0;
 				});
-				close(); //wierd man
-				//closeSubState(); // this can save the settings
+				//close(); //wierd man
+				closeSubState(); // this can save the settings
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
 
@@ -566,7 +572,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		}
 
 		#if mobile
-	  addVirtualPad(LEFT_FULL, A_B);
+			addVirtualPad(LEFT_FULL, A_B);
 		#end //it's a substate
 
 		changeSelection();
@@ -606,8 +612,12 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
-			close(); //this too
-			//closeSubState();
+			#if android
+				flixel.addons.transition.FlxTransitionableState.skipNextTransOut = true;
+			FlxG.resetState();
+			#else
+				close();
+			#end
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
