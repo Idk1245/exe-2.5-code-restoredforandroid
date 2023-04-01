@@ -125,10 +125,10 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		changeSelection();
 		reloadCheckboxes();
 
-        /*#if android
+        #if android
             addVirtualPad(LEFT_FULL, A_B_C);
             addVirtualPadCamera();
-        #end*/
+        #end
 	}
 
 	public function addOption(option:Option) {
@@ -249,7 +249,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 				}
 			}
 
-			if(controls.RESET) /*#if android || virtualPad.buttonC.justPressed #end)*/
+			if(controls.RESET #if android || virtualPad.buttonC.justPressed #end)
 			{
 				for (i in 0...optionsArray.length)
 				{
