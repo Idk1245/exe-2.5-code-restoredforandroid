@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "bf-endless",
+		"player1": "endless_bf",
 		"gfVersion": "invisgf",
 		"notes": [
 			{
@@ -5012,7 +5012,7 @@
 			}
 		],
 		"events": [],
-		"player2": "majin-new",
+		"player2": "majin_new",
 		"splashSkin": "noteSplashes",
 		"song": "endeavours",
 		"needsVoices": true,
