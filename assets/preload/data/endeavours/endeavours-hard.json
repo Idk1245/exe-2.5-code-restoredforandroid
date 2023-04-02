@@ -5016,7 +5016,7 @@
 		"splashSkin": "noteSplashes",
 		"song": "endeavours",
 		"needsVoices": true,
-		"arrowSkin": "majinNOTES",
+		"arrowSkin": "",
 		"stage": "endless-forest",
 		"validScore": true,
 		"bpm": 156,
