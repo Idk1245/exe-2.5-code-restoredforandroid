@@ -3,7 +3,7 @@ package;
 class CharSongList
 {
     public static var data:Map<String,Array<String>> = [
-      "majin" => ["endless", "endeavors", "endless-og"],
+      "majin" => ["endless", "endeavours", "endless-og"],
       "lord x" => ["cycles"],
       "tails doll" => ["sunshine", "soulless"],
       "faker" => ["faker", "black-sun"],
