@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Sonic_EXE_Kopia.png">
+<SubTexture name="SONIClaugh0000" x="3014" y="705" width="509" height="692" frameX="-18" frameY="-15" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0001" x="3526" y="678" width="510" height="670" frameX="-6" frameY="-39" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0002" x="492" y="2941" width="510" height="663" frameX="-4" frameY="-46" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0003" x="1370" y="2941" width="510" height="659" frameX="-3" frameY="-51" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0004" x="0" y="3605" width="511" height="656" frameX="-2" frameY="-53" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0005" x="999" y="3605" width="511" height="654" frameX="-2" frameY="-55" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0006" x="1510" y="3605" width="511" height="653" frameX="-2" frameY="-57" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0007" x="1510" y="3605" width="511" height="653" frameX="-1" frameY="-44" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0008" x="1510" y="3605" width="511" height="653" frameX="-1" frameY="-44" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0009" x="1510" y="3605" width="511" height="653" frameX="-1" frameY="-44" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONIClaugh0010" x="1510" y="3605" width="511" height="653" frameX="-1" frameY="-44" frameWidth="551" frameHeight="712" />
+<SubTexture name="SONICmoveDOWN0000" x="537" y="6056" width="516" height="532" frameX="-34" frameY="-44" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0001" x="0" y="6056" width="537" height="553" frameX="-12" frameY="-23" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0002" x="906" y="5488" width="544" height="567" frameX="-7" frameY="-10" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0003" x="5523" y="4912" width="546" height="568" frameX="-5" frameY="-9" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0004" x="1450" y="5488" width="548" height="567" frameX="-4" frameY="-10" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0005" x="4974" y="4912" width="549" height="572" frameX="-3" frameY="-5" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0006" x="2200" y="4912" width="549" height="574" frameX="-3" frameY="-3" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0007" x="1100" y="4912" width="550" height="575" frameX="-2" frameY="-2" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0008" x="1650" y="4912" width="550" height="575" frameX="-2" frameY="-2" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0009" x="0" y="4912" width="550" height="576" frameX="-2" frameY="-1" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveDOWN0010" x="550" y="4912" width="550" height="576" frameX="-2" frameY="-1" frameWidth="578" frameHeight="579" />
+<SubTexture name="SONICmoveIDLE0000" x="2369" y="2941" width="424" height="657" frameX="-6" frameY="-9" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0001" x="2793" y="2941" width="424" height="657" frameX="-6" frameY="-9" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0002" x="3217" y="2941" width="424" height="657" frameX="-7" frameY="-9" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0003" x="4049" y="1971" width="421" height="653" frameX="-11" frameY="-12" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0004" x="4049" y="2624" width="422" height="653" frameX="-12" frameY="-12" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0005" x="2021" y="3605" width="423" height="653" frameX="-12" frameY="-12" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0006" x="2444" y="3605" width="422" height="653" frameX="-12" frameY="-12" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0007" x="2866" y="3605" width="421" height="653" frameX="-12" frameY="-12" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0008" x="4049" y="0" width="424" height="657" frameX="-7" frameY="-9" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0009" x="4049" y="657" width="424" height="657" frameX="-6" frameY="-9" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveIDLE0010" x="2369" y="2941" width="424" height="657" frameX="-4" frameY="-6" frameWidth="459" frameHeight="668" />
+<SubTexture name="SONICmoveLEFT0000" x="3526" y="0" width="523" height="678" frameX="-38" frameY="-21" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0001" x="3526" y="1348" width="498" height="670" frameX="-64" frameY="-29" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0002" x="0" y="2941" width="492" height="664" frameX="-70" frameY="-36" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0003" x="1880" y="2941" width="489" height="659" frameX="-74" frameY="-41" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0004" x="511" y="3605" width="488" height="656" frameX="-75" frameY="-44" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0005" x="3287" y="3605" width="487" height="653" frameX="-76" frameY="-46" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0006" x="3774" y="3605" width="486" height="651" frameX="-77" frameY="-48" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0007" x="4473" y="0" width="486" height="651" frameX="-77" frameY="-48" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0008" x="4959" y="1302" width="486" height="650" frameX="-77" frameY="-49" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0009" x="5445" y="1302" width="486" height="650" frameX="-77" frameY="-49" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveLEFT0010" x="4959" y="1952" width="486" height="650" frameX="-77" frameY="-49" frameWidth="566" frameHeight="702" />
+<SubTexture name="SONICmoveRIGHT0000" x="3014" y="0" width="512" height="705" frameX="-6" frameY="-25" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0001" x="1214" y="766" width="478" height="728" frameX="-6" frameY="-2" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0002" x="1390" y="2226" width="470" height="710" frameX="-6" frameY="-20" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0003" x="1860" y="2226" width="467" height="709" frameX="-6" frameY="-21" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0004" x="2327" y="2226" width="465" height="709" frameX="-6" frameY="-21" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0005" x="926" y="2226" width="464" height="714" frameX="-6" frameY="-16" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0006" x="2404" y="1444" width="463" height="715" frameX="-6" frameY="-15" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0007" x="1830" y="1498" width="463" height="715" frameX="-6" frameY="-15" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0008" x="0" y="2226" width="463" height="715" frameX="-6" frameY="-15" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0009" x="463" y="2226" width="463" height="715" frameX="-6" frameY="-15" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveRIGHT0010" x="2404" y="728" width="463" height="716" frameX="-6" frameY="-14" frameWidth="533" frameHeight="732" />
+<SubTexture name="SONICmoveUP0000" x="0" y="0" width="598" height="766" frameX="-17" frameY="-10" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0001" x="598" y="0" width="594" height="751" frameX="-23" frameY="-25" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0002" x="1192" y="0" width="603" height="735" frameX="-14" frameY="-41" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0003" x="608" y="766" width="606" height="731" frameX="-10" frameY="-45" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0004" x="0" y="766" width="608" height="732" frameX="-8" frameY="-44" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0005" x="1795" y="0" width="609" height="731" frameX="-7" frameY="-45" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0006" x="1795" y="731" width="609" height="730" frameX="-7" frameY="-46" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0007" x="0" y="1498" width="610" height="728" frameX="-6" frameY="-48" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0008" x="610" y="1498" width="610" height="728" frameX="-6" frameY="-48" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0009" x="1220" y="1498" width="610" height="728" frameX="-6" frameY="-48" frameWidth="629" frameHeight="777" />
+<SubTexture name="SONICmoveUP0010" x="2404" y="0" width="610" height="728" frameX="-6" frameY="-48" frameWidth="629" frameHeight="777" />
+<SubTexture name="Getya Getya0000" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0001" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0002" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0003" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0004" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0005" x="6545" y="3869" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0006" x="6545" y="4413" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0007" x="6545" y="4957" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0008" x="6545" y="5501" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0009" x="6182" y="558" width="350" height="544" frameX="-451" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0010" x="6182" y="4910" width="350" height="543" frameX="-451" frameY="-127" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0011" x="6545" y="3869" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0012" x="6182" y="5453" width="345" height="537" frameX="-456" frameY="-133" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0013" x="4473" y="2396" width="439" height="578" frameX="-418" frameY="-95" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0014" x="4473" y="3551" width="434" height="573" frameX="-412" frameY="-99" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0015" x="4473" y="3551" width="434" height="573" frameX="-412" frameY="-99" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0016" x="2749" y="4912" width="434" height="573" frameX="-412" frameY="-99" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0017" x="3183" y="4912" width="434" height="573" frameX="-412" frameY="-99" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0018" x="1998" y="5488" width="434" height="567" frameX="-411" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0019" x="5338" y="3883" width="437" height="587" frameX="-444" frameY="-86" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0020" x="4473" y="651" width="433" height="583" frameX="-438" frameY="-91" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0021" x="4473" y="1234" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0022" x="4473" y="1234" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0023" x="4473" y="1234" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0024" x="4473" y="1234" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0025" x="4473" y="1234" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0026" x="4473" y="1234" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0027" x="4473" y="1815" width="430" height="581" frameX="-438" frameY="-93" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0028" x="4473" y="2974" width="413" height="577" frameX="-444" frameY="-97" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0029" x="3641" y="2941" width="401" height="568" frameX="-446" frameY="-104" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0030" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0031" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0032" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0033" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0034" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0035" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0036" x="2432" y="5488" width="390" height="567" frameX="-454" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0037" x="2822" y="5488" width="386" height="567" frameX="-458" frameY="-105" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0038" x="5775" y="3883" width="365" height="584" frameX="-477" frameY="-90" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0039" x="5346" y="3247" width="376" height="635" frameX="-437" frameY="-34" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0040" x="3014" y="2067" width="364" height="666" frameX="-429" frameY="-7" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0041" x="3526" y="2018" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0042" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0043" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0044" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0045" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0046" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0047" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0048" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0049" x="3014" y="1397" width="371" height="670" frameX="-422" frameY="-1" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0050" x="1002" y="2941" width="368" height="662" frameX="-427" frameY="-9" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0051" x="4959" y="2602" width="386" height="645" frameX="-419" frameY="-24" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0052" x="4959" y="3883" width="379" height="618" frameX="-436" frameY="-51" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0053" x="2345" y="6056" width="493" height="476" frameX="-390" frameY="-190" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0054" x="1860" y="6056" width="485" height="489" frameX="-392" frameY="-176" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0055" x="1860" y="6056" width="485" height="489" frameX="-392" frameY="-176" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0056" x="1860" y="6056" width="485" height="489" frameX="-392" frameY="-176" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0057" x="1860" y="6056" width="485" height="489" frameX="-392" frameY="-176" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0058" x="1407" y="6056" width="453" height="490" frameX="-405" frameY="-176" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0059" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0060" x="1223" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0061" x="2446" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0062" x="3669" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0063" x="4959" y="0" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0064" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0065" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0066" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0067" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0068" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0069" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0070" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0071" x="0" y="4261" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0072" x="4959" y="651" width="1223" height="651" frameX="-5" frameY="-65" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0073" x="6545" y="2224" width="362" height="552" frameX="-430" frameY="-118" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0074" x="6182" y="1102" width="348" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0075" x="6182" y="1646" width="345" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0076" x="6182" y="2190" width="348" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0077" x="6182" y="2734" width="348" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0078" x="6182" y="3278" width="348" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0079" x="6182" y="3278" width="348" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0080" x="6182" y="3278" width="348" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0081" x="1053" y="6056" width="354" height="519" frameX="-464" frameY="-151" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0082" x="6545" y="2776" width="388" height="549" frameX="-441" frameY="-122" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0083" x="5445" y="1952" width="387" height="649" frameX="-428" frameY="-25" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0084" x="5345" y="2602" width="387" height="642" frameX="-426" frameY="-31" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0085" x="5732" y="2602" width="387" height="636" frameX="-415" frameY="-37" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0086" x="4959" y="3247" width="387" height="636" frameX="-415" frameY="-37" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0087" x="5722" y="3247" width="387" height="626" frameX="-406" frameY="-47" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0088" x="4049" y="1314" width="418" height="657" frameX="-357" frameY="-16" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0089" x="3208" y="5488" width="489" height="566" frameX="-256" frameY="-115" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0090" x="5440" y="5488" width="467" height="560" frameX="-265" frameY="-121" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0091" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0092" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0093" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya idle0000" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0094" x="3617" y="4912" width="457" height="573" frameX="-271" frameY="-108" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0095" x="3697" y="5488" width="457" height="563" frameX="-271" frameY="-118" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0096" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0097" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0098" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0099" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0100" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0101" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0102" x="4074" y="4912" width="449" height="573" frameX="-279" frameY="-108" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0103" x="0" y="5488" width="454" height="568" frameX="-274" frameY="-113" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0104" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0105" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0106" x="4611" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0107" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0108" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0109" x="4523" y="4912" width="451" height="573" frameX="-277" frameY="-108" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0110" x="454" y="5488" width="452" height="568" frameX="-276" frameY="-113" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0111" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0112" x="4611" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0113" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0114" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0115" x="4154" y="5488" width="457" height="562" frameX="-271" frameY="-119" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0116" x="6545" y="0" width="458" height="556" frameX="-271" frameY="-124" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0117" x="5068" y="5488" width="372" height="561" frameX="-494" frameY="-108" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0118" x="6182" y="0" width="363" height="558" frameX="-476" frameY="-112" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0119" x="6545" y="556" width="363" height="556" frameX="-469" frameY="-114" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0120" x="6545" y="556" width="363" height="556" frameX="-469" frameY="-114" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0121" x="6545" y="556" width="363" height="556" frameX="-469" frameY="-114" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0122" x="6545" y="1112" width="363" height="556" frameX="-469" frameY="-114" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0123" x="6545" y="1668" width="363" height="556" frameX="-469" frameY="-114" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0124" x="6182" y="3822" width="335" height="544" frameX="-468" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0125" x="6182" y="3822" width="335" height="544" frameX="-468" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0126" x="6182" y="4366" width="352" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0127" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0128" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0129" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0130" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0131" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0132" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0133" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+<SubTexture name="Getya Getya0134" x="6545" y="3325" width="353" height="544" frameX="-448" frameY="-126" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>
