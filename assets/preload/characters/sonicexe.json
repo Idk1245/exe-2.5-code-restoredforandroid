@@ -72,10 +72,9 @@
 				-69
 			],
 			"indices": [],
-			"fps": 10,
+			"fps": 12,
 			"anim": "Getya",
 			"loop": false,
-			"scale": 1.2,
 			"name": "Getya"
 		}
 	],
