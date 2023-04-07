@@ -2,7 +2,7 @@
 	"animations": [
 		{
 			"offsets": [
-				-61,
+				-1,
 				-52
 			],
 			"loop": false,
@@ -13,8 +13,8 @@
 		},
 		{
 			"offsets": [
-				4,
-				31
+				24,
+				21
 			],
 			"loop": false,
 			"fps": 24,
@@ -25,7 +25,7 @@
 		{
 			"offsets": [
 				-107,
-				-15
+				-25
 			],
 			"loop": false,
 			"fps": 24,
@@ -35,8 +35,8 @@
 		},
 		{
 			"offsets": [
-				-27,
-				-167
+				3,
+				-157
 			],
 			"loop": false,
 			"fps": 24,
@@ -46,8 +46,8 @@
 		},
 		{
 			"offsets": [
-				70,
-				-83
+				110,
+				-53
 			],
 			"loop": false,
 			"fps": 24,
@@ -68,18 +68,18 @@
 		},
 		{
 			"offsets": [
-				391,
-				-59
+				361,
+				-69
 			],
 			"indices": [],
-			"fps": 15,
+			"fps": 12,
 			"anim": "Getya",
 			"loop": false,
 			"name": "Getya"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Sonic_EXE_Kopia",
+	"image": "characters/Getya",
 	"position": [
 		0,
 		0
@@ -96,5 +96,5 @@
 		110
 	],
 	"sing_duration": 4,
-	"scale": 2.7
+	"scale": 1
 }
