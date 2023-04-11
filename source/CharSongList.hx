@@ -20,7 +20,8 @@ class CharSongList
       "sanic" => ["too-fest"],
       "coldsteel" => ["personel"],
       "sonichu" => ["shocker"],
-      "devoid" => ["hollow"]
+      "devoid" => ["hollow"],
+      "sl4sh" => ["b4cksl4sh"]
     ];
 
     public static var characters:Array<String> = [ // just for ordering
@@ -41,7 +42,8 @@ class CharSongList
       "sanic",
       "coldsteel",
       "sonichu",
-      "devoid"
+      "devoid",
+      "sl4sh"
     ];
 
     // TODO: maybe a character display names map? for the top left in FreeplayState
