@@ -1,224 +1,600 @@
-function define(name,def)
-    modMgr:define(name)
-    modMgr:set(name,def)
+function onCreate() --satanos
+
+setPropertyFromClass('ClientPrefs','middleScroll', false)
 end
 
--- sonic bg
-setVar("defaultCamZoom", 0.9)
-local sky = newSprite(-414,-440.8,true):loadGraphic("SonicP2/sky")
-sky.antialiasing=true;
-sky.scrollFactorX = 1;
-sky.scrollFactorY = 1;
-sky.scaleX = 1.4;
-sky.scaleY = 1.4;
-
-local trees = newSprite(-290.55,-298.3,true):loadGraphic("SonicP2/backtrees")
-trees.antialiasing=true;
-trees.scrollFactorX = 1
-trees.scrollFactorY = 1
-trees.scaleX = 1.2
-trees.scaleY = 1.2
-
-local bg2 = newSprite(-290.55,-298.3,true):loadGraphic("SonicP2/trees")
-bg2.antialiasing=true;
-bg2.scrollFactorX = 1
-bg2.scrollFactorY = 1
-bg2.scaleX = 1.2
-bg2.scaleY = 1.2
-
-local bg = newSprite(-290.55,-298.3,true):loadGraphic("SonicP2/ground")
-bg.antialiasing=true;
-bg.scrollFactorX = 1
-bg.scrollFactorY = 1
-bg.scaleX = 1.2
-bg.scaleY = 1.2
-
-modMgr:set("unboundedReverse",100) -- as long as its not 0, reverse can go >100 and itll work same as <0
-modMgr:set("stealth", 25, 1)
-modMgr:set("opponentSwap", 50)
-modMgr:set("reverse", 100, 1)
-
-modMgr:queueEase(160, 170, "opponentSwap", 0,'quadOut')
-modMgr:queueEase(160, 170, "stealth",0,'quadOut', 1)
-
-modMgr:queueEase(412, 418, "alpha", 100,'quadOut')
-modMgr:queueSet(424, "reverse", 0, 1)
-modMgr:queueSet(424, "centered", 100, 0)
-modMgr:queueSet(424, "split", 100, 0)
-modMgr:queueSet(424, "opponentSwap", 50)
-
-modMgr:queueEase(432, 448, "alpha", 0, 'quadOut', 0)
-
-modMgr:queueEase(560, 572, "centered", 0, 'quadOut', 0)
-
-modMgr:queueEase(688, 706, "alpha", 0, 'quadOut', 1)
-modMgr:queueEase(688, 706, "opponentSwap", 0, 'quadOut')
-modMgr:queueEase(688, 706, "split", 0, 'quadOut', 0)
-
-modMgr:queueEase(724, 724.5, "drunk", 450, 'quartIn', 1)
-modMgr:queueEase(725, 730, "drunk", 0, 'quadOut')
-
-modMgr:queueEase(852, 852.5, "drunk", -450, 'quartIn', 0)
-modMgr:queueEase(853, 858, "drunk", 0, 'quadOut')
-
-modMgr:queueEase(944, 976, "opponentSwap", 50, 'quadOut')
-modMgr:queueEase(944, 976, "alpha", 100, 'quadOut', 1)
-
-modMgr:queueSet(944, "drunk", 75, 0)
-modMgr:queueEase(944.5, 976, "drunk", 0, 'quadOut')
-
-modMgr:queueSet(976, "drunk", 75, 0)
-modMgr:queueEase(976, 1006, "drunk", 0, 'quadOut')
-
-modMgr:queueSet(1008, "drunk", 75, 0)
-modMgr:queueEase(1008, 1012, "drunk", 0, 'quadOut')
-
-modMgr:queueSet(1012, "drunk", 75, 0)
-modMgr:queueEase(1012, 1020, "drunk", 0, 'quadOut')
-
-modMgr:queueEase(1040, 1072, "alpha", 75, 'linear', 1)
-
-modMgr:queueSet(1200, "squish", 100, 'quintOut')
-modMgr:queueEase(1200, 1204, "squish", 0, 'quintOut')
-modMgr:queueEase(1200, 1204, "alpha", 0, 'quartOut', 1)
-modMgr:queueEase(1200, 1204, "opponentSwap", 100, 'quartOut')
-
-modMgr:queueSet(1456, "squish", 100, 'quintOut')
-modMgr:queueEase(1456, 1460, "squish", 0, 'quintOut')
-modMgr:queueEase(1456, 1460, "alpha", 75, 'quartOut', 1)
-modMgr:queueEase(1456, 1460, "opponentSwap", 50, 'quartOut')
-
-modMgr:queueEase(1472, 1476, "rotateX", math.rad(180), 'quartOut')
-modMgr:queueSet(1476, "reverse", 100)
-modMgr:queueSet(1476, "rotateX", 0)
-
-modMgr:queueEase(1488, 1492, "rotateX", math.rad(180), 'quartOut')
-modMgr:queueSet(1492, "reverse", 0)
-modMgr:queueSet(1492, "rotateX", 0)
-
-modMgr:queueEase(1504, 1508, "rotateX", math.rad(180), 'quartOut')
-modMgr:queueSet(1508, "reverse", 100)
-modMgr:queueSet(1508, "rotateX", 0)
-
-modMgr:queueEase(1520, 1524, "rotateX", math.rad(180), 'quartOut')
-modMgr:queueSet(1524, "reverse", 0)
-modMgr:queueSet(1524, "rotateX", 0)
-
-modMgr:queueEase(1584, 1588, "centerrotateZ", math.rad(-90), 'elasticOut', 0)
-modMgr:queueEase(1584, 1588, "centerrotateZ", math.rad(90), 'elasticOut', 1)
-modMgr:queueEase(1584, 1588, "transformY", 25, 'elasticOut')
-
-modMgr:queueEase(1584, 1588, "confusion", -90, 'elasticOut', 0)
-modMgr:queueEase(1584, 1588, "confusion", 90, 'elasticOut', 1)
-
-modMgr:queueEase(1600, 1604, "centerrotateZ", math.rad(180), 'elasticOut', 0)
-modMgr:queueEase(1600, 1604, "centerrotateZ", math.rad(0), 'elasticOut', 1)
-modMgr:queueEase(1600, 1604, "transformY", 0, 'elasticOut')
-modMgr:queueEase(1600, 1604, "flip", 100, 'elasticOut', 0)
-modMgr:queueEase(1600, 1604, "confusion", 0, 'elasticOut')
-modMgr:queueSet(1604, "reverse", 100, 0)
-modMgr:queueSet(1604, "flip", 0, 0)
-modMgr:queueSet(1604, "centerrotateZ", 0, 0)
-
-modMgr:queueSet(1644, "squish", 100, 'quintOut')
-modMgr:queueEase(1644, 1648, "squish", 0, 'quintOut')
-modMgr:queueEase(1644, 1648, "opponentSwap", 100, 'quartOut')
-modMgr:queueEase(1644, 1648, "alpha", 0, 'quartOut', 1)
-modMgr:queueEase(1644, 1650, "reverse", 0, 'quartOut', 0)
-modMgr:queueEase(1644, 1650, "reverse", 100, 'quartOut', 1)
-
-modMgr:queueSet(1760, "reverse", 100, 0)
-modMgr:queueSet(1760, "reverse", 0, 1)
-modMgr:queueSet(1760, "opponentSwap", 0)
-
-modMgr:queueEase(1868, 1870, "reverse", 100, 'quartOut', 1)
-modMgr:queueEase(1868, 1870, "reverse", 0, 'quartOut', 0)
-
-modMgr:queueEase(2032, 2048, "drunk", 35, 'quartOut')
-modMgr:queueEase(2032, 2048, "tipsy", 15, 'quartOut')
-modMgr:queueEase(2032, 2048, "opponentSwap", 50, 'quartOut')
-modMgr:queueEase(2032, 2048, "stealth", 25, 'quartOut', 1)
-modMgr:queueEase(2032, 2048, "wave", 50, 'quartOut')
-
-modMgr:queueSet(2096, "squish", 100, 'quintOut')
-modMgr:queueEase(2096, 2100, "squish", 0, 'quintOut')
-modMgr:queueEase(2096, 2100, "flip", 100, 'quartOut')
-
-modMgr:queueEase(2160, 2172, "flip", 0, 'quartOut')
-
-modMgr:queueEase(2160, 2177, "opponentSwap", 0, 'quadOut')
-modMgr:queueEase(2160, 2177, "stealth", 0, 'quadOut', 1)
-
-modMgr:queueEase(2176, 2180, 'brake', 0, 'quadOut')
-modMgr:queueEase(2176, 2180, 'wave', 25, 'quadOut')
-modMgr:queueEase(2176, 2180, 'boost', 100, 'quadOut')
-
-modMgr:queueEase(2288, 2292, 'wave', 0, 'quadOut')
-modMgr:queueEase(2288, 2292, 'boost', 0, 'quadOut')
-modMgr:queueEase(2288, 2292, 'drunk', 0, 'quadOut')
-modMgr:queueEase(2288, 2292, 'tipsy', 0, 'quadOut')
-
-modMgr:queueEase(2312, 2315, 'flip', 100, 'linear')
-
-modMgr:queueEase(2352, 2360, 'flip', 0, 'linear')
-modMgr:queueEase(2360, 2362, 'centered', 100, 'quadOut')
-modMgr:queueEase(2360, 2362, 'split', 100, 'quadOut')
-modMgr:queueEase(2416, 2424, 'centered', 0, 'backOut')
-modMgr:queueSet(2416, 'split', 0)
-modMgr:queueSet(2416, 'reverse', 100, 0)
-modMgr:queueSet(2416, 'reverse', 0, 1)
-modMgr:queueSet(2432, "squish", 100, 'quintOut')
-modMgr:queueEase(2432, 2436, "squish", 0, 'quintOut')
-modMgr:queueEase(2432, 2436, 'opponentSwap', -100, 'quartOut', 0)
-modMgr:queueEase(2432, 2436, 'opponentSwap', 50, 'quartOut', 1)
-modMgr:queueSet(2436, "reverse", 0, 0)
-
-modMgr:queueSet(2446, "squish", 150, 'quintOut')
-modMgr:queueEase(2446, 2450, "squish", 0, 'quintOut')
-modMgr:queueEase(2446, 2450, 'opponentSwap', 50, 'quartOut', 0)
-modMgr:queueEase(2446, 2450, 'opponentSwap', -100, 'quartOut', 1)
-modMgr:queueSet(2450, "reverse", 0, 1)
-
-
-modMgr:queueSet(2464, "squish", 150, 1)
-modMgr:queueSet(2464, "squish", 100, 0)
-modMgr:queueEase(2464, 2468, "squish", 0, 'quintOut')
-modMgr:queueEase(2464, 2468, 'opponentSwap', 0, 'quartOut', 0)
-modMgr:queueEase(2464, 2468, 'opponentSwap', 0, 'quartOut', 1)
-
-modMgr:queueEase(2550, 2554, 'reverse', -50, 'backIn', 0)
-modMgr:queueSet(2554, 'reverse', 150, 0)
-modMgr:queueEase(2554, 2558, 'reverse', 100, 'backOut', 0)
-
-modMgr:queueEase(2576, 2580, 'reverse', 150, 'backIn', 0)
-modMgr:queueSet(2580, 'reverse', -50, 0)
-modMgr:queueEase(2580, 2584, 'reverse', 0, 'backOut', 0)
-
-modMgr:queueEase(2672, 2686, 'opponentSwap', 50, 'backInOut', 0)
-modMgr:queueEase(2672, 2676, 'reverse', -150, 'backIn', 1)
-modMgr:queueEase(2672, 2676, 'alpha', 100, 'backIn', 1)
-
-modMgr:queueEase(2688, 2672, 'drunk', 50, 'linear')
-modMgr:queueEase(2688, 2672, 'tipsy', 50, 'linear')
-
-modMgr:queueEase(2736, 2744, 'reverse1', 100, 'backInOut', 0)
-modMgr:queueEase(2745, 2753, 'reverse3', 100, 'backInOut', 0)
-modMgr:queueEase(2747, 2755, 'reverse2', 100, 'backInOut', 0)
-modMgr:queueEase(2749, 2757, 'reverse0', 100, 'backInOut', 0)
-
-if(getOption"downScroll")then
-modMgr:queueEase(2819, 2827, 'transform1Y', -200, 'backIn', 0)
-modMgr:queueEase(2828, 2836, 'transform0Y', -200, 'backIn', 0)
-modMgr:queueEase(2829, 2837, 'transform2Y', -200, 'backIn', 0)
-modMgr:queueEase(2832, 2840, 'transform3Y', -200, 'backIn', 0)
-else
-modMgr:queueEase(2819, 2827, 'transform1Y', 200, 'backIn', 0)
-modMgr:queueEase(2828, 2836, 'transform0Y', 200, 'backIn', 0)
-modMgr:queueEase(2829, 2837, 'transform2Y', 200, 'backIn', 0)
-modMgr:queueEase(2832, 2840, 'transform3Y', 200, 'backIn', 0)
+function onCreatePost()
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
 end
-modMgr:queueEase(2832,2848,'alpha',100,'quadOut')
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',true)
+end
 
-function startCountdown()
-    return 'hidden' 
+
+noteTweenX('play0', 4, 415, 0.1)
+noteTweenX('play1', 5, 525, 0.1)
+noteTweenX('play2', 6, 635, 0.1)
+noteTweenX('play3', 7, 745, 0.1)
+
+noteTweenY('opY0', 0, 550, 0.1)
+noteTweenY('opY1', 1, 550, 0.1)
+noteTweenY('opY2', 2, 550, 0.1)
+noteTweenY('opY3', 3, 550, 0.1)
+
+noteTweenY('playY0', 4, 50, 0.1)
+noteTweenY('playY1', 5, 50, 0.1)
+noteTweenY('playY2', 6, 50, 0.1)
+noteTweenY('playY3', 7, 50, 0.1)
+
+noteTweenX('op0', 0, 415, 0.1)
+noteTweenX('op1', 1, 525, 0.1)
+noteTweenX('op2', 2, 635, 0.1)
+noteTweenX('op3', 3, 745, 0.1)
+end
+
+
+function onEvent(name, value1, value2)
+   if name == 'hola' then
+   if value1 == '1' then --160 step
+noteTweenX('play0', 4, 715, 0.8,'quadOut')
+noteTweenX('play1', 5, 825, 0.8,'quadOut')
+noteTweenX('play2', 6, 935, 0.8,'quadOut')
+noteTweenX('play3', 7, 1045, 0.8,'quadOut')
+
+noteTweenAngle('play0a', 4, 360, 0.8,'quadOut')
+noteTweenAngle('play1a', 5, 360, 0.8,'quadOut')
+noteTweenAngle('play2a', 6, 360, 0.8,'quadOut')
+noteTweenAngle('play3a', 7, 360, 0.8,'quadOut')
+
+noteTweenX('op0', 0, 115, 0.8,'quadOut')
+noteTweenX('op1', 1, 225, 0.8,'quadOut')
+noteTweenX('op2', 2, 335, 0.8,'quadOut')
+noteTweenX('op3', 3, 445, 0.8,'quadOut')
+
+noteTweenAngle('op0a', 0, 360, 0.8,'quadOut')
+noteTweenAngle('op1a', 1, 360, 0.8,'quadOut')
+noteTweenAngle('op2a', 2, 360, 0.8,'quadOut')
+noteTweenAngle('op3a', 3, 360, 0.8,'quadOut')
+end
+   if value1 == '2' then --432 step
+noteTweenAlpha('op0', 0, 0, 0.5)
+noteTweenAlpha('op1', 1, 0, 0.5)
+noteTweenAlpha('op2', 2, 0, 0.5)
+noteTweenAlpha('op3', 3, 0, 0.5)
+
+noteTweenAlpha('player0', 4, 0, 0.5)
+noteTweenAlpha('player1', 5, 0, 0.5)
+noteTweenAlpha('player2', 6, 0, 0.5)
+noteTweenAlpha('player3', 7, 0, 0.5)
+end
+   if value1 == '3' then --452 step
+noteTweenX('play0', 4, 415, 0.1)
+noteTweenX('play1', 5, 525, 0.1)
+noteTweenX('play2', 6, 635, 0.1)
+noteTweenX('play3', 7, 745, 0.1)
+
+noteTweenY('playY0', 4, 325, 0.1)
+noteTweenY('playY1', 5, 325, 0.1)
+noteTweenY('playY2', 6, 325, 0.1)
+noteTweenY('playY3', 7, 325, 0.1)
+
+for i = 0,1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+for i = 2,3 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+end
+   if value1 == '4' then --480 step
+noteTweenAlpha('player0', 4, 1, 0.5)
+noteTweenAlpha('player1', 5, 1, 0.5)
+noteTweenAlpha('player2', 6, 1, 0.5)
+noteTweenAlpha('player3', 7, 1, 0.5)
+end
+   if value1 == '5' then --560 step
+noteTweenY('playY0', 4, 50, 0.5,'quartOut')
+noteTweenY('playY1', 5, 50, 0.5,'quartOut')
+noteTweenY('playY2', 6, 550, 0.5,'quartOut')
+noteTweenY('playY3', 7, 550, 0.5,'quartOut')
+end
+   if value1 == '6' then --688 step
+noteTweenAlpha('op0', 0, 1, 0.5)
+noteTweenAlpha('op1', 1, 1, 0.5)
+noteTweenAlpha('op2', 2, 1, 0.5)
+noteTweenAlpha('op3', 3, 1, 0.5)
+
+noteTweenY('opY0', 0, 50, 0.5,'quadOut')
+noteTweenY('opY1', 1, 50, 0.5,'quadOut')
+noteTweenY('opY2', 2, 50, 0.5,'quadOut')
+noteTweenY('opY3', 3, 50, 0.5,'quadOut')
+
+noteTweenX('play0', 4, 715, 0.6,'quadOut')
+noteTweenX('play1', 5, 825, 0.7,'quadOut')
+noteTweenX('play2', 6, 935, 0.8,'quadOut')
+noteTweenX('play3', 7, 1045, 0.9,'quadOut')
+
+noteTweenY('playY0', 4, 50, 0.6,'quadOut')
+noteTweenY('playY1', 5, 50, 0.7,'quadOut')
+noteTweenY('playY2', 6, 50, 0.8,'quadOut')
+noteTweenY('playY3', 7, 50, 0.9,'quadOut')
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+end
+   if value1 == '7' then --944 step
+noteTweenX('play0', 4, 415, 0.5,'quadOut')
+noteTweenX('play1', 5, 525, 0.5,'quadOut')
+noteTweenX('play2', 6, 635, 0.5,'quadOut')
+noteTweenX('play3', 7, 745, 0.5,'quadOut')
+
+noteTweenX('op0', 0, 415, 0.5,'quadOut')
+noteTweenX('op1', 1, 525, 0.5,'quadOut')
+noteTweenX('op2', 2, 635, 0.5,'quadOut')
+noteTweenX('op3', 3, 745, 0.5,'quadOut')
+
+noteTweenAlpha('op0a', 0, 0, 0.5)
+noteTweenAlpha('op1a', 1, 0, 0.5)
+noteTweenAlpha('op2a', 2, 0, 0.5)
+noteTweenAlpha('op3a', 3, 0, 0.5)
+end
+   if value1 == '8' then --1192 step
+noteTweenX('op0', 0, 715, 0.5,'quadOut')
+noteTweenX('op1', 1, 825, 0.5,'quadOut')
+noteTweenX('op2', 2, 935, 0.5,'quadOut')
+noteTweenX('op3', 3, 1045, 0.5,'quadOut')
+
+noteTweenX('play0', 4, 115, 0.5,'quadOut')
+noteTweenX('play1', 5, 225, 0.5,'quadOut')
+noteTweenX('play2', 6, 335, 0.5,'quadOut')
+noteTweenX('play3', 7, 445, 0.5,'quadOut')
+
+noteTweenAlpha('op0a', 0, 1, 0.5)
+noteTweenAlpha('op1a', 1, 1, 0.5)
+noteTweenAlpha('op2a', 2, 1, 0.5)
+noteTweenAlpha('op3a', 3, 1, 0.5)
+end
+   if value1 == '9' then --1455 step
+noteTweenX('play0', 4, 415, 0.3,'elasticInOut')
+noteTweenX('play1', 5, 525, 0.3,'elasticInOut')
+noteTweenX('play2', 6, 635, 0.3,'elasticInOut')
+noteTweenX('play3', 7, 745, 0.3,'elasticInOut')
+
+noteTweenX('op0', 0, 415, 0.3,'elasticInOut')
+noteTweenX('op1', 1, 525, 0.3,'elasticInOut')
+noteTweenX('op2', 2, 635, 0.3,'elasticInOut')
+noteTweenX('op3', 3, 745, 0.3,'elasticInOut')
+
+noteTweenAlpha('op0a', 0, 0.25, 0.3)
+noteTweenAlpha('op1a', 1, 0.25, 0.3)
+noteTweenAlpha('op2a', 2, 0.25, 0.3)
+noteTweenAlpha('op3a', 3, 0.25, 0.3)
+end
+   if value1 == '10' then --1472 step
+noteTweenY('playY0', 4, 550, 0.2)
+noteTweenY('playY1', 5, 550, 0.2)
+noteTweenY('playY2', 6, 550, 0.2)
+noteTweenY('playY3', 7, 550, 0.2)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+
+noteTweenY('opY0', 0, 550, 0.2)
+noteTweenY('opY1', 1, 550, 0.2)
+noteTweenY('opY2', 2, 550, 0.2)
+noteTweenY('opY3', 3, 550, 0.2)
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',true)
+end
+end
+   if value1 == '11' then --1488 step
+noteTweenY('playY0', 4, 50, 0.2)
+noteTweenY('playY1', 5, 50, 0.2)
+noteTweenY('playY2', 6, 50, 0.2)
+noteTweenY('playY3', 7, 50, 0.2)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+noteTweenY('opY0', 0, 50, 0.2)
+noteTweenY('opY1', 1, 50, 0.2)
+noteTweenY('opY2', 2, 50, 0.2)
+noteTweenY('opY3', 3, 50, 0.2)
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+end
+   if value1 == '12' then --1504 step
+noteTweenY('playY0', 4, 550, 0.2)
+noteTweenY('playY1', 5, 550, 0.2)
+noteTweenY('playY2', 6, 550, 0.2)
+noteTweenY('playY3', 7, 550, 0.2)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+
+noteTweenY('opY0', 0, 550, 0.2)
+noteTweenY('opY1', 1, 550, 0.2)
+noteTweenY('opY2', 2, 550, 0.2)
+noteTweenY('opY3', 3, 550, 0.2)
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',true)
+end
+end
+   if value1 == '13' then --1520 step
+noteTweenY('playY0', 4, 50, 0.2)
+noteTweenY('playY1', 5, 50, 0.2)
+noteTweenY('playY2', 6, 50, 0.2)
+noteTweenY('playY3', 7, 50, 0.2)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+noteTweenY('opY0', 0, 50, 0.2)
+noteTweenY('opY1', 1, 50, 0.2)
+noteTweenY('opY2', 2, 50, 0.2)
+noteTweenY('opY3', 3, 50, 0.2)
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+end
+   if value1 == '14' then --1584 step
+for i = 4, 7 do 
+      setPropertyFromGroup("strumLineNotes", i, "x", 160)
+      setPropertyFromGroup("strumLineNotes", i, "y", 110 + (i % 4) * 112 )
+      setPropertyFromGroup("strumLineNotes", i, "direction", 0 )
+   end
+   for i = 0, 3 do 
+      setPropertyFromGroup("strumLineNotes", i, "x", 1000)
+      setPropertyFromGroup("strumLineNotes", i, "y", 110 + (i % 4) * 112 )
+      setPropertyFromGroup("strumLineNotes", i, "direction", 180 )
+   end
+end
+   if value1 == '15' then --1600 step
+for i = 4, 7 do 
+      setPropertyFromGroup("strumLineNotes", i, "x", 0)
+      setPropertyFromGroup("strumLineNotes", i, "y", 0)
+      setPropertyFromGroup("strumLineNotes", i, "direction", 90 )
+   end
+   for i = 0, 3 do 
+      setPropertyFromGroup("strumLineNotes", i, "x", 0)
+      setPropertyFromGroup("strumLineNotes", i, "y", 0)
+      setPropertyFromGroup("strumLineNotes", i, "direction", 90 )
+   end
+   
+noteTweenY('playY0', 4, 550, 0.1)
+noteTweenY('playY1', 5, 550, 0.1)
+noteTweenY('playY2', 6, 550, 0.1)
+noteTweenY('playY3', 7, 550, 0.1)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+
+noteTweenY('opY0', 0, 50, 0.1)
+noteTweenY('opY1', 1, 50, 0.1)
+noteTweenY('opY2', 2, 50, 0.1)
+noteTweenY('opY3', 3, 50, 0.1)
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+
+noteTweenX('play0', 4, 415, 0.1)
+noteTweenX('play1', 5, 525, 0.1)
+noteTweenX('play2', 6, 635, 0.1)
+noteTweenX('play3', 7, 745, 0.1)
+
+noteTweenX('op0', 0, 415, 0.1)
+noteTweenX('op1', 1, 525, 0.1)
+noteTweenX('op2', 2, 635, 0.1)
+noteTweenX('op3', 3, 745, 0.1)
+    
+end
+   if value1 == '16' then --1644 step
+noteTweenAlpha('op0a', 0, 1, 0.2)
+noteTweenAlpha('op1a', 1, 1, 0.2)
+noteTweenAlpha('op2a', 2, 1, 0.2)
+noteTweenAlpha('op3a', 3, 1, 0.2)
+
+noteTweenX('op0', 0, 715, 0.1)
+noteTweenX('op1', 1, 825, 0.1)
+noteTweenX('op2', 2, 935, 0.1)
+noteTweenX('op3', 3, 1045, 0.1)
+
+noteTweenX('play0', 4, 115, 0.1)
+noteTweenX('play1', 5, 225, 0.1)
+noteTweenX('play2', 6, 335, 0.1)
+noteTweenX('play3', 7, 445, 0.1)
+
+noteTweenY('playY0', 4, 50, 0.1)
+noteTweenY('playY1', 5, 50, 0.1)
+noteTweenY('playY2', 6, 50, 0.1)
+noteTweenY('playY3', 7, 50, 0.1)
+
+noteTweenY('opY0', 0, 550, 0.1)
+noteTweenY('opY1', 1, 550, 0.1)
+noteTweenY('opY2', 2, 550, 0.1)
+noteTweenY('opY3', 3, 550, 0.1)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',true)
+end
+end
+   if value1 == '17' then --1744 step
+noteTweenAlpha('op0', 0, 0, 0.5)
+noteTweenAlpha('op1', 1, 0, 0.5)
+noteTweenAlpha('op2', 2, 0, 0.5)
+noteTweenAlpha('op3', 3, 0, 0.5)
+
+noteTweenAlpha('player0', 4, 0, 0.5)
+noteTweenAlpha('player1', 5, 0, 0.5)
+noteTweenAlpha('player2', 6, 0, 0.5)
+noteTweenAlpha('player3', 7, 0, 0.5)
+end
+   if value1 == '18' then --1775 step
+noteTweenX('op0', 4, 715, 0.1)
+noteTweenX('op1', 5, 825, 0.1)
+noteTweenX('op2', 6, 935, 0.1)
+noteTweenX('op3', 7, 1045, 0.1)
+
+noteTweenX('play0', 0, 115, 0.1)
+noteTweenX('play1', 1, 225, 0.1)
+noteTweenX('play2', 2, 335, 0.1)
+noteTweenX('play3', 3, 445, 0.1)
+
+noteTweenY('playY0', 0, 50, 0.1)
+noteTweenY('playY1', 1, 50, 0.1)
+noteTweenY('playY2', 2, 50, 0.1)
+noteTweenY('playY3', 3, 50, 0.1)
+
+noteTweenY('opY0', 4, 550, 0.1)
+noteTweenY('opY1', 5, 550, 0.1)
+noteTweenY('opY2', 6, 550, 0.1)
+noteTweenY('opY3', 7, 550, 0.1)
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+end
+   if value1 == '19' then --1778 step
+noteTweenAlpha('op0', 0, 1, 0.5)
+noteTweenAlpha('op1', 1, 1, 0.5)
+noteTweenAlpha('op2', 2, 1, 0.5)
+noteTweenAlpha('op3', 3, 1, 0.5)
+
+noteTweenAlpha('player0', 4, 1, 0.5)
+noteTweenAlpha('player1', 5, 1, 0.5)
+noteTweenAlpha('player2', 6, 1, 0.5)
+noteTweenAlpha('player3', 7, 1, 0.5)
+end
+   if value1 == '20' then --1868 step
+noteTweenY('playY0', 4, 50, 0.2,'elasticInOut')
+noteTweenY('playY1', 5, 50, 0.2,'elasticInOut')
+noteTweenY('playY2', 6, 50, 0.2,'elasticInOut')
+noteTweenY('playY3', 7, 50, 0.2,'elasticInOut')
+
+noteTweenY('opY0', 0, 550, 0.2,'elasticInOut')
+noteTweenY('opY1', 1, 550, 0.2,'elasticInOut')
+noteTweenY('opY2', 2, 550, 0.2,'elasticInOut')
+noteTweenY('opY3', 3, 550, 0.2,'elasticInOut')
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',true)
+end
+end
+   if value1 == '21' then --2031 step
+noteTweenX('play0', 4, 415, 0.3,'quadOut')
+noteTweenX('play1', 5, 525, 0.3,'quadOut')
+noteTweenX('play2', 6, 635, 0.3,'quadOut')
+noteTweenX('play3', 7, 745, 0.3,'quadOut')
+
+noteTweenX('op0', 0, 415, 0.3,'quadOut')
+noteTweenX('op1', 1, 525, 0.3,'quadOut')
+noteTweenX('op2', 2, 635, 0.3,'quadOut')
+noteTweenX('op3', 3, 745, 0.3,'quadOut')
+
+noteTweenAlpha('opa0', 0, 0.25, 0.3)
+noteTweenAlpha('opa1', 1, 0.25, 0.3)
+noteTweenAlpha('opa2', 2, 0.25, 0.3)
+noteTweenAlpha('opa3', 3, 0.25, 0.3)
+end
+   if value1 == '22' then --2096 step
+noteTweenX('play0', 4, 745, 0.2)
+noteTweenX('play1', 5, 635, 0.2)
+noteTweenX('play2', 6, 525, 0.2)
+noteTweenX('play3', 7, 415, 0.2)
+
+noteTweenX('op0', 0, 745, 0.2)
+noteTweenX('op1', 1, 635, 0.2)
+noteTweenX('op2', 2, 525, 0.2)
+noteTweenX('op3', 3, 415, 0.2)
+end
+   if value1 == '23' then --2160 step
+noteTweenX('op0', 4, 715, 0.3,'elasticInOut')
+noteTweenX('op1', 5, 825, 0.3,'elasticInOut')
+noteTweenX('op2', 6, 935, 0.3,'elasticInOut')
+noteTweenX('op3', 7, 1045, 0.3,'elasticInOut')
+
+noteTweenX('play0', 0, 115, 0.3,'elasticInOut')
+noteTweenX('play1', 1, 225, 0.3,'elasticInOut')
+noteTweenX('play2', 2, 335, 0.3,'elasticInOut')
+noteTweenX('play3', 3, 445, 0.3,'elasticInOut')
+end
+   if value1 == '24' then --2311 step
+noteTweenX('play0', 4, 1044, 0.1,'elasticInOut')
+noteTweenX('play1', 5, 935, 0.1,'elasticInOut')
+noteTweenX('play2', 6, 825, 0.1,'elasticInOut')
+noteTweenX('play3', 7, 715, 0.1,'elasticInOut')
+end
+   if value1 == '25' then --2352 step
+noteTweenX('play0', 4, 715, 0.1,'elasticInOut')
+noteTweenX('play1', 5, 825, 0.1,'elasticInOut')
+noteTweenX('play2', 6, 935, 0.1,'elasticInOut')
+noteTweenX('play3', 7, 1045, 0.1,'elasticInOut')
+end
+   if value1 == '26' then --2353 step
+noteTweenY('playY0', 4, 325, 0.1)
+noteTweenY('playY1', 5, 325, 0.1)
+noteTweenY('playY2', 6, 325, 0.1)
+noteTweenY('playY3', 7, 325, 0.1)
+
+noteTweenY('opY0', 0, 325, 0.1)
+noteTweenY('opY1', 1, 325, 0.1)
+noteTweenY('opY2', 2, 325, 0.1)
+noteTweenY('opY3', 3, 325, 0.1)
+
+for i = 0,1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+for i = 2,3 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+
+for i = 0,1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+
+for i = 2,3 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',true)
+end
+end
+   if value1 == '28' then --2425 step
+noteTweenY('opY0', 0, 50, 0.2,'elasticInOut')
+noteTweenY('opY1', 1, 50, 0.2,'elasticInOut')
+noteTweenY('opY2', 2, 50, 0.2,'elasticInOut')
+noteTweenY('opY3', 3, 50, 0.2,'elasticInOut')
+
+noteTweenX('op0', 0, 415, 0.1,'elasticInOut')
+noteTweenX('op1', 1, 525, 0.1,'elasticInOut')
+noteTweenX('op2', 2, 635, 0.1,'elasticInOut')
+noteTweenX('op3', 3, 745, 0.1,'elasticInOut')
+
+noteTweenX('play0', 4, 10000, 0.1,'elasticInOut')
+noteTweenX('play1', 5, 10000, 0.1,'elasticInOut')
+noteTweenX('play2', 6, 10000, 0.1,'elasticInOut')
+noteTweenX('play3', 7, 10000, 0.1,'elasticInOut')
+
+noteTweenY('playY0', 4, 50, 0.2,'elasticInOut')
+noteTweenY('playY1', 5, 50, 0.2,'elasticInOut')
+noteTweenY('playY2', 6, 50, 0.2,'elasticInOut')
+noteTweenY('playY3', 7, 50, 0.2,'elasticInOut')
+
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+
+for i = 0, getProperty('opponentStrums.length')-1 do
+setPropertyFromGroup('opponentStrums',i,'downScroll',false)
+end
+end
+   if value1 == '29' then --2447 step
+noteTweenX('play0', 4, 415, 0.1,'elasticInOut')
+noteTweenX('play1', 5, 525, 0.1,'elasticInOut')
+noteTweenX('play2', 6, 635, 0.1,'elasticInOut')
+noteTweenX('play3', 7, 745, 0.1,'elasticInOut')
+
+noteTweenX('op0', 0, -10000, 0.1,'elasticInOut')
+noteTweenX('op1', 1, -10000, 0.1,'elasticInOut')
+noteTweenX('op2', 2, -10000, 0.1,'elasticInOut')
+noteTweenX('op3', 3, -10000, 0.1,'elasticInOut')
+end
+   if value1 == '30' then --2464 step
+noteTweenX('play0', 4, 715, 0.1,'elasticInOut')
+noteTweenX('play1', 5, 825, 0.1,'elasticInOut')
+noteTweenX('play2', 6, 935, 0.1,'elasticInOut')
+noteTweenX('play3', 7, 1045, 0.1,'elasticInOut')
+
+noteTweenX('op0', 0, 115, 0.1,'elasticInOut')
+noteTweenX('op1', 1, 225, 0.1,'elasticInOut')
+noteTweenX('op2', 2, 335, 0.1,'elasticInOut')
+noteTweenX('op3', 3, 445, 0.1,'elasticInOut')
+end
+   if value1 == '31' then --2558 step
+noteTweenY('play0', 4, 550, 0.2,'elasticInOut')
+noteTweenY('play1', 5, 550, 0.2,'elasticInOut')
+noteTweenY('play2', 6, 550, 0.2,'elasticInOut')
+noteTweenY('play3', 7, 550, 0.2,'elasticInOut')
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+end
+   if value1 == '32' then --2577 step
+noteTweenY('play0', 4, 50, 0.2,'elasticInOut')
+noteTweenY('play1', 5, 50, 0.2,'elasticInOut')
+noteTweenY('play2', 6, 50, 0.2,'elasticInOut')
+noteTweenY('play3', 7, 50, 0.2,'elasticInOut')
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',false)
+end
+end
+   if value1 == '33' then --2672 step
+noteTweenX('play0', 4, 415, 0.2,'elasticInOut')
+noteTweenX('play1', 5, 525, 0.2,'elasticInOut')
+noteTweenX('play2', 6, 635, 0.2,'elasticInOut')
+noteTweenX('play3', 7, 745, 0.2,'elasticInOut')
+
+noteTweenX('op0', 0, 415, 0.2,'elasticInOut')
+noteTweenX('op1', 1, 525, 0.2,'elasticInOut')
+noteTweenX('op2', 2, 635, 0.2,'elasticInOut')
+noteTweenX('op3', 3, 745, 0.2,'elasticInOut')
+
+noteTweenAlpha('op0a', 0, 0, 0.2)
+noteTweenAlpha('op1a', 1, 0, 0.2)
+noteTweenAlpha('op2a', 2, 0, 0.2)
+noteTweenAlpha('op3a', 3, 0, 0.2)
+end
+   if value1 == '34' then --2736 step
+noteTweenY('play0', 4, 550, 1.4,'elasticInOut')
+noteTweenY('play1', 5, 550, 1.1,'elasticInOut')
+noteTweenY('play2', 6, 550, 1.3,'elasticInOut')
+noteTweenY('play3', 7, 550, 1.2,'elasticInOut')
+for i = 0, getProperty('playerStrums.length')-1 do
+setPropertyFromGroup('playerStrums',i,'downScroll',true)
+end
+end
+end
+end
+
+
+function onUpdatePost() --que
+   if curStep > 1584 < 1600 then
+   for i = 0, getProperty("notes.length")-1 do
+      local noteData = getPropertyFromGroup("notes", i , "noteData")
+      if getPropertyFromGroup("notes", i , "isSustainNote") then 
+         setPropertyFromGroup("notes", i , "angle", getPropertyFromGroup("strumLineNotes", noteData, "direction") - 90)
+         if getPropertyFromGroup("notes", i ,"prevNote") ~= nil then 
+            setPropertyFromGroup("notes", i , "flipY", true)
+         end
+      else 
+         setPropertyFromGroup("notes", i , "angle", getPropertyFromGroup("strumLineNotes", noteData, "angle"))
+      end
+   end
+   end
 end
