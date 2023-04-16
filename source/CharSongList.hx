@@ -20,6 +20,7 @@ class CharSongList
       "sanic" => ["too-fest"],
       "coldsteel" => ["personel"],
       "sonichu" => ["shocker"],
+      "satanos" => ["perdition"],
       "devoid" => ["hollow"],
       "sl4sh" => ["b4cksl4sh"]
     ];
@@ -42,6 +43,7 @@ class CharSongList
       "sanic",
       "coldsteel",
       "sonichu",
+      "satanos",
       "devoid",
       "sl4sh"
     ];
