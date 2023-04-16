@@ -12,6 +12,7 @@
 ### Special Thanks:
 - **Mihai Alexandru (MAJigsaw77 - GitHub, MA Jigsaw)** - Android Tools/Porting Stuff Creator/Owner, The OG
 - **Nuno Filipe Studios** - Help with fixing bugs
+- **Idk1245/@Idk_Ye** - Restored the mod with *most* songs
 --------------------
 ### Port Update:
 - Out Now (v1.1)
