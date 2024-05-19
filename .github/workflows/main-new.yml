@@ -47,7 +47,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib install lime 7.7.0
+          haxelib install lime 7.9.0
           haxelib install flixel 4.11.0
           haxelib install flixel-addons 2.11.0
           haxelib install flixel-ui
@@ -72,7 +72,7 @@ jobs:
           haxelib set flixel-addons 2.11.0
           haxelib set flixel 4.11.0
           haxelib set openfl 9.1.0
-          haxelib set lime 7.7.0
+          haxelib set lime 7.9.0
           haxelib set hxCodec 2.6.1
           haxelib set hxcpp 4.2.1
         env:
