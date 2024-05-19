@@ -63,6 +63,8 @@ jobs:
           haxelib run lime config JAVA_HOME $JAVA_HOME
           haxelib run lime config ANDROID_SETUP true
           haxelib git linc_luajit https://github.com/superpowers04/linc_luajit
+          haxelib remove hxCodec
+          haxelib install hxCodec 3.0.0
           haxelib set flixel-addons 2.11.0
           haxelib set flixel 4.11.0
           haxelib set openfl 9.1.0
