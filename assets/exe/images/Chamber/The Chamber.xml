@@ -1,31 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="The Chamber.png">
-	<!-- Created with Adobe Animate version 21.0.6.41649 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Chamber Sonic Fall0000" x="0" y="0" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0001" x="0" y="0" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0002" x="2085" y="0" width="2085" height="696"/>
-	<SubTexture name="Chamber Sonic Fall0003" x="2085" y="0" width="2085" height="696"/>
-	<SubTexture name="Chamber Sonic Fall0004" x="4170" y="0" width="2085" height="694" frameX="0" frameY="-2" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0005" x="4170" y="0" width="2085" height="694" frameX="0" frameY="-2" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0006" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0007" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0008" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0009" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0010" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0011" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0012" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0013" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0014" x="0" y="696" width="2085" height="693" frameX="0" frameY="-3" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0015" x="2085" y="696" width="2085" height="692" frameX="0" frameY="-4" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0016" x="2085" y="696" width="2085" height="692" frameX="0" frameY="-4" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0017" x="4170" y="696" width="2085" height="692" frameX="0" frameY="-4" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0018" x="4170" y="696" width="2085" height="692" frameX="0" frameY="-4" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0019" x="0" y="1389" width="2085" height="676" frameX="0" frameY="-20" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0020" x="0" y="1389" width="2085" height="676" frameX="0" frameY="-20" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0021" x="2085" y="1389" width="2085" height="498" frameX="0" frameY="-198" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0022" x="2085" y="1389" width="2085" height="498" frameX="0" frameY="-198" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0023" x="4170" y="1389" width="2085" height="400" frameX="0" frameY="-296" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0024" x="4170" y="1389" width="2085" height="400" frameX="0" frameY="-296" frameWidth="2085" frameHeight="696"/>
-	<SubTexture name="Chamber Sonic Fall0025" x="0" y="2065" width="2085" height="356" frameX="0" frameY="-340" frameWidth="2085" frameHeight="696"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Chamber Sonic Fall0000" x="0" y="1377" width="2086" height="683" frameX="2" frameY="-17" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0001" x="0" y="1377" width="2086" height="683" frameX="2" frameY="-17" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0002" x="2086" y="681" width="2086" height="680" frameX="2" frameY="-20" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0003" x="2086" y="681" width="2086" height="680" frameX="2" frameY="-20" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0004" x="2086" y="0" width="2086" height="681" frameX="2" frameY="-19" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0005" x="2086" y="0" width="2086" height="681" frameX="2" frameY="-19" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0006" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0007" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0008" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0009" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0010" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0011" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0012" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0013" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0014" x="0" y="2060" width="2086" height="679" frameX="2" frameY="-21" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0015" x="2086" y="1361" width="2086" height="680" frameX="2" frameY="-20" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0016" x="2086" y="1361" width="2086" height="680" frameX="2" frameY="-20" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0017" x="0" y="693" width="2086" height="684" frameX="2" frameY="-16" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0018" x="0" y="693" width="2086" height="684" frameX="2" frameY="-16" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0019" x="0" y="0" width="2086" height="693" frameX="2" frameY="-7" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0020" x="0" y="0" width="2086" height="693" frameX="2" frameY="-7" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0021" x="2086" y="2060" width="2086" height="533" frameX="2" frameY="-167" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0022" x="2086" y="2060" width="2086" height="533" frameX="2" frameY="-167" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0023" x="0" y="2739" width="2086" height="438" frameX="2" frameY="-262" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0024" x="0" y="2739" width="2086" height="438" frameX="2" frameY="-262" frameWidth="2085" frameHeight="702"/>
+	<SubTexture name="Chamber Sonic Fall0025" x="2086" y="2739" width="2086" height="356" frameX="2" frameY="-344" frameWidth="2085" frameHeight="702"/>
 </TextureAtlas>
