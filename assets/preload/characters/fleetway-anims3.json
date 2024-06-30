@@ -1,103 +1,92 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				0,
-				-40
+				10,
+				-10
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "AAAA",
-			"fps": 24,
-			"name": "Fleetway Scream",
-			"indices": []
+			"indices": [],
+			"name": "Fleetway Scream"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				60,
-				26
-			],
-			"anim": "Shut up",
-			"fps": 24,
-			"name": "Fleetway Shut Up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				60,
-				120
-			],
-			"anim": "Grrr",
-			"fps": 24,
-			"name": "Fleetway Grrr",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				250,
-				10
-			],
-			"anim": "Laser Blast",
-			"fps": 24,
-			"name": "Fleetway Laser Blast",
-			"indices": []
-		},
-		{
-			"loop": false,
 			"offsets": [
 				100,
-				0
+				76
 			],
-			"anim": "lmao",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Laugh",
-			"indices": []
+			"anim": "Shut up",
+			"indices": [],
+			"name": "Fleetway Shut Up"
 		},
 		{
+			"offsets": [
+				100,
+				140
+			],
 			"loop": false,
+			"fps": 24,
+			"anim": "Grrr",
+			"indices": [],
+			"name": "Fleetway Grrr"
+		},
+		{
+			"offsets": [
+				120,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "lmao",
+			"indices": [],
+			"name": "Fleetway Laugh"
+		},
+		{
 			"offsets": [
 				90,
 				90
 			],
-			"anim": "Step it up",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway StepItUp",
-			"indices": []
+			"anim": "Step it up",
+			"indices": [],
+			"name": "Fleetway StepItUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				13,
 				78
 			],
-			"anim": "fatphobia",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Too Slow",
-			"indices": []
+			"anim": "fatphobia",
+			"indices": [],
+			"name": "Fleetway Too Slow"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				110,
+				140,
 				90
 			],
-			"anim": "WHAT",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway WHAT?!",
-			"indices": []
+			"anim": "WHAT",
+			"indices": [],
+			"name": "Fleetway WHAT?!"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				0
+				40
 			],
-			"anim": "Finished",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway YoureFinished",
-			"indices": []
+			"anim": "Finished",
+			"indices": [],
+			"name": "Fleetway YoureFinished"
 		}
 	],
 	"no_antialiasing": false,
@@ -109,8 +98,8 @@
 	"healthicon": "fleetway",
 	"flip_x": false,
 	"healthbar_colors": [
-		220,
-		255,
+		175,
+		115,
 		0
 	],
 	"camera_position": [

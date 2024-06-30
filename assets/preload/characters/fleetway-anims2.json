@@ -1,25 +1,24 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				0,
-				0
+				79,
+				121
 			],
-			"anim": "Growl",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Growl",
-			"indices": []
+			"anim": "Growl",
+			"indices": [],
+			"name": "Fleetway Growl"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				90,
 				-60
 			],
-			"anim": "Right Alt",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Right Alt",
+			"anim": "Right Alt",
 			"indices": [
 				0,
 				1,
@@ -37,40 +36,41 @@
 				13,
 				14,
 				15
-			]
+			],
+			"name": "Fleetway Right Alt"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				-40
+				0
 			],
-			"anim": "AAAA",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Scream",
-			"indices": []
+			"anim": "AAAA",
+			"indices": [],
+			"name": "Fleetway Scream"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				160,
 				90
 			],
-			"anim": "Ill show you",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Show You",
-			"indices": []
+			"anim": "Ill show you",
+			"indices": [],
+			"name": "Fleetway Show You"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				60,
 				26
 			],
-			"anim": "Shut up",
+			"loop": false,
 			"fps": 24,
-			"name": "Fleetway Shut Up",
-			"indices": []
+			"anim": "Shut up",
+			"indices": [],
+			"name": "Fleetway Shut Up"
 		}
 	],
 	"no_antialiasing": false,
@@ -82,8 +82,8 @@
 	"healthicon": "fleetway",
 	"flip_x": false,
 	"healthbar_colors": [
-		220,
-		255,
+		175,
+		115,
 		0
 	],
 	"camera_position": [
