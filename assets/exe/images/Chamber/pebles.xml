@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="pebles.png">
-	<!-- Created with Adobe Animate version 21.0.6.41649 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="pebles instance 10000" x="0" y="0" width="3044" height="244"/>
-	<SubTexture name="pebles instance 20000" x="0" y="244" width="3044" height="243"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="pebles instance 0000" x="0" y="243" width="3044" height="243" frameX="2" frameY="2" frameWidth="3044" frameHeight="244"/>
+	<SubTexture name="pebles instance 0001" x="0" y="0" width="3044" height="243" frameX="2" frameY="2" frameWidth="3044" frameHeight="243"/>
 </TextureAtlas>
