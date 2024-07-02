@@ -2,77 +2,77 @@
 	"animations": [
 		{
 			"offsets": [
-				67,
-				-263
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "left"
-		},
-		{
-			"offsets": [
-				-40,
-				-140
+				77,
+				-280
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "right"
+			"name": "Tails Soul Right"
 		},
 		{
 			"offsets": [
-				-52,
-				-230
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "down"
-		},
-		{
-			"offsets": [
-				0,
-				-172
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "idle"
-		},
-		{
-			"offsets": [
-				14,
-				-89
+				136,
+				-195
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "up"
+			"name": "Tails Soul Up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				110,
+				-321
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Tails Soul Down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				80,
+				-270
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Tails Soul Idle"
+		},
+		{
+			"offsets": [
+				198,
+				-355
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Tails Soul Left"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Tails",
+	"image": "characters/"Tails",
 	"position": [
-		-100,
-		-10
+		350,
+		50
 	],
-	"healthicon": "tails-encore",
+	"healthicon": "tails",
 	"flip_x": false,
 	"healthbar_colors": [
-		25,
-		25,
-		25
+		41,
+		40,
+		46
 	],
 	"camera_position": [
-		-10,
-		180
+		-150,
+		280
 	],
-	"sing_duration": 4,
-	"scale": 1
+	"sing_duration": 6.1,
+	"scale": 1.2
 }
