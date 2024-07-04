@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				67,
-				12
+				38,
+				10
 			],
 			"loop": false,
 			"fps": 24,
@@ -13,7 +13,7 @@
 		},
 		{
 			"offsets": [
-				-113,
+				-108,
 				-57
 			],
 			"loop": false,
@@ -24,8 +24,8 @@
 		},
 		{
 			"offsets": [
-				8,
-				-153
+				-2,
+				-154
 			],
 			"loop": false,
 			"fps": 24,
@@ -56,26 +56,26 @@
 			"indices": []
 		},
 		{
+			"offsets": [
+				-40,
+				-38
+			],
 			"loop": false,
+			"fps": 17,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "SONIClaugh"
+		},
+		{
 			"offsets": [
 				52,
 				-60
 			],
-			"anim": "Getya",
-			"fps": 26,
-			"name": "sonicImmagetya",
-			"indices": []
-		},
-		{
-			"offsets": [
-				-38,
-				-37
-			],
 			"indices": [],
-			"fps": 17,
-			"anim": "singDOWN-alt",
+			"fps": 22,
+			"anim": "Getya",
 			"loop": false,
-			"name": "SONIClaugh"
+			"name": "sonicImmagetya"
 		}
 	],
 	"vocals_file": "",
@@ -93,8 +93,8 @@
 		142
 	],
 	"camera_position": [
-		-10,
-		110
+		10,
+		50
 	],
 	"sing_duration": 4,
 	"scale": 1.2,
