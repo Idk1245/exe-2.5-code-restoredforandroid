@@ -2755,11 +2755,6 @@
 						-1,
 					]
 				],
-				"Play Animation",
-						"Getya",
-						"dad"
-					]
-				],
 				"typeOfSection": 0,
 				"lengthInSteps": 16,
 				"altAnim": false,
@@ -2772,6 +2767,11 @@
 					[
 						93115.3046321168,
 						-1,
+						"Play Animation",
+						"Getya",
+						"dad"
+					]
+				],
 						"Lyrics",
 						"i am... gonna catch...--#484FB1",
 						"1.2"
