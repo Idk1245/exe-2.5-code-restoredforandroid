@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
-				38,
+				28,
 				10
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "SONICmoveUP"
+			"fps": 24,
+			"name": "SONICmoveUP",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-108,
 				-57
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "SONICmoveRIGHT"
+			"fps": 24,
+			"name": "SONICmoveRIGHT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-2,
 				-154
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "SONICmoveDOWN"
+			"fps": 24,
+			"name": "SONICmoveDOWN",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				123,
 				-11
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "SONICmoveLEFT"
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-60,
-				-80
-			],
-			"anim": "idle",
 			"fps": 24,
-			"name": "SONICmoveIDLE",
+			"name": "SONICmoveLEFT",
 			"indices": []
 		},
 		{
 			"offsets": [
+				-60,
+				-80
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "SONICmoveIDLE"
+		},
+		{
+			"loop": false,
+			"offsets": [
 				-40,
 				-38
 			],
-			"loop": false,
-			"fps": 17,
 			"anim": "singDOWN-alt",
-			"indices": [],
-			"name": "SONIClaugh"
+			"fps": 17,
+			"name": "SONIClaugh",
+			"indices": []
 		},
 		{
 			"offsets": [
@@ -72,7 +72,7 @@
 				-60
 			],
 			"indices": [],
-			"fps": 22,
+			"fps": 21,
 			"anim": "Getya",
 			"loop": false,
 			"name": "sonicImmagetya"
