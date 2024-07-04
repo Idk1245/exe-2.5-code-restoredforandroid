@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-100,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 30,
-			"name": "Sonic Faker Idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Sonic Faker Idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-94,
 				-4
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 30,
-			"name": "Sonic Down Faker",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sonic Down Faker"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-104,
 				22
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 30,
-			"name": "Sonic Right Faker",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Sonic Right Faker"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-102,
 				29
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 30,
-			"name": "Sonic Up Faker",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Sonic Up Faker"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-96,
 				5
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 30,
-			"name": "Sonic Left Faker",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Sonic Left Faker"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-85,
 				11
 			],
-			"indices": [],
-			"fps": 47,
 			"anim": "reveal",
-			"loop": false,
-			"name": "Sonic Reveal"
+			"fps": 47,
+			"name": "Sonic Reveal",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
@@ -82,7 +82,7 @@
 		255
 	],
 	"camera_position": [
-		-90,
+		-60,
 		50
 	],
 	"sing_duration": 6.1,
