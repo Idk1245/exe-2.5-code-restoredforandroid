@@ -2,90 +2,90 @@
 	"animations": [
 		{
 			"offsets": [
-				-100,
-				0
+				-64,
+				-36
 			],
-			"loop": false,
-			"fps": 30,
-			"anim": "idle",
 			"indices": [],
-			"name": "Sonic Faker Idle"
-		},
-		{
-			"offsets": [
-				-94,
-				-4
-			],
-			"loop": false,
-			"fps": 30,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "Sonic Down Faker"
-		},
-		{
-			"offsets": [
-				-104,
-				22
-			],
-			"loop": false,
-			"fps": 30,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Sonic Right Faker"
-		},
-		{
-			"offsets": [
-				-102,
-				29
-			],
-			"loop": false,
-			"fps": 30,
+			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
+			"loop": false,
 			"name": "Sonic Up Faker"
 		},
 		{
 			"offsets": [
-				-96,
-				5
+				-63,
+				-44
 			],
-			"loop": false,
-			"fps": 30,
-			"anim": "singLEFT",
 			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Sonic Right Faker"
+		},
+		{
+			"offsets": [
+				-51,
+				-75
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Sonic Down Faker"
+		},
+		{
+			"offsets": [
+				-58,
+				-64
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
 			"name": "Sonic Left Faker"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-85,
-				11
+				-60,
+				-70
 			],
-			"anim": "reveal",
-			"fps": 47,
-			"name": "Sonic Reveal",
-			"indices": []
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Sonic Faker Idle"
+		},
+		{
+			"offsets": [
+				-42,
+				-57
+			],
+			"indices": [],
+			"fps": 50,
+			"anim": "Revaled",
+			"loop": false,
+			"name": "Sonic Reveal"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/Fak",
 	"position": [
-		50,
-		40
+		80,
+		60
 	],
-	"healthicon": "neutral-sonic",
+	"healthicon": "fuck",
 	"flip_x": false,
 	"healthbar_colors": [
 		0,
-		51,
-		255
+		123,
+		253
 	],
 	"camera_position": [
-		-30,
-		50
+		220,
+		110
 	],
-	"sing_duration": 6.1,
-	"scale": 1,
+	"sing_duration": 4,
+	"scale": 1.2,
 	"_editor_isPlayer": false
 }
