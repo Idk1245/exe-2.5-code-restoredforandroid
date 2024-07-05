@@ -5,7 +5,7 @@
 
 - **MarioMaster** - Coder/Porter(The **Real One** they say, he's a great porter)
 
-- **Stefan2008** - Coder/Porter(The ~~Bad Porter~~ Good Porter, because he didn't ported any mods on Source or Hard-coded, but he's there to help! Thank you)
+- **Stefan2008** - Coder/Porter(The ~~Bad Porter~~ Good Porter, because he didn't port any mods on Source or Hard-code, but he's there to help! Thank you)
 
 - **Ralsei** - Why am I here? XD. I'm everywhere heheheh(Not a Porter/Coder, I just came here out of nowhere)
 --------------------
