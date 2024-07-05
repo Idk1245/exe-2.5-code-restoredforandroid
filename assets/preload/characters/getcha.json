@@ -7,9 +7,9 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "sonicImmagetya",
+			"anim": "idle",
 			"indices": [],
-			"name": "sonicImmagetya"
+			"name": "anim"
 		}
 	],
 	"no_antialiasing": false,
