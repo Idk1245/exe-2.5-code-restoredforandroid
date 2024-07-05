@@ -2,90 +2,90 @@
 	"animations": [
 		{
 			"offsets": [
-				-64,
-				-36
+				-100,
+				0
 			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singUP",
 			"loop": false,
-			"name": "Sonic Up Faker"
-		},
-		{
-			"offsets": [
-				-63,
-				-44
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Sonic Right Faker"
-		},
-		{
-			"offsets": [
-				-51,
-				-75
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singDOWN",
-			"loop": false,
-			"name": "Sonic Down Faker"
-		},
-		{
-			"offsets": [
-				-58,
-				-64
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "Sonic Left Faker"
-		},
-		{
-			"offsets": [
-				-60,
-				-70
-			],
-			"indices": [],
-			"fps": 24,
+			"fps": 30,
 			"anim": "idle",
-			"loop": false,
+			"indices": [],
 			"name": "Sonic Faker Idle"
 		},
 		{
 			"offsets": [
-				-42,
-				-57
+				-94,
+				-4
 			],
-			"indices": [],
-			"fps": 50,
-			"anim": "Revaled",
 			"loop": false,
-			"name": "Sonic Reveal"
+			"fps": 30,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sonic Down Faker"
+		},
+		{
+			"offsets": [
+				-104,
+				22
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Sonic Right Faker"
+		},
+		{
+			"offsets": [
+				-102,
+				29
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Sonic Up Faker"
+		},
+		{
+			"offsets": [
+				-96,
+				5
+			],
+			"loop": false,
+			"fps": 30,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Sonic Left Faker"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-85,
+				11
+			],
+			"anim": "reveal",
+			"fps": 47,
+			"name": "Sonic Reveal",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/Fak",
 	"position": [
-		80,
-		60
+		50,
+		40
 	],
-	"healthicon": "fuck",
+	"healthicon": "neutral-sonic",
 	"flip_x": false,
 	"healthbar_colors": [
 		0,
-		123,
-		253
+		51,
+		255
 	],
 	"camera_position": [
-		220,
-		110
+		-30,
+		50
 	],
-	"sing_duration": 4,
-	"scale": 1.2,
+	"sing_duration": 6.1,
+	"scale": 1,
 	"_editor_isPlayer": false
 }

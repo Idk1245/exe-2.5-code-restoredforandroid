@@ -3,19 +3,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				-43
-			],
-			"anim": "singDOWN-alt",
-			"fps": 24,
-			"name": "SONIClaugh",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				34,
-				31
+				28,
+				10
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -25,8 +14,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-90,
-				-16
+				-108,
+				-57
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -34,21 +23,10 @@
 			"indices": []
 		},
 		{
-			"loop": true,
-			"offsets": [
-				-60,
-				-80
-			],
-			"anim": "idle",
-			"fps": 24,
-			"name": "SONICmoveIDLE",
-			"indices": []
-		},
-		{
 			"loop": false,
 			"offsets": [
-				10,
-				-158
+				-2,
+				-154
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -58,20 +36,54 @@
 		{
 			"loop": false,
 			"offsets": [
-				67,
-				-83
+				123,
+				-11
 			],
 			"anim": "singLEFT",
 			"fps": 24,
 			"name": "SONICmoveLEFT",
 			"indices": []
+		},
+		{
+			"offsets": [
+				-60,
+				-80
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "SONICmoveIDLE"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-38
+			],
+			"anim": "singDOWN-alt",
+			"fps": 17,
+			"name": "SONIClaugh",
+			"indices": []
+		},
+		{
+			"offsets": [
+				52,
+				-60
+			],
+			"indices": [],
+			"fps": 21,
+			"anim": "Getya",
+			"loop": false,
+			"name": "sonicImmagetya"
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/sonicexe",
+	"image": "characters/Sonic_EXE_kopia",
 	"position": [
-		-120,
-		-40
+		0,
+		0
 	],
 	"healthicon": "sonicexe",
 	"flip_x": false,
@@ -81,9 +93,10 @@
 		142
 	],
 	"camera_position": [
-		-10,
-		110
+		10,
+		50
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1.2,
+	"_editor_isPlayer": false
 }
