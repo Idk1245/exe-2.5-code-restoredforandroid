@@ -9208,6 +9208,7 @@
 				"mustHitSection": true
 			}
 		],
+		"gfVersion": "invisgf",
 		"initialSpeed": 1.26,
 		"sliderVelocities": null,
 		"song": "our-horizon",
