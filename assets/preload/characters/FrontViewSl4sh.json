@@ -1,72 +1,73 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				13,
 				516
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "sl4sh idle",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				13,
-				516
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "sl4sh down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				13,
-				515
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "sl4sh up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				16,
-				516
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "sl4sh right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				13,
-				515
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "sl4sh left",
-			"indices": []
-		},
-		{
-			"offsets": [
-				18,
-				516
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "attack",
 			"indices": [],
-			"name": "sl4sh attack"
+			"name": "sl4sh idle"
+		},
+		{
+			"offsets": [
+				13,
+				516
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "sl4sh down"
+		},
+		{
+			"offsets": [
+				13,
+				516
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "sl4sh up"
+		},
+		{
+			"offsets": [
+				19,
+				516
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "sl4sh right"
+		},
+		{
+			"offsets": [
+				10,
+				516
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "sl4sh left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				11,
+				516
+			],
+			"anim": "attack",
+			"fps": 24,
+			"name": "sl4sh attack",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": true,
 	"image": "characters/frontviewsl4sh",
 	"position": [
@@ -81,9 +82,10 @@
 		56
 	],
 	"camera_position": [
-		-600,
+		-700,
 		-640
 	],
 	"sing_duration": 4,
-	"scale": 3.00000000000001
+	"scale": 3.00000000000001,
+	"_editor_isPlayer": false
 }
