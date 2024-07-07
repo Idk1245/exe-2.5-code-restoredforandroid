@@ -2891,7 +2891,7 @@ class PlayState extends MusicBeatState
 			{
 				modManager.setReceptors();
 				modManager.registerModifiers();
-				ModchartShit.setupModchart(this, modManager, SONG.song.toLowerCase() != 'perdition'){
+				ModchartShit.setupModchart(this, modManager, SONG.song.toLowerCase()) != 'perdition'){               
 			}
 
 			if(sonicHUDSongs.contains(SONG.song.toLowerCase()) && SONG.song.toLowerCase() != 'you-cant-run'){
