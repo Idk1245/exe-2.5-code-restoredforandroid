@@ -2178,7 +2178,7 @@ class PlayState extends MusicBeatState
 		if (SONG.isRing) {
 		addMobileControls(true, true);
 			
-		if (SONG.isb4cksl4sh) {
+		if {(SONG.isb4cksl4sh)}
 		addMobileControls(true, true);
 		
 		if (ClientPrefs.isvpad && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard') {
