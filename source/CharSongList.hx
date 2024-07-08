@@ -13,7 +13,7 @@ class CharSongList
       "curse" => ["malediction"],
       "starved" => ["prey", "fight-or-flight"],
       "xterion" => ["substantial", "digitalized"],
-      "needlemouse" => ["round-a-bout", "relax"],
+      "needlemouse" => ["relax", "round-a-bout"],
       "hog" => ["hedge"],
       "scorched" => ["manual-blast"],
       "sunky" => ["milk"],
