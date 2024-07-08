@@ -2177,11 +2177,8 @@ class PlayState extends MusicBeatState
 		#if mobile
 		if (SONG.isRing) {
 		addMobileControls(true, true);
-			
-		if {(SONG.isb4cksl4sh)}
-		addMobileControls(true, true);
-		
-		if (ClientPrefs.isvpad && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard') {
+	         
+    		if (ClientPrefs.isvpad && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard') {
 		addVirtualPad(NONE, DODGE);
 		addVirtualPadCamera(false);
 		virtualPad.visible = false;
