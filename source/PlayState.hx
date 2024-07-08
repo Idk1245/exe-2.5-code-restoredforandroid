@@ -2880,7 +2880,7 @@ class PlayState extends MusicBeatState
 				virtualPad.visible = true;
 				}
 
-		                if (ClientPrefs.isvpad && SONG.canDodge && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard'){
+		                if (ClientPrefs.isvpad && SONG.dodge && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard'){
 				virtualPad.visible = true;
 				}
 		
