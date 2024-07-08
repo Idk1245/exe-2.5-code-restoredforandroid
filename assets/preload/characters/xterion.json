@@ -109,9 +109,9 @@
 	"healthicon": "xterion",
 	"flip_x": false,
 	"healthbar_colors": [
-		183,
-		216,
-		85
+		0,
+		20,
+		125
 	],
 	"camera_position": [
 		-230,
