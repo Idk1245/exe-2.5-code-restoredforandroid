@@ -61,8 +61,6 @@ class MainMenuState extends MusicBeatState
 	{
 		/*#if debug
 		optionShit.push('sound test');
-		#else
-		optionShit.push('sound test locked');
 		#end
 		if(!ClientPrefs.beatweek){
 			optionShit.push('sound_test locked');
