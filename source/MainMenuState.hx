@@ -205,7 +205,7 @@ class MainMenuState extends MusicBeatState
 				if (urmom == 30)
 				{
 					FlxG.save.data.storyProgress = 0;
-					FlxG.save.data.soundTestUnlocked = false;
+					FlxG.save.data.soundTestUnlocked = true;
 					FlxG.save.data.songArray = [];
 					FlxG.switchState(new MainMenuState());
 				}
