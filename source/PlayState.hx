@@ -481,6 +481,7 @@ class PlayState extends MusicBeatState
 		"you-cant-run", // for the pixel part in specific
 		"fatality",
 		"b4cksl4sh",
+		"you-cant-run-encore", // for the pixel part
 	];
 
 	var hudStyle:String = 'sonic2';
@@ -491,6 +492,7 @@ class PlayState extends MusicBeatState
 		"you-cant-run" => "sonic1", // because its green hill zone so it should be sonic1
 		"our-horizon" => "chaotix",
 		"my-horizon" => "chaotix"
+		"you-cant-run-encore" => "sonic1", // cuz green hill
 		// "songName" => "styleName",
 
 		// styles are sonic2 and sonic3
