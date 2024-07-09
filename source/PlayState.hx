@@ -1485,7 +1485,7 @@ class PlayState extends MusicBeatState
 		// use this for 4:3 aspect ratio shit lmao
 		switch (SONG.song.toLowerCase())
 		{
-			case 'fatality' | "milk":
+			case 'fatality' | "milk" | "b4cksl4sh":
 				isFixedAspectRatio = true;
 			default:
 				isFixedAspectRatio = false;
