@@ -2263,7 +2263,7 @@ class PlayState extends MusicBeatState
 					camHUD.alpha = 0;
 					startCountdown();
 
-				case 'too-slow' | 'you-cant-run' | 'triple-trouble' | 'endless' | 'cycles' | 'prey' | 'fight-or-flight'| 'round-a-bout' | 'relax' | 'malediction' | 'substantial' | 'digitalized' | 'b4cksl4sh':
+				case 'too-slow' | 'you-cant-run' | 'triple-trouble' | 'endless' | 'cycles' | 'malediction' | 'prey' | 'fight-or-flight'| 'substantial' | 'digitalized' | 'round-a-bout' | 'relax' | 'shocker' | 'hollow' | 'b4cksl4sh':
 
 					if (daSong == 'too-slow' || daSong == 'you-cant-run' || daSong == 'cycles')
 						{
