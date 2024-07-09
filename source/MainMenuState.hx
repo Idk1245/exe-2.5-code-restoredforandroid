@@ -59,8 +59,6 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-		/*#if debug
-		optionShit.push('sound test');
 		#end
 		if(!ClientPrefs.beatweek){
 			optionShit.push('sound_test locked');
@@ -132,8 +130,6 @@ class MainMenuState extends MusicBeatState
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 			menuItem.animation.addByPrefix('lock', optionShit[i] + " locked", 24);
-		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
-				menuItem.animation.play('lock');
 				menuItem.animation.addByPrefix('idle', optionShit[i] + " locked", 24);
 			}
 			else
@@ -247,8 +243,6 @@ class MainMenuState extends MusicBeatState
 				{
 					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
 				}
-				else if (!ClientPrefs.beatweek && optionShit[curSelected] == 'sound_test')
-				{
 					soundCooldown = false;
 					FlxG.sound.play(Paths.sound('deniedMOMENT'));
 					camera.shake(0.03,0.03);
@@ -331,8 +325,6 @@ class MainMenuState extends MusicBeatState
 		menuItems.forEach(function(spr:FlxSprite)
 		{
 			var daChoice:String = optionShit[curSelected];
-			if(!ClientPrefs.beatweek && daChoice == 'sound_test'){
-					spr.animation.play('lock');
 				}
 			spr.animation.play('idle');
 			
@@ -348,8 +340,6 @@ class MainMenuState extends MusicBeatState
 			
 			if (spr.ID == curSelected && finishedFunnyMove)
 			{
-				if(!ClientPrefs.beatweek && daChoice == 'sound_test'){
-					spr.animation.play('lock');
 				}
 				else
 				spr.animation.play('selected');
