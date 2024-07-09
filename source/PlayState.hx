@@ -7820,6 +7820,53 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+if (SONG.song.toLowerCase() == 'our-horizon')
+		{
+			switch (curStep)
+			{
+				case 896:
+					FlxTween.tween(camHUD, {alpha: 0}, 2.2);
+				case 908:
+					dad.playAnim('transformation', true);
+					dad.specialAnim = true;
+					camZooming = false;
+					cinematicBars(true);
+				case 924:
+
+					FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.5}, 12, {ease: FlxEase.cubeInOut});
+					FlxTween.tween(whiteFuck, {alpha: 1}, 6, {ease: FlxEase.cubeInOut, onComplete: function(twn:FlxTween)
+						{
+							remove(fucklesFGPixel);
+							remove(fucklesBGPixel);
+							fucklesBGPixel.destroy();
+							fucklesFGPixel.destroy();
+							fucklesFuckedUpBg.visible = true;
+							fucklesFuckedUpFg.visible = true;
+						}
+					});
+				case 975:
+					cinematicBars(false);
+				case 992:
+					literallyMyHorizon();
+				case 1120, 1248, 1376, 1632, 1888, 1952, 2048, 2054, 2060:
+					fucklesHealthRandomize();
+					camHUD.shake(0.005, 1);
+				case 1121, 1760:
+					superZoomShit = true;
+				case 1503, 2015:
+					superZoomShit = false;
+				case 1504, 2080:
+					supersuperZoomShit = true;
+				case 1759, 2336:
+					supersuperZoomShit = false;
+				case 2208, 2222, 2240, 2254, 2320, 2324, 2328:
+					fucklesFinale();
+					camHUD.shake(0.003, 1);
+				case 2337:
+					camZooming = false;
+			}
+}
+
 		if (SONG.song.toLowerCase() == 'b4cksl4sh')
 			{
 				switch (curStep)
