@@ -491,7 +491,7 @@ class PlayState extends MusicBeatState
 		"prey" => "soniccd",
 		"you-cant-run" => "sonic1", // because its green hill zone so it should be sonic1
 		"our-horizon" => "chaotix",
-		"my-horizon" => "chaotix"
+		"my-horizon" => "chaotix",
 		"you-cant-run-encore" => "sonic1", // cuz green hill
 		// "songName" => "styleName",
 
