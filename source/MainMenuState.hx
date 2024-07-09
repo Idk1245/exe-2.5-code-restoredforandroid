@@ -58,7 +58,7 @@ class MainMenuState extends MusicBeatState
 
 
 	override function create()
-	{
+}
 		#end
 		if(!ClientPrefs.beatweek){
 			optionShit.push('sound_test locked');
