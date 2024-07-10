@@ -177,7 +177,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0.60 * (60 / FlxG.save.data.fpsCap));
 
-		var credits:FlxText = null;
+		var credits:FlxText = new FlxText(FlxG.width - 300, FlxG.height - 18 * 2, 300, "Android Port By MaysLastPlay, MarioMaster, Stefan2008, Ralsei", 3);
 		credits.scrollFactor.set();
 		credits.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(credits); //If you reading this, I'm putting random comments on my code cuz i feel lonely.
@@ -186,7 +186,7 @@ class MainMenuState extends MusicBeatState
 
 		#if mobile
 			addVirtualPad(UP_DOWN, A_B);
-			virtualPad.y = -40;
+			virtualPad.y = -36;
 		#end
 
 		super.create();
@@ -205,7 +205,7 @@ class MainMenuState extends MusicBeatState
 				if (urmom == 30)
 				{
 					FlxG.save.data.storyProgress = 0;
-					FlxG.save.data.soundTestUnlocked = true;
+					FlxG.save.data.soundTestUnlocked = false;
 					FlxG.save.data.songArray = [];
 					FlxG.switchState(new MainMenuState());
 				}
