@@ -56,10 +56,8 @@ class MainMenuState extends MusicBeatState
 	public static var finishedFunnyMove:Bool = false;
 	var debugKeys:Array<FlxKey>;
 
-
-	override function create()
 }
-	{	#end
+	{
 		if(!ClientPrefs.beatweek){
 			optionShit.push('sound_test locked');
 			optionShit.push('encore locked');
