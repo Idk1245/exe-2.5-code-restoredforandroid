@@ -129,10 +129,10 @@ class MainMenuState extends MusicBeatState
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-			menuItem.animation.addByPrefix('lock', optionShit[i] + " locked", 24);
+		
 		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
-				menuItem.animation.play('lock');
-				menuItem.animation.addByPrefix('idle', optionShit[i] + " locked", 24);
+				menuItem.animation.play('idle');
+				menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			}
 			else
 			{
@@ -201,7 +201,7 @@ class MainMenuState extends MusicBeatState
 				if (urmom == 30)
 				{
 					FlxG.save.data.storyProgress = 0;
-					FlxG.save.data.soundTestUnlocked = false;
+					FlxG.save.data.soundTestUnlocked = 'true;
 					FlxG.save.data.songArray = [];
 					FlxG.switchState(new MainMenuState());
 				}
