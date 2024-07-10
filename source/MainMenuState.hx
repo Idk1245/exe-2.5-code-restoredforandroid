@@ -187,7 +187,7 @@ class MainMenuState extends MusicBeatState
 		#if mobile
 			addVirtualPad(UP_DOWN, A_B);
 			virtualPad.y = -36;
-		        virtualPad.x = -10;
+		        virtualPad.x = -36;
 		#end
 
 		super.create();
@@ -205,7 +205,7 @@ class MainMenuState extends MusicBeatState
 				urmom += 1;
 				if (urmom == 30)
 				{
-					FlxG.save.data.storyProgress = 0;
+					FlxG.save.data.storyProgress = 1;
 					FlxG.save.data.soundTestUnlocked = true;
 					FlxG.save.data.songArray = [];
 					FlxG.switchState(new MainMenuState());
