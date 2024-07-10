@@ -60,6 +60,10 @@ class MainMenuState extends MusicBeatState
 	override function create()
 	{
 		/*#if debug
+		optionShit.push('sound test');
+		#else
+		optionShit.push('sound test locked');
+		#end
 		if(!ClientPrefs.beatweek){
 			optionShit.push('sound_test locked');
 			optionShit.push('encore locked');
@@ -129,8 +133,13 @@ class MainMenuState extends MusicBeatState
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-		
+			menuItem.animation.addByPrefix('lock', optionShit[i] + " locked", 24);
 		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
+				menuItem.animation.play('lock');
+				menuItem.animation.addByPrefix('idle', optionShit[i] + " locked", 24);
+			}
+			else
+			{
 				menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 				menuItem.animation.play('idle');
 			}
@@ -196,9 +205,9 @@ class MainMenuState extends MusicBeatState
 				if (urmom == 30)
 				{
 					FlxG.save.data.storyProgress = 0;
-					FlxG.save.data.soundTestUnlocked = true;
-				;	FlxG.save.data.songArray = [];
-				;	FlxG.switchState(new MainMenuState());
+					FlxG.save.data.soundTestUnlocked = false;
+					FlxG.save.data.songArray = [];
+					FlxG.switchState(new MainMenuState());
 				}
 				if (FlxG.keys.pressed.DELETE)
 				{
