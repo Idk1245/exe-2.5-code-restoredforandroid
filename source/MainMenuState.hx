@@ -131,11 +131,6 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
 		
 		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
-				menuItem.animation.play('idle');
-				menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
-			}
-			else
-			{
 				menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 				menuItem.animation.play('idle');
 			}
