@@ -10510,12 +10510,12 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "invis_gf",
+		"gfVersion": "invisgf",
 		"player2": "majin_encore",
-		"player3": "invis_gf",
+		"player3": "invisgf",
 		"song": "endless-encore",
 		"validScore": true,
-		"stage": "endless-stage",
+		"stage": "endless-forest",
 		"arrowSkin": "Majin_Notes",
 		"splashSkin": "endlessNoteSplashes",
 		"needsVoices": true,
