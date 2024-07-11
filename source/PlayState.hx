@@ -7847,7 +7847,7 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 				case 975:
 					cinematicBars(false);
 				case 992:
-					literallyOurHorizon();
+					literallyMyHorizon();
 				case 1120, 1248, 1376, 1632, 1888, 1952, 2048, 2054, 2060:
 					fucklesHealthRandomize();
 					camHUD.shake(0.005, 1);
