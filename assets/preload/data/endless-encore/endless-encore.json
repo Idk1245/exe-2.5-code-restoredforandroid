@@ -1,7 +1,6 @@
- {
+{
 	"song": {
 		"player1": "majinencbf",
-      "stage": "endless-forest",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -10511,16 +10510,16 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "invisgf",
+		"gfVersion": "invis_gf",
 		"player2": "majin_encore",
-		"player3": "invisgf",
+		"player3": "invis_gf",
 		"song": "endless-encore",
 		"validScore": true,
+		"stage": "endless-stage",
 		"arrowSkin": "Majin_Notes",
 		"splashSkin": "endlessNoteSplashes",
 		"needsVoices": true,
 		"speed": 3,
 		"bpm": 155
 	}
-}	}
-}}
+}
