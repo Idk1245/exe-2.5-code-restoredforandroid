@@ -293,8 +293,6 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new SoundTestMenu());									
 									case 'options':
 										MusicBeatState.switchState(new OptionsState());
-								        case 'extras':
-										MusicBeatState.switchState(new ExtrasState());
 								}
 							});
 						}
