@@ -38,8 +38,7 @@ class MainMenuState extends MusicBeatState
 		'encore',
 		'freeplay',
 		'sound_test',
-		'options',
-		'extras'
+		'options'
 	];
 
 	var newGaming:FlxText;
