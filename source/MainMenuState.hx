@@ -38,7 +38,8 @@ class MainMenuState extends MusicBeatState
 		'encore',
 		'freeplay',
 		'sound_test',
-		'options'
+		'options',
+		'extras'
 	];
 
 	var newGaming:FlxText;
@@ -292,6 +293,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new SoundTestMenu());									
 									case 'options':
 										MusicBeatState.switchState(new OptionsState());
+								        case 'extras':
+										MusicBeatState.switchState(new ExtrasState());
 								}
 							});
 						}
