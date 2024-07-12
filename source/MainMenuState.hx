@@ -136,7 +136,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.addByPrefix('lock', optionShit[i] + " locked", 24);
 		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
 				menuItem.animation.play('lock');
-				menuItem.animation.addByPrefix('idle', optionShit[i] + " locked", 24);
+				menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			}
 			else
 			{
@@ -333,7 +333,7 @@ class MainMenuState extends MusicBeatState
 		{
 			var daChoice:String = optionShit[curSelected];
 			if(!ClientPrefs.beatweek && daChoice == 'sound_test'){
-					spr.animation.play('lock');
+					spr.animation.play('idle');
 				}
 			spr.animation.play('idle');
 			
@@ -350,7 +350,7 @@ class MainMenuState extends MusicBeatState
 			if (spr.ID == curSelected && finishedFunnyMove)
 			{
 				if(!ClientPrefs.beatweek && daChoice == 'sound_test'){
-					spr.animation.play('lock');
+					spr.animation.play('idle');
 				}
 				else
 				spr.animation.play('selected');
