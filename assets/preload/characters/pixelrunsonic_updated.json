@@ -1,61 +1,62 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
-				0
+				-10
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "ycr sonic idle",
-			"indices": []
+			"indices": [],
+			"name": "ycr sonic idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-8,
-				32
+				22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "ycr sonic up",
-			"indices": []
+			"indices": [],
+			"name": "ycr sonic up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-8,
-				32
+				22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "ycr sonic right",
-			"indices": []
+			"indices": [],
+			"name": "ycr sonic right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-8,
-				32
+				22
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "ycr sonic left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "ycr sonic left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-16,
-				32
+				22
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "ycr sonic down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "ycr sonic down"
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": true,
 	"image": "characters/ycr_sonic_sheet",
 	"position": [
@@ -74,5 +75,6 @@
 		-150
 	],
 	"sing_duration": 6.1,
-	"scale": 8
+	"scale": 8.2,
+	"_editor_isPlayer": false
 }
