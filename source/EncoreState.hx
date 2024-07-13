@@ -29,7 +29,7 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 	var curSelected:Int = 0;
 
-	var songArray:Array<String> = ["too-slow-encore", "you-cant-run-encore", "triple-trouble-encore", "endless-encore"];
+	var songArray:Array<String> = ["too-slow-encore", "you-cant-run_encore", "triple-trouble-encore", "endless_encore"];
 
 	var boxgrp:FlxTypedSpriteGroup<FlxSprite>;
 
@@ -151,12 +151,12 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 			{
           case "too-slow-encore":
 					PlayState.SONG = Song.loadFromJson('too-slow-encore', 'too-slow-encore');
-          case "you-cant-run-encore":
-					PlayState.SONG = Song.loadFromJson('you-cant-run-encore', 'you-cant-run-encore');
+          case "you-cant-run_encore":
+					PlayState.SONG = Song.loadFromJson('you-cant-run_encore', 'you-cant-run_encore');
           case "triple-trouble-encore":
 					PlayState.SONG = Song.loadFromJson('triple-trouble-encore', 'triple-trouble-encore');
-	  case "endless-encore":
-					PlayState.SONG = Song.loadFromJson('endless-encore', 'endless-encore');
+	  case "endless_encore":
+					PlayState.SONG = Song.loadFromJson('endless_encore', 'endless_encore');
 				default:
 					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase() + '-hard', songArray[curSelected].toLowerCase());
 			}
