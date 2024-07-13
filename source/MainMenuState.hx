@@ -133,9 +133,9 @@ class MainMenuState extends MusicBeatState
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
 			menuItem.animation.addByPrefix('selected', optionShit[i] + " white", 24);
-			menuItem.animation.addByPrefix('lock', optionShit[i] + " locked", 24);
+			menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 		if (!ClientPrefs.beatweek && optionShit[i] == 'sound_test') {
-				menuItem.animation.play('lock');
+				menuItem.animation.play('idle');
 				menuItem.animation.addByPrefix('idle', optionShit[i] + " basic", 24);
 			}
 			else
