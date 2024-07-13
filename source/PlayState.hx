@@ -479,6 +479,7 @@ class PlayState extends MusicBeatState
 		"our-horizon",
 		"prey",
 		"you-cant-run", // for the pixel part in specific
+		"you-cant-run_encore", // pixel part
 		"fatality",
 		"b4cksl4sh",
 	];
@@ -489,6 +490,7 @@ class PlayState extends MusicBeatState
 		"fatality" => "sonic3",
 		"prey" => "soniccd",
 		"you-cant-run" => "sonic1", // because its green hill zone so it should be sonic1
+		"you-cant-run_encore" => "sonic1", //green hill blah blah
 		"our-horizon" => "chaotix",
 		"my-horizon" => "chaotix",
 		// "songName" => "styleName",
