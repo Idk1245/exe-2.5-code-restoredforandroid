@@ -2,65 +2,242 @@
 	"animations": [
 		{
 			"offsets": [
-				-46,
-				-50
+				-67,
+				28
 			],
-			"loop": false,
-			"fps": 24,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"fps": 18,
 			"anim": "idle",
-			"indices": [],
-			"name": "Idle"
+			"loop": false,
+			"name": "Xeno_Idle"
 		},
 		{
 			"offsets": [
-				41,
-				-20
+				-70,
+				29
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "Up Note"
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				15
+			],
+			"fps": 18,
+			"anim": "singDOWN-loop",
+			"loop": true,
+			"name": "Xeno_Down"
 		},
 		{
 			"offsets": [
-				-50,
-				-152
+				-70,
+				28
 			],
-			"loop": false,
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
 			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Down Note"
+			"loop": false,
+			"name": "Xeno_Down"
 		},
 		{
 			"offsets": [
-				41,
-				-66
+				-57,
+				27
 			],
-			"indices": [],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
 			"fps": 24,
 			"anim": "singRIGHT",
 			"loop": false,
-			"name": "Left Note"
+			"name": "Xeno_Left"
 		},
 		{
 			"offsets": [
-				346,
-				-63
+				-61,
+				26
 			],
-			"indices": [],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Xeno_Up"
+		},
+		{
+			"offsets": [
+				-89,
+				23
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
 			"fps": 24,
 			"anim": "singLEFT",
 			"loop": false,
-			"name": "Right Note"
+			"name": "Xeno_Right"
+		},
+		{
+			"offsets": [
+				-65,
+				27
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"fps": 18,
+			"anim": "idle-loop",
+			"loop": true,
+			"name": "Xeno_Idle"
+		},
+		{
+			"offsets": [
+				-65,
+				26
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				15
+			],
+			"fps": 18,
+			"anim": "singUP-loop",
+			"loop": true,
+			"name": "Xeno_Up"
+		},
+		{
+			"offsets": [
+				-66,
+				28
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				15
+			],
+			"fps": 18,
+			"anim": "singRIGHT-loop",
+			"loop": true,
+			"name": "Xeno_Left"
+		},
+		{
+			"offsets": [
+				-66,
+				28
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				15
+			],
+			"fps": 18,
+			"anim": "singLEFT-loop",
+			"loop": true,
+			"name": "Xeno_Right"
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/Beast",
 	"position": [
 		450,
-		-360
+		-410
 	],
 	"healthicon": "BEAST",
 	"flip_x": true,
@@ -70,9 +247,10 @@
 		255
 	],
 	"camera_position": [
-		-320,
-		160
+		-340,
+		180
 	],
 	"sing_duration": 4,
-	"scale": 0.95
+	"scale": 1.15,
+	"_editor_isPlayer": false
 }
