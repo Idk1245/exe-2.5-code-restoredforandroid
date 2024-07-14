@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				95,
-				-158
+				115,
+				-160
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Tails Soul Right",
-			"indices": []
+			"indices": [],
+			"name": "Tails Soul Right"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				136,
-				-62
+				156,
+				-64
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "Tails Soul Up",
-			"indices": []
+			"indices": [],
+			"name": "Tails Soul Up"
 		},
 		{
-			"offsets": [
-				110,
-				-191
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				130,
+				-195
+			],
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Tails Soul Down"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				198,
-				-225
-			],
-			"anim": "singLEFT",
 			"fps": 24,
-			"name": "Tails Soul Left",
+			"name": "Tails Soul Down",
 			"indices": []
 		},
 		{
 			"offsets": [
-				95,
-				-158
+				218,
+				-227
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "idle",
+			"anim": "singLEFT",
 			"indices": [],
-			"name": "Tails Soul Idle"
+			"name": "Tails Soul Left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				115,
+				-157
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Tails Soul Idle",
+			"indices": []
 		}
 	],
 	"vocals_file": "",

@@ -2,34 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				84,
-				-50
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13
-			],
-			"name": "Knux Idle"
-		},
-		{
-			"offsets": [
-				77,
-				-41
+				454,
+				55
 			],
 			"loop": false,
 			"fps": 24,
@@ -56,8 +30,8 @@
 		},
 		{
 			"offsets": [
-				130,
-				-41
+				454,
+				55
 			],
 			"loop": false,
 			"fps": 24,
@@ -85,8 +59,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				86,
-				-40
+				454,
+				55
 			],
 			"anim": "singLEFT",
 			"fps": 24,
@@ -113,8 +87,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				54,
-				-51
+				454,
+				55
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
@@ -137,6 +111,32 @@
 				14,
 				15
 			]
+		},
+		{
+			"offsets": [
+				454,
+				55
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"fps": 20,
+			"anim": "idle",
+			"loop": false,
+			"name": "Knux Idle"
 		}
 	],
 	"vocals_file": "",
@@ -154,8 +154,8 @@
 		0
 	],
 	"camera_position": [
-		-510,
-		200
+		-700,
+		0
 	],
 	"sing_duration": 4,
 	"scale": 1.05,
