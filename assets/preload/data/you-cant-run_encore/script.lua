@@ -2,7 +2,7 @@ local event1 = false
 local event2 = false
 
 function onCreate()
-	addCharacterToList('bfpickel_updated', 'boyfriend')
+	addCharacterToList('bfpixelencore', 'boyfriend')
 	addCharacterToList('pixelrunsonic_updated', 'dad')	
 	setProperty('timeBarBG.color', FlxColor.RED)
 end
