@@ -117,6 +117,9 @@
 				273,
 				111
 			],
+			"loop": false,
+			"fps": 19,
+			"anim": "idle",
 			"indices": [
 				0,
 				1,
@@ -133,9 +136,6 @@
 				12,
 				13
 			],
-			"fps": 19,
-			"anim": "idle",
-			"loop": false,
 			"name": "Xeno_Idle"
 		}
 	],
@@ -155,7 +155,7 @@
 	],
 	"camera_position": [
 		-850,
-		-180
+		-200
 	],
 	"sing_duration": 4,
 	"scale": 1.25,
