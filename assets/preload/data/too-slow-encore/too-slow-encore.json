@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "Encore-right",
-		"player2": "FakerEXE",
+		"player2": "Fakersonic",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -308,10 +308,10 @@
 						777.777777777778
 					],
 					[
-						42130.5555555556,
+						41777.7777777778,
 						-1,
 						"Play Animation",
-						"reveal",
+						"trans",
 						"dad"
 					]
 				],
@@ -337,7 +337,7 @@
 						-1,
 						"Change Character",
 						"2",
-						"gf"
+						"EncoreBG"
 					],
 					[
 						42956.9892473118,
@@ -1877,16 +1877,6 @@
 						3,
 						0,
 						"Static Note"
-					],
-					[
-						82669.2542119488,
-						6,
-						0
-					],
-					[
-						83022.1953884194,
-						4,
-						0
 					]
 				],
 				"typeOfSection": 0,
@@ -2749,13 +2739,6 @@
 						3,
 						0,
 						"Static Note"
-					],
-					[
-						92463.3718590076,
-						-1,
-						"Play Animation",
-						"Getya",
-						"dad"
 					]
 				],
 				"typeOfSection": 0,
@@ -2771,8 +2754,15 @@
 						93115.3046321168,
 						-1,
 						"Lyrics",
-						"i am... gonna catch...--#484FB1",
+						"I'm... gonna get...--#484FB1",
 						"1.2"
+					],
+					[
+						93081.0189178311,
+						-1,
+						"Change Character",
+						"dad",
+						"getcha"
 					]
 				],
 				"typeOfSection": 0,
@@ -2788,7 +2778,7 @@
 						94623.8760606882,
 						-1,
 						"Lyrics",
-						"yaaaaa!--#FF0007",
+						"chaaaaa!--#FF0007",
 						"0.5"
 					]
 				],
@@ -2805,7 +2795,7 @@
 						96338.1617749739,
 						-1,
 						"Lyrics",
-						"i am...--#484FB1",
+						"I am...--#484FB1",
 						"0.9"
 					]
 				],
@@ -2843,7 +2833,15 @@
 				"bpm": 100
 			},
 			{
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						100109.590346402,
+						-1,
+						"Lyrics",
+						"*demonic laughter*--#FF0007",
+						"3.4"
+					]
+				],
 				"typeOfSection": 0,
 				"lengthInSteps": 16,
 				"altAnim": true,
@@ -2863,18 +2861,11 @@
 			{
 				"sectionNotes": [
 					[
-						103195.304632117,
+						103881.018917831,
 						-1,
 						"Change Character",
 						"dad",
 						"sonicexe"
-					],
-					[
-						103184.590346402,
-						-1,
-						"Play Animation",
-						"end",
-						"Dad"
 					]
 				],
 				"typeOfSection": 0,
@@ -4072,6 +4063,20 @@
 						126621.07494024,
 						2,
 						88.2352941176471
+					],
+					[
+						125474.016116711,
+						-1,
+						"Change Character",
+						"gf",
+						"empty"
+					],
+					[
+						125562.251410828,
+						-1,
+						"Change Character",
+						"gf",
+						"GF_hedhehog"
 					]
 				],
 				"altAnim": false,
@@ -4738,13 +4743,6 @@
 						3,
 						0,
 						"Static Note"
-					],
-					[
-						146119.026620912,
-						-1,
-						"Screen Shake",
-						"1, 0.05",
-						"1, 0.05"
 					]
 				],
 				"altAnim": false,
@@ -7604,6 +7602,20 @@
 						6,
 						0,
 						"Static Note"
+					],
+					[
+						174119.026620912,
+						-1,
+						"Play Animation",
+						"AAA",
+						"dad"
+					],
+					[
+						174110.693287579,
+						-1,
+						"Change Character",
+						"dad",
+						"sonicexe2"
 					]
 				],
 				"altAnim": false,
@@ -7643,7 +7655,15 @@
 			{
 				"lengthInSteps": 16,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						177541.943287579,
+						-1,
+						"Play Animation",
+						"end",
+						"dad"
+					]
+				],
 				"altAnim": false,
 				"bpm": 100,
 				"changeBPM": false,
@@ -8507,6 +8527,106 @@
 				"bpm": 135
 			},
 			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 135
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 135,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 135,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 135
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 135,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 135,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 135,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 135
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"gfSection": false,
+				"bpm": 135,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"gfSection": false,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 135
+			},
+			{
 				"lengthInSteps": 16,
 				"typeOfSection": 0,
 				"sectionNotes": [],
@@ -8558,11 +8678,12 @@
 			}
 		],
 		"player3": "FirstEncoreBG",
+		"isRing": false,
 		"song": "too-slow-encore",
+		"needsVoices": false,
 		"validScore": true,
-		"arrowSkin": "",
 		"stage": "too-slow",
-		"needsVoices": true,
+		"arrowSkin": "",
 		"speed": 2.7,
 		"bpm": 135
 	}
