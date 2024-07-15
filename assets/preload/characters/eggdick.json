@@ -1,72 +1,73 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				164,
-				120
+				126
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "Idle"
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				256,
-				234
+				164,
+				230
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Right"
-		},
-		{
-			"offsets": [
-				315,
-				444
-			],
-			"indices": [],
 			"fps": 24,
-			"anim": "singUP",
-			"loop": false,
-			"name": "Up"
+			"name": "Right",
+			"indices": []
 		},
 		{
+			"loop": false,
+			"offsets": [
+				329,
+				423
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up",
+			"indices": []
+		},
+		{
+			"loop": false,
 			"offsets": [
 				165,
-				42
+				67
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down",
+			"indices": []
+		},
+		{
 			"loop": false,
-			"name": "Down"
+			"offsets": [
+				333,
+				221
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Left",
+			"indices": []
 		},
 		{
 			"offsets": [
-				166,
-				409
+				168,
+				391
 			],
 			"indices": [],
-			"fps": 35,
+			"fps": 34,
 			"anim": "laugh",
 			"loop": false,
 			"name": "Laugh"
-		},
-		{
-			"offsets": [
-				320,
-				224
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "Left"
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/eggman_soul",
 	"position": [
@@ -85,5 +86,6 @@
 		-170
 	],
 	"sing_duration": 4,
-	"scale": 0.95
+	"scale": 0.95,
+	"_editor_isPlayer": false
 }
