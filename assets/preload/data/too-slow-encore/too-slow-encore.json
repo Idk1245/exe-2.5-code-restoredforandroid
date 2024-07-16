@@ -311,7 +311,7 @@
 						41777.7777777778,
 						-1,
 						"Play Animation",
-						"reveal",
+						"trans",
 						"dad"
 					]
 				],
@@ -336,8 +336,8 @@
 						42860.2150537635,
 						-1,
 						"Change Character",
-						"EncoreBG",
-						"gf"
+						"2",
+						"EncoreBG"
 					],
 					[
 						42956.9892473118,
@@ -2761,8 +2761,8 @@
 						93081.0189178311,
 						-1,
 						"Change Character",
-						"getcha",
-						"dad"
+						"dad",
+						"getcha"
 					]
 				],
 				"typeOfSection": 0,
@@ -7606,16 +7606,16 @@
 					[
 						174119.026620912,
 						-1,
-						"Change Character",
-						"dad",
-						"sonicexe"
+						"Play Animation",
+						"AAA",
+						"dad"
 					],
 					[
 						174110.693287579,
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe"
+						"sonicexe2"
 					]
 				],
 				"altAnim": false,
@@ -7659,9 +7659,9 @@
 					[
 						177541.943287579,
 						-1,
-						"Change Character",
-						"dad",
-						"sonicexe"
+						"Play Animation",
+						"end",
+						"dad"
 					]
 				],
 				"altAnim": false,
@@ -8680,7 +8680,7 @@
 		"player3": "FirstEncoreBG",
 		"isRing": false,
 		"song": "too-slow-encore",
-		"needsVoices": true,
+		"needsVoices": false,
 		"validScore": true,
 		"stage": "too-slow",
 		"arrowSkin": "",
