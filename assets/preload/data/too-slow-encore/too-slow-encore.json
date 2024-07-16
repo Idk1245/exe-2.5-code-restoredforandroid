@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "Encore-right",
-		"player2": "FakerEXE",
+		"player2": "Fakersonic",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -311,7 +311,7 @@
 						41777.7777777778,
 						-1,
 						"Play Animation",
-						"reveal",
+						"trans",
 						"dad"
 					]
 				],
@@ -337,7 +337,7 @@
 						-1,
 						"Change Character",
 						"2",
-						"gf"
+						"EncoreBG"
 					],
 					[
 						42956.9892473118,
@@ -2760,9 +2760,9 @@
 					[
 						93081.0189178311,
 						-1,
-						"Change Character",
-						"dad",
-						"getcha"
+						"Play Animation",
+						"getcha",
+						"dad"
 					]
 				],
 				"typeOfSection": 0,
@@ -2863,9 +2863,9 @@
 					[
 						103881.018917831,
 						-1,
-						"Change Character",
-						"dad",
-						"sonicexe"
+						"Play Animation",
+						"end",
+						""
 					]
 				],
 				"typeOfSection": 0,
@@ -4067,16 +4067,16 @@
 					[
 						125474.016116711,
 						-1,
-						"",
-						"",
-						""
+						"Change Character",
+						"gf",
+						"empty"
 					],
 					[
 						125562.251410828,
 						-1,
-						"",
-						"",
-						""
+						"Change Character",
+						"gf",
+						"GF_hedhehog"
 					]
 				],
 				"altAnim": false,
@@ -7606,16 +7606,16 @@
 					[
 						174119.026620912,
 						-1,
-						"",
-						"",
-						""
+						"Play Animation",
+						"AAA",
+						"dad"
 					],
 					[
 						174110.693287579,
 						-1,
-						"",
-						"",
-						""
+						"Change Character",
+						"dad",
+						"sonicexe2"
 					]
 				],
 				"altAnim": false,
@@ -7659,9 +7659,9 @@
 					[
 						177541.943287579,
 						-1,
-						"",
-						"",
-						""
+						"Play Animation",
+						"end",
+						"dad"
 					]
 				],
 				"altAnim": false,
@@ -8685,9 +8685,6 @@
 		"stage": "too-slow",
 		"arrowSkin": "",
 		"speed": 2.7,
-		"bpm": 135
-	}
-}
 		"bpm": 135
 	}
 }
