@@ -3188,8 +3188,8 @@
 						129555.555555555,
 						-1,
 						"Change Character",
-						"getcha",
-						"dad"
+						"dad",
+						"getcha"
 					],
 					[
 						129722.222222222,
@@ -6516,16 +6516,16 @@
 					[
 						182638.888888889,
 						-1,
-						"Play Animation",
-						"AAA",
-						"dad"
+						"Change Character",
+						"dad",
+						"sonicexe"
 					],
 					[
 						182632.638888889,
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe2"
+						"sonicexe"
 					]
 				],
 				"typeOfSection": 0,
