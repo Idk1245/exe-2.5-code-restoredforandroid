@@ -311,7 +311,7 @@
 						41777.7777777778,
 						-1,
 						"Play Animation",
-						"trans",
+						"reveal",
 						"dad"
 					]
 				],
@@ -336,8 +336,8 @@
 						42860.2150537635,
 						-1,
 						"Change Character",
-						"2",
-						"EncoreBG"
+						"EncoreBG",
+						"gf"
 					],
 					[
 						42956.9892473118,
@@ -7607,15 +7607,15 @@
 						174119.026620912,
 						-1,
 						"Play Animation",
-						"AAA",
-						"dad"
+						"end",
+						""
 					],
 					[
 						174110.693287579,
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe2"
+						"sonicexe"
 					]
 				],
 				"altAnim": false,
@@ -7661,7 +7661,7 @@
 						-1,
 						"Play Animation",
 						"end",
-						"dad"
+						""
 					]
 				],
 				"altAnim": false,
