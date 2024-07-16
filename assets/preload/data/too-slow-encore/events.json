@@ -271,8 +271,8 @@
 						42860.2150537635,
 						-1,
 						"Change Character",
-						"2",
-						"EncoreBG"
+						"FirstEncoreBG",
+						"gf"
 					],
 					[
 						42956.9892473118,
@@ -692,7 +692,7 @@
 						-1,
 						"Change Character",
 						"dad",
-						"EXE_animation"
+						"getcha"
 					]
 				],
 				"bpm": 0,
@@ -980,7 +980,7 @@
 						-1,
 						"Change Character",
 						"gf",
-						"empty"
+						"gf"
 					]
 				],
 				"bpm": 0,
@@ -1145,7 +1145,7 @@
 						-1,
 						"Change Character",
 						"gf",
-						"EncoreBG"
+						"gf"
 					]
 				],
 				"bpm": 0,
@@ -1389,16 +1389,16 @@
 					[
 						174119.026620912,
 						-1,
-						"Play Animation",
-						"AAA",
-						"dad"
+						"Change Character",
+						"dad",
+						"sonicexe"
 					],
 					[
 						174110.693287579,
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe2"
+						"sonicexe"
 					]
 				],
 				"bpm": 0,
