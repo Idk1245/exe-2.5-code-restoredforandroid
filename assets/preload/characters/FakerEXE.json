@@ -25,7 +25,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				-105,
+				-104,
 				22
 			],
 			"anim": "singRIGHT",
@@ -47,7 +47,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				-95,
+				-96,
 				5
 			],
 			"anim": "singLEFT",
@@ -61,7 +61,7 @@
 				11
 			],
 			"indices": [],
-			"fps": 41,
+			"fps": 30,
 			"anim": "reveal",
 			"loop": false,
 			"name": "Sonic Reveal"

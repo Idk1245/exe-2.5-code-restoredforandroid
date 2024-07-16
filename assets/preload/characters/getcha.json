@@ -1,17 +1,18 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				70,
 				-33
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "anim"
+			"fps": 24,
+			"name": "anim",
+			"indices": []
 		}
 	],
+	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/getCHA",
 	"position": [
@@ -30,5 +31,6 @@
 		110
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2,
+	"_editor_isPlayer": false
 }
