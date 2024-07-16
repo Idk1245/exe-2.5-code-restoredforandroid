@@ -2,8 +2,19 @@
 	"animations": [
 		{
 			"offsets": [
-				-7,
-				10
+				-1,
+				-52
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "SONIClaugh"
+		},
+		{
+			"offsets": [
+				24,
+				21
 			],
 			"loop": false,
 			"fps": 24,
@@ -13,8 +24,8 @@
 		},
 		{
 			"offsets": [
-				-168,
-				-57
+				-107,
+				-25
 			],
 			"loop": false,
 			"fps": 24,
@@ -24,8 +35,8 @@
 		},
 		{
 			"offsets": [
-				-32,
-				-154
+				3,
+				-157
 			],
 			"loop": false,
 			"fps": 24,
@@ -35,8 +46,8 @@
 		},
 		{
 			"offsets": [
-				103,
-				-11
+				110,
+				-53
 			],
 			"loop": false,
 			"fps": 24,
@@ -47,7 +58,7 @@
 		{
 			"loop": true,
 			"offsets": [
-				-90,
+				-60,
 				-80
 			],
 			"anim": "idle",
@@ -57,30 +68,18 @@
 		},
 		{
 			"offsets": [
-				-70,
-				-38
+				361,
+				-69
 			],
-			"loop": false,
-			"fps": 17,
-			"anim": "singDOWN-alt",
 			"indices": [],
-			"name": "SONIClaugh"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				22,
-				-60
-			],
+			"fps": 11,
 			"anim": "Getya",
-			"fps": 21,
-			"name": "sonicImmagetya",
-			"indices": []
+			"loop": false,
+			"name": "Getya"
 		}
 	],
-	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/Sonic_EXE_kopia",
+	"image": "characters/Sonic_EXE_Kopia",
 	"position": [
 		0,
 		0
@@ -93,10 +92,9 @@
 		142
 	],
 	"camera_position": [
-		10,
-		50
+		-10,
+		110
 	],
 	"sing_duration": 4,
-	"scale": 1.2,
-	"_editor_isPlayer": false
+	"scale": 1
 }
