@@ -311,7 +311,7 @@
 						41777.7777777778,
 						-1,
 						"Play Animation",
-						"trans",
+						"reveal",
 						"dad"
 					]
 				],
@@ -337,7 +337,7 @@
 						-1,
 						"Change Character",
 						"2",
-						"EncoreBG"
+						"gf"
 					],
 					[
 						42956.9892473118,
@@ -8686,5 +8686,12 @@
 		"arrowSkin": "",
 		"speed": 2.7,
 		"bpm": 135
+	}
+}
+7,
+		"bpm": 135
+	}
+}
+
 	}
 }
