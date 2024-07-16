@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "Encore-right",
-		"player2": "Fakersonic",
+		"player2": "FakerEXE",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -311,7 +311,7 @@
 						41777.7777777778,
 						-1,
 						"Play Animation",
-						"trans",
+						"reveal",
 						"dad"
 					]
 				],
@@ -337,7 +337,7 @@
 						-1,
 						"Change Character",
 						"2",
-						"EncoreBG"
+						"gf"
 					],
 					[
 						42956.9892473118,
@@ -2760,7 +2760,7 @@
 					[
 						93081.0189178311,
 						-1,
-						"Play Animation",
+						"Change Character",
 						"getcha",
 						"dad"
 					]
@@ -2863,9 +2863,9 @@
 					[
 						103881.018917831,
 						-1,
-						"Play Animation",
-						"end",
-						""
+						"Change Character",
+						"dad",
+						"sonicexe"
 					]
 				],
 				"typeOfSection": 0,
@@ -7607,15 +7607,15 @@
 						174119.026620912,
 						-1,
 						"Play Animation",
-						"AAA",
-						"dad"
+						"end",
+						""
 					],
 					[
 						174110.693287579,
 						-1,
 						"Change Character",
-						"dad",
-						"sonicexe2"
+						"end",
+						""
 					]
 				],
 				"altAnim": false,
@@ -7661,7 +7661,7 @@
 						-1,
 						"Play Animation",
 						"end",
-						"dad"
+						""
 					]
 				],
 				"altAnim": false,
