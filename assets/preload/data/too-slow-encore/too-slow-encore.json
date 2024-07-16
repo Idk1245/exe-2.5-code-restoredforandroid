@@ -7606,16 +7606,16 @@
 					[
 						174119.026620912,
 						-1,
-						"Play Animation",
-						"end",
-						""
+						"Change Character",
+						"dad",
+						"sonicexe"
 					],
 					[
 						174110.693287579,
 						-1,
 						"Change Character",
-						"end",
-						""
+						"dad",
+						"sonicexe"
 					]
 				],
 				"altAnim": false,
@@ -7659,9 +7659,9 @@
 					[
 						177541.943287579,
 						-1,
-						"Play Animation",
-						"end",
-						""
+						"Change Character",
+						"dad",
+						"sonicexe"
 					]
 				],
 				"altAnim": false,
