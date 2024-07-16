@@ -1,26 +1,15 @@
 {
 	"animations": [
 		{
-			"loop": false,
-			"offsets": [
-				70,
-				-33
-			],
-			"anim": "idle",
-			"fps": 24,
-			"name": "anim",
-			"indices": []
-		},
-		{
 			"offsets": [
 				-252,
 				-197
 			],
-			"indices": [],
-			"fps": 24,
-			"anim": "",
 			"loop": false,
-			"name": ""
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "anim"
 		}
 	],
 	"vocals_file": "",
