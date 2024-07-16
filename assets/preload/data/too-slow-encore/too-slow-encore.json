@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "Encore-right",
-		"player2": "Faker",
+		"player2": "FakerEXE",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -4067,16 +4067,16 @@
 					[
 						125474.016116711,
 						-1,
-						"Change Character",
-						"gf",
-						"empty"
+						"",
+						"",
+						""
 					],
 					[
 						125562.251410828,
 						-1,
-						"Change Character",
-						"gf",
-						"GF_hedhehog"
+						"",
+						"",
+						""
 					]
 				],
 				"altAnim": false,
@@ -7606,16 +7606,16 @@
 					[
 						174119.026620912,
 						-1,
-						"Play Animation",
-						"AAA",
-						"dad"
+						"",
+						"",
+						""
 					],
 					[
 						174110.693287579,
 						-1,
-						"Change Character",
-						"dad",
-						"sonicexe2"
+						"",
+						"",
+						""
 					]
 				],
 				"altAnim": false,
