@@ -7608,7 +7608,7 @@
 						-1,
 						"Play Animation",
 						"end",
-						""
+						"dad"
 					],
 					[
 						174110.693287579,
@@ -7661,7 +7661,7 @@
 						-1,
 						"Play Animation",
 						"end",
-						""
+						"dad"
 					]
 				],
 				"altAnim": false,
