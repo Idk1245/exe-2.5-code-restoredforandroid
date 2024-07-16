@@ -10,6 +10,17 @@
 			"fps": 24,
 			"name": "anim",
 			"indices": []
+		},
+		{
+			"offsets": [
+				-252,
+				-197
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "",
+			"loop": false,
+			"name": ""
 		}
 	],
 	"vocals_file": "",
