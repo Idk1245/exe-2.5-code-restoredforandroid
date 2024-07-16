@@ -1,7 +1,7 @@
 {
 	"song": {
 		"player1": "Encore-right",
-		"player2": "FakerEXE",
+		"player2": "Faker",
 		"notes": [
 			{
 				"lengthInSteps": 16,
@@ -7659,9 +7659,9 @@
 					[
 						177541.943287579,
 						-1,
-						"Play Animation",
-						"end",
-						"dad"
+						"",
+						"",
+						""
 					]
 				],
 				"altAnim": false,
@@ -8680,7 +8680,7 @@
 		"player3": "FirstEncoreBG",
 		"isRing": false,
 		"song": "too-slow-encore",
-		"needsVoices": false,
+		"needsVoices": true,
 		"validScore": true,
 		"stage": "too-slow",
 		"arrowSkin": "",
@@ -8688,10 +8688,6 @@
 		"bpm": 135
 	}
 }
-7,
 		"bpm": 135
-	}
-}
-
 	}
 }
