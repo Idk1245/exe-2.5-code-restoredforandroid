@@ -1,0 +1,36 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-191,
+				-242
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "anim"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/getCHA",
+	"position": [
+		-58,
+		-80
+	],
+	"healthicon": "sonicexe",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		85,
+		142
+	],
+	"camera_position": [
+		-10,
+		110
+	],
+	"sing_duration": 4,
+	"scale": 2.05,
+	"_editor_isPlayer": false
+}
