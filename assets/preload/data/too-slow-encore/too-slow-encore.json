@@ -4068,15 +4068,15 @@
 						125474.016116711,
 						-1,
 						"Change Character",
-						"end",
-						""
+						"dad",
+						"sonicexe"
 					],
 					[
 						125562.251410828,
 						-1,
 						"Change Character",
-						"end",
-						""
+						"dad",
+						"sonicexe"
 					]
 				],
 				"altAnim": false,
@@ -7606,16 +7606,16 @@
 					[
 						174119.026620912,
 						-1,
-						"Play Animation",
-						"end",
-						"dad"
+						"",
+						"",
+						""
 					],
 					[
 						174110.693287579,
 						-1,
-						"Change Character",
-						"dad",
-						"sonicexe"
+						"",
+						"",
+						""
 					]
 				],
 				"altAnim": false,
@@ -7659,9 +7659,9 @@
 					[
 						177541.943287579,
 						-1,
-						"Play Animation",
-						"end",
-						"dad"
+						"",
+						"",
+						""
 					]
 				],
 				"altAnim": false,
