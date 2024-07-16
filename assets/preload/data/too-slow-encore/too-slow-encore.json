@@ -330,7 +330,7 @@
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe"
+						"sonicexe_normal"
 					],
 					[
 						42860.2150537635,
@@ -2762,7 +2762,7 @@
 						-1,
 						"Change Character",
 						"dad",
-						"getcha"
+						"getcha_normal"
 					]
 				],
 				"typeOfSection": 0,
