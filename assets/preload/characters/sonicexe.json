@@ -1,53 +1,42 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				-7,
-				10
-			],
 			"loop": false,
+			"offsets": [
+				0,
+				-43
+			],
+			"anim": "singDOWN-alt",
 			"fps": 24,
+			"name": "SONIClaugh",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				31
+			],
 			"anim": "singUP",
-			"indices": [],
-			"name": "SONICmoveUP"
+			"fps": 24,
+			"name": "SONICmoveUP",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-168,
-				-57
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-90,
+				-16
+			],
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "SONICmoveRIGHT"
-		},
-		{
-			"offsets": [
-				-32,
-				-154
-			],
-			"loop": false,
 			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "SONICmoveDOWN"
-		},
-		{
-			"offsets": [
-				103,
-				-11
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "SONICmoveLEFT"
+			"name": "SONICmoveRIGHT",
+			"indices": []
 		},
 		{
 			"loop": true,
 			"offsets": [
-				-90,
+				-60,
 				-80
 			],
 			"anim": "idle",
@@ -56,34 +45,33 @@
 			"indices": []
 		},
 		{
-			"offsets": [
-				-70,
-				-38
-			],
 			"loop": false,
-			"fps": 17,
-			"anim": "singDOWN-alt",
-			"indices": [],
-			"name": "SONIClaugh"
+			"offsets": [
+				10,
+				-158
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "SONICmoveDOWN",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				22,
-				-60
+				67,
+				-83
 			],
-			"anim": "Getya",
-			"fps": 21,
-			"name": "sonicImmagetya",
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "SONICmoveLEFT",
 			"indices": []
 		}
 	],
-	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/Sonic_EXE_kopia",
+	"image": "characters/sonicexe",
 	"position": [
-		0,
-		0
+		-120,
+		-40
 	],
 	"healthicon": "sonicexe",
 	"flip_x": false,
@@ -93,10 +81,9 @@
 		142
 	],
 	"camera_position": [
-		10,
-		50
+		-10,
+		110
 	],
 	"sing_duration": 4,
-	"scale": 1.2,
-	"_editor_isPlayer": false
+	"scale": 1
 }
