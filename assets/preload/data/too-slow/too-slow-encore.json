@@ -2762,7 +2762,7 @@
 						-1,
 						"Change Character",
 						"dad",
-						"getcha"
+						"getcha_normal"
 					]
 				],
 				"typeOfSection": 0,
@@ -2865,7 +2865,7 @@
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe"
+						"sonicexe_slightlybigger"
 					]
 				],
 				"typeOfSection": 0,
@@ -4069,14 +4069,14 @@
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe"
+						"sonicexe_slightlybigger"
 					],
 					[
 						125562.251410828,
 						-1,
 						"Change Character",
 						"dad",
-						"sonicexe"
+						"sonicexe_slightlybigger"
 					]
 				],
 				"altAnim": false,
