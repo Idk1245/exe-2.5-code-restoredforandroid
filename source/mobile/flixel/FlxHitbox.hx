@@ -42,7 +42,7 @@ class FlxHitbox extends FlxSpriteGroup
 				add(buttonUp = createHint(FlxG.width / 2, 0, Std.int(FlxG.width / 4), FlxG.height, 0x00FF00));
 				add(buttonRight = createHint((FlxG.width / 2) + (FlxG.width / 4), 0, Std.int(FlxG.width / 4), FlxG.height, 0xFF0000));
 				
-			case SPACE
+			case SPACE:
 				add(buttonLeft = createHint(0, offsetSec, Std.int(FlxG.width / 4), 540, 0xFF00FF));
 				add(buttonDown = createHint(FlxG.width / 4, offsetSec, Std.int(FlxG.width / 4), 540, 0x00FFFF));
 				add(buttonUp = createHint(FlxG.width / 2, offsetSec, Std.int(FlxG.width / 4), 540, 0x00FF00));
