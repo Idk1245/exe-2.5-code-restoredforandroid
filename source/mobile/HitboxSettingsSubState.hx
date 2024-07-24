@@ -65,8 +65,7 @@ class GradientHitboxes extends BaseOptionsMenu
 	        addOption(option);
 		
 		FlxG.save.data.gradientHitboxes = !FlxG.save.data.gradientHitboxes;
-		return true;
-		return (FlxG.save.data.gradientHitboxes = 1);
+		(FlxG.save.data.gradientHitboxes = 1);
 
 		super();
 	}
