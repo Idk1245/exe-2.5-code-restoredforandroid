@@ -64,12 +64,11 @@ class GradientHitboxes extends BaseOptionsMenu
                         ['gradient', 'non-gradient']);		       
 	        addOption(option);
 		
-		super();
-	}
-}
 		FlxG.save.data.gradientHitboxes = !FlxG.save.data.gradientHitboxes;
 		display = updateDisplay();
 		return true;
 		return (FlxG.save.data.gradientHitboxes ? "Gradient Hitboxes On" : "Gradient Hitboxes Off");
+
+		super();
 	}
 }
