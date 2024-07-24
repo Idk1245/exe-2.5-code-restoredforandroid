@@ -7,6 +7,7 @@ import flixel.util.FlxDestroyUtil;
 import openfl.display.BitmapData;
 import openfl.display.Shape;
 import mobile.flixel.FlxButton;
+import android.flixel.FlxButton;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
