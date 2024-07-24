@@ -63,8 +63,6 @@ class GradientHitboxes extends Option
 		display = updateDisplay();
 		return true;
 	}
-
-	{
 		return (FlxG.save.data.gradientHitboxes ? "Gradient Hitboxes On" : "Gradient Hitboxes Off");
 	}
 }
