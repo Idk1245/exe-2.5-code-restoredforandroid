@@ -1,4 +1,4 @@
-package android.flixel;
+package mobile.flixel;
 
 import flixel.FlxG;
 import flixel.FlxCamera;
