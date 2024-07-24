@@ -2883,6 +2883,13 @@ class PlayState extends MusicBeatState
 				}
 		
                 #end
+			    #if mobile
+                mobileControls.visible = true;
+				if (ClientPrefs.isvpad && if(daSong == 'b4cksl4sh') && MobileControls.mode != 'Hitbox' && MobileControls.mode != 'Keyboard'){
+				virtualPad.visible = true;
+				}
+		
+                #end
 
 		inCutscene = false;
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
