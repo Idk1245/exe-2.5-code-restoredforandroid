@@ -6,6 +6,8 @@ import flixel.util.FlxDestroyUtil;
 import openfl.display.BitmapData;
 import openfl.display.Shape;
 import mobile.flixel.FlxButton;
+import flixel.tweens.FlxTween;
+import flixel.util.FlxColor;
 
 /**
  * A zone with 4 hint's (A hitbox).
