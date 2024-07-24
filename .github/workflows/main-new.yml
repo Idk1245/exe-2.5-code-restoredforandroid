@@ -49,6 +49,8 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib install lime 7.9.0
           haxelib install flixel 4.11.0
+          haxelib install flixel
+          haxelib --quiet --always run lime setup flixel
           haxelib install flixel-addons 2.11.0
           haxelib install flixel-ui
           haxelib install hscript
