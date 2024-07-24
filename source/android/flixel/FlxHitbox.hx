@@ -1,4 +1,4 @@
-package android.flixel;
+package mobile.flixel;
 
 import openfl.display.Shape;
 import openfl.display.BitmapData;
