@@ -66,7 +66,7 @@ class GradientHitboxes extends BaseOptionsMenu
 		
 		FlxG.save.data.gradientHitboxes = !FlxG.save.data.gradientHitboxes;
 		return true;
-		return (FlxG.save.data.gradientHitboxes ? "Gradient Hitboxes On" : "Gradient Hitboxes Off");
+		return (FlxG.save.data.gradientHitboxes = "Gradient Hitboxes On" : "Gradient Hitboxes Off");
 
 		super();
 	}
