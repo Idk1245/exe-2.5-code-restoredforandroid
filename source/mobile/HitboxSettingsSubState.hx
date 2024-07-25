@@ -48,25 +48,3 @@ class HitboxSettingsSubState extends BaseOptionsMenu
 		super();
 	}
 }
-
-class GradientHitboxes extends BaseOptionsMenu
-{
-	public function new(desc:String)
-	{
-		title = 'Hitbox Style in Game';
-		rpcTitle = 'Hitbox Style in Game';
-
-	        var option:Option = new Option('Hitbox Style:',
-			"Choose if your hitbox will be gradient or non-gradient.",
-			'gradientHitboxes',
-		        'string',
-			'gradientHitboxes',
-                        ['gradient', 'non-gradient']);		       
-	        addOption(option);
-		
-		FlxG.save.data.gradientHitboxes = !FlxG.save.data.gradientHitboxes;
-		(FlxG.save.data.gradientHitboxes = 1);
-
-		super();
-	}
-}
