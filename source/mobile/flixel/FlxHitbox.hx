@@ -116,7 +116,7 @@ class FlxHitbox extends FlxSpriteGroup
 			if (hintTween != null)
 				hintTween.cancel();
 
-			hintTween = FlxTween.tween(hint, {alpha: / 100, {
+			hintTween = FlxTween.tween(hint, {alpha:}, / 100, {
 				ease: FlxEase.circInOut,
 				onComplete: function(twn:FlxTween)
 				{
