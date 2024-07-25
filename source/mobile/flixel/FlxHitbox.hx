@@ -116,7 +116,7 @@ class FlxHitbox extends FlxSpriteGroup
 			if (hintTween != null)
 				hintTween.cancel();
 
-			hintTween = FlxTween.tween(hint, {alpha: Hitbox.getOpacity(true)},getOpacity(true) / 100, {
+			hintTween = FlxTween.tween(hint, {alpha: MobileControls.getOpacity(true)},MobileControls.getOpacity(true) / 100, {
 				ease: FlxEase.circInOut,
 				onComplete: function(twn:FlxTween)
 				{
@@ -129,7 +129,7 @@ class FlxHitbox extends FlxSpriteGroup
 			if (hintTween != null)
 				hintTween.cancel();
 
-			hintTween = FlxTween.tween(hint, {alpha: 0.00001}, Hitbox.getOpacity(true) / 10, {
+			hintTween = FlxTween.tween(hint, {alpha: 0.00001}, MobileControls.getOpacity(true) / 10, {
 				ease: FlxEase.circInOut,
 				onComplete: function(twn:FlxTween)
 				{
@@ -142,7 +142,7 @@ class FlxHitbox extends FlxSpriteGroup
 			if (hintTween != null)
 				hintTween.cancel();
 
-			hintTween = FlxTween.tween(hint, {alpha: 0.00001}, Hitbox.getOpacity(true) / 10, {
+			hintTween = FlxTween.tween(hint, {alpha: 0.00001}, MobileControls.getOpacity(true) / 10, {
 				ease: FlxEase.circInOut,
 				onComplete: function(twn:FlxTween)
 				{
