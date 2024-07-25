@@ -92,8 +92,11 @@ class FlxHitbox extends FlxSpriteGroup
 	{
 		var shape:Shape = new Shape();
 		shape.graphics.beginFill(Color);
-		shape.graphics.lineStyle(10, Color, 1);
+		shape.graphics.lineStyle(3, Color, 1);
 		shape.graphics.drawRect(0, 0, Width, Height);
+		shape.graphics.endFill();
+		shape.graphics.beginGradientFill(RADIAL, [Color, FlxColor.TRANSPARENT], [0.6, 0], [0, 255], null, null, null, 0.5);
+		shape.graphics.drawRect(3, 3, Width - 6, Height - 6);
 		shape.graphics.endFill();
 
 		var bitmap:BitmapData = new BitmapData(Width, Height, true, 0);
