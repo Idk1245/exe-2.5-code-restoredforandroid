@@ -2265,7 +2265,7 @@ class PlayState extends MusicBeatState
 					camHUD.alpha = 0;
 					startCountdown();
 
-				case 'too-slow' | 'you-cant-run' | 'you-cant-run_encore' | 'triple-trouble' | 'endless' | 'endless-og' | 'endeavours' | 'cycles' | 'malediction' | 'prey' | 'fight-or-flight'| 'substantial' | 'digitalized' | 'round-a-bout' | 'relax' | 'hedge' | 'manual-blast' | 'shocker' | 'perdition' | 'hollow' | 'b4cksl4sh':
+				case 'too-slow' | 'you-cant-run' | 'triple-trouble' | 'endless' | 'endless-og' | 'endeavours' | 'cycles' | 'malediction' | 'prey' | 'fight-or-flight'| 'substantial' | 'digitalized' | 'round-a-bout' | 'relax' | 'hedge' | 'manual-blast' | 'shocker' | 'perdition' | 'hollow' | 'b4cksl4sh':
 
 					if (daSong == 'too-slow' || daSong == 'you-cant-run' || daSong == 'you-cant-run_encore' || daSong == 'cycles')
 						{
@@ -7880,7 +7880,7 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 }             case  'my-horizon' | 'our-horizon':
 					add(blackFuck);
 					startCircle.loadGraphic(Paths.image('StartScreens/'+ daSong, '_title_card', 'exe'));
-					startCircle.frames = Paths.getSparrowAtlas('StartScreens/'+ daSong, '_title_card', 'exe');
+					startCircle.frames = Paths.getSparrowAtlas('StartScreens/' + daSong, '_title_card', 'exe');
 					startCircle.animation.addByPrefix('idle'+ daSong, '_title', 24, false);
 					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
 					startCircle.alpha = 0;
