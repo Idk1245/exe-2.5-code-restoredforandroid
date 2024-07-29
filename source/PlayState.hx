@@ -8368,7 +8368,7 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 	var lastBeatHit:Int = -1;
 	var fucklesBeats:Bool = true;
 
-	override function beatHit()
+}       override function beatHit()
 	{
 		super.beatHit();
 
