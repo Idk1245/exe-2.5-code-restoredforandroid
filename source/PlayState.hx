@@ -7877,14 +7877,11 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 				case 2337:
 					camZooming = false;
            {
-}                               case  'my-horizon' | 'our-horizon':
-
-                                        if (daSong == 'my-horizon' || daSong == 'our-horizon')
-				
-					add(blackFuck);
-					startCircle.loadGraphic(Paths.image('StartScreens/'+ daSong, '_title_card', 'exe'));
-					startCircle.frames = Paths.getSparrowAtlas('StartScreens/' + daSong, '_title_card', 'exe');
-					startCircle.animation.addByPrefix('idle'+ daSong, '_title', 24, false);
+}                               case  'my-horizon':
+				        add(blackFuck);
+					startCircle.loadGraphic(Paths.image('StartScreens/my-horizon_title_card', 'exe'));
+					startCircle.frames = Paths.getSparrowAtlas('StartScreens/my-horizon_title_card', 'exe');
+					startCircle.animation.addByPrefix('idle' 'my horizon title', 24, false);
 					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
 					startCircle.alpha = 0;
 					startCircle.screenCenter();
