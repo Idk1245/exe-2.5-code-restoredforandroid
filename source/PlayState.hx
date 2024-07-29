@@ -2608,6 +2608,9 @@ class PlayState extends MusicBeatState
 			case 'cycles':
 				transIn = XTransitionSubstate;
 				transOut = XTransitionSubstate;
+			case 'chaos':
+                                transIn = SonicTransitionSubstate;
+				transOut = SonicTransitionSubstate:
 			default:
 
 		}
