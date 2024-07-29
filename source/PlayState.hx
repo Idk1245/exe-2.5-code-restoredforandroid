@@ -8921,7 +8921,6 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 		return super.switchTo(state);
 	}
 }
-
 case 'my-horizon':
     add(blackFuck);
     startCircle.loadGraphic(Paths.image('StartScreens/my-horizon_title_card', 'exe'));
