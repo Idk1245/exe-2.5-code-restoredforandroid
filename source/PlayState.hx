@@ -7883,7 +7883,7 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 				
 					add(blackFuck);
 					startCircle.loadGraphic(Paths.image('StartScreens/'+ daSong, '_title_card', 'exe'));
-					startCircle.frames = Paths.getSparrowAtlas('StartScreens/' + daSong, '_title_card', 'exe'));
+					startCircle.frames = Paths.getSparrowAtlas('StartScreens/' + daSong, '_title_card', 'exe');
 					startCircle.animation.addByPrefix('idle'+ daSong, '_title', 24, false);
 					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
 					startCircle.alpha = 0;
