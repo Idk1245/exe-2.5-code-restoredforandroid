@@ -2265,7 +2265,7 @@ class PlayState extends MusicBeatState
 					camHUD.alpha = 0;
 					startCountdown();
 
-				case 'too-slow' | 'you-cant-run' | 'triple-trouble' | 'endless' | 'endless-og' | 'endeavours' | 'cycles' | 'malediction' | 'prey' | 'fight-or-flight'| 'substantial' | 'digitalized' | 'round-a-bout' | 'relax' | 'hedge' | 'manual-blast' | 'shocker' | 'perdition' | 'hollow' | 'b4cksl4sh':
+				case 'too-slow' | 'you-cant-run' | 'you-cant-run_encore' | 'triple-trouble' | 'endless' | 'endless-og' | 'endeavours' | 'cycles' | 'malediction' | 'prey' | 'fight-or-flight'| 'substantial' | 'digitalized' | 'round-a-bout' | 'relax' | 'hedge' | 'manual-blast' | 'shocker' | 'perdition' | 'hollow' | 'b4cksl4sh':
 
 					if (daSong == 'too-slow' || daSong == 'you-cant-run' || daSong == 'you-cant-run_encore' || daSong == 'cycles')
 						{
@@ -2609,7 +2609,7 @@ class PlayState extends MusicBeatState
 				transIn = XTransitionSubstate;
 				transOut = XTransitionSubstate;
 			case 'chaos':
-                                transIn = SonicTransitionSubstate;
+                transIn = SonicTransitionSubstate;
 				transOut = SonicTransitionSubstate;
 			default:
 
@@ -7876,18 +7876,9 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 					camHUD.shake(0.003, 1);
 				case 2337:
 					camZooming = false;
-                           
-                                if (SONG.song.toLowerCase() == 'my-horizon') {
-				        add(blackFuck);
-					startCircle.loadGraphic(Paths.image('StartScreens/my-horizon_title_card', 'exe'));
-					startCircle.frames = Paths.getSparrowAtlas('StartScreens/my-horizon_title_card', 'exe');
-					startCircle.animation.addByPrefix('idle', 'my horizon title', 24, false);
-					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
-					startCircle.alpha = 0;
-					startCircle.screenCenter();
-					add(startCircle);
-                        }
+			}
 }
+
 		if (SONG.song.toLowerCase() == 'b4cksl4sh')
 			{
 				switch (curStep)
@@ -8368,7 +8359,7 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 	var lastBeatHit:Int = -1;
 	var fucklesBeats:Bool = true;
 
-}       override function beatHit()
+	override function beatHit()
 	{
 		super.beatHit();
 
