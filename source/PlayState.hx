@@ -7876,8 +7876,8 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 					camHUD.shake(0.003, 1);
 				case 2337:
 					camZooming = false;
-             {
-                case  'my-horizon' | 'our-horizon':
+           {
+}             case  'my-horizon' | 'our-horizon':
 					add(blackFuck);
 					startCircle.loadGraphic(Paths.image('StartScreens/' + daSong + '_title_card', 'exe'));
 					startCircle.frames = Paths.getSparrowAtlas('StartScreens/' + daSong + '_title_card', 'exe');
