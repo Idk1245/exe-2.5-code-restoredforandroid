@@ -7601,21 +7601,6 @@ class PlayState extends MusicBeatState
 						isCameraOnForcedPos = true;
 				}
 			}
-                if (SONG.song.toLowerCase() == 'my-horizon') {
-                       add(blackFuck);
-                       startCircle.loadGraphic(Paths.image('StartScreens/my-horizon_title_card', 'exe'));
-                       startCircle.frames = Paths.getSparrowAtlas('StartScreens/my-horizon_title_card', 'exe');
-                       startCircle.animation.addByPrefix('idle', 'my horizon title', 24, false);
-                       startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
-                       startCircle.alpha = 0;
-                       startCircle.screenCenter();
-                       add(startCircle);
-                          } else {
-                              switch (curStep) {
-                                  case 896:
-                                      FlxTween.tween(camHUD, {alpha: 0}, 2.2);
-		 {
-		 {			
 		if (curStage == 'fatality' && SONG.song.toLowerCase()=='fatality')
 		{
 			switch (curStep)
