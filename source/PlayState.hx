@@ -2610,7 +2610,7 @@ class PlayState extends MusicBeatState
 				transOut = XTransitionSubstate;
 			case 'chaos':
                                 transIn = SonicTransitionSubstate;
-				transOut = SonicTransitionSubstate:
+				transOut = SonicTransitionSubstate;
 			default:
 
 		}
