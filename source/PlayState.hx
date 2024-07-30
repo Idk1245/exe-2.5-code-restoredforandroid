@@ -2452,7 +2452,8 @@ class PlayState extends MusicBeatState
 					startCircle.alpha = 0;
 					startCircle.screenCenter();
 					add(startCircle);
-			
+			}};
+					
 					new FlxTimer().start(1, function(tmr:FlxTimer)
 					{
 						switch (amongus)
