@@ -2443,17 +2443,7 @@ class PlayState extends MusicBeatState
 					go.cameras = [camHUD];
 					var amongus:Int = 0;
 
-				case 'my-horizon':
-				        add(blackFuck);
-					startCircle.loadGraphic(Paths.image('StartScreens/my-horizon_title_card', 'exe'));
-					startCircle.frames = Paths.getSparrowAtlas('StartScreens/my-horizon_title_card', 'exe');
-					startCircle.animation.addByPrefix('idle', 'my horizon title', 24, false);
-					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
-					startCircle.alpha = 0;
-					startCircle.screenCenter();
-					add(startCircle);
-			}
-				{	
+
 					new FlxTimer().start(1, function(tmr:FlxTimer)
 					{
 						switch (amongus)
@@ -2480,7 +2470,7 @@ class PlayState extends MusicBeatState
 						amongus += 1;
 						if (amongus < 5)
 							tmr.reset(Conductor.crochet / 700);
-					}};
+					});
 
 
 				case "fatality":
