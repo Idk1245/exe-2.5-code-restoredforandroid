@@ -7836,14 +7836,14 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 		{
 			switch (curStep)
 			{
-				case 896:
+				case 753:
 					FlxTween.tween(camHUD, {alpha: 0}, 2.2);
-				case 908:
+				case 765:
 					dad.playAnim('transformation', true);
 					dad.specialAnim = true;
 					camZooming = false;
 					cinematicBars(true);
-				case 924:
+				case 781:
 
 					FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.5}, 12, {ease: FlxEase.cubeInOut});
 					FlxTween.tween(whiteFuck, {alpha: 1}, 6, {ease: FlxEase.cubeInOut, onComplete: function(twn:FlxTween)
@@ -7856,11 +7856,11 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 							fucklesFuckedUpFg.visible = true;
 						}
 					});
-				case 975:
+				case 832:
 					cinematicBars(false);
-				case 992:
+				case 849:
 					literallyMyHorizon();
-				case 1120, 1248, 1376, 1632, 1888, 1952, 2048, 2054, 2060:
+				case 977, 1248, 1376, 1632, 1888, 1952, 2048, 2054, 2060:
 					fucklesHealthRandomize();
 					camHUD.shake(0.005, 1);
 				case 1121, 1760:
