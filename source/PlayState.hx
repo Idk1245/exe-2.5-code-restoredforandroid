@@ -2316,6 +2316,38 @@ class PlayState extends MusicBeatState
 						});
 					});
 
+				case  'my-horizon' | 'our-horizon':
+					add(blackFuck);
+					startCircle.loadGraphic(Paths.image('StartScreens/'+ daSong  +'_title_card', 'exe'));
+					startCircle.frames = Paths.getSparrowAtlas('StartScreens/'+ daSong +'_title_card', 'exe');
+					startCircle.animation.addByPrefix('idle', daSong +'_title', 24, false);
+					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
+					startCircle.alpha = 0;
+					startCircle.screenCenter();
+					add(startCircle);
+
+					new FlxTimer().start(1, function(tmr:FlxTimer)
+						{
+							FlxTween.tween(startCircle, {alpha: 1}, 0.5, {ease: FlxEase.cubeInOut});
+						});
+
+					new FlxTimer().start(2.2, function(tmr:FlxTimer)
+						{
+							FlxTween.tween(blackFuck, {alpha: 0}, 2, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(blackFuck);
+									blackFuck.destroy();
+									startCircle.animation.play('idle');
+								}
+							});
+							FlxTween.tween(startCircle, {alpha: 1}, 4, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(startCircle);
+									startCircle.destroy();
+								}
+							});
 
 				case 'milk':
 					startCountdown();
