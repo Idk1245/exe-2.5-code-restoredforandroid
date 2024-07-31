@@ -2348,6 +2348,7 @@ class PlayState extends MusicBeatState
 									startCircle.destroy();
 								}
 							});
+						});
 
 				case 'milk':
 					startCountdown();
