@@ -49,9 +49,9 @@ class CreditsState extends MusicBeatState
 		trace("finding mod shit");
 		if (FileSystem.exists(Paths.mods())) {
 			trace("mods folder");
-			if (FileSystem.exists(Paths.modFolders("data/credits.txt"))){
+			if (FileSystem.exists(Paths.modFolders("data/credits.json"))){
 				trace("credit file");
-				var firstarray:Array<String> = CoolUtil.coolTextFile(Paths.modFolders("data/credits.txt"));
+				var firstarray:Array<String> = CoolUtil.coolTextFile(Paths.modFolders("data/credits.json"));
 				trace("found credit shit");
 				
 				for(i in firstarray){
