@@ -3202,9 +3202,9 @@ class PlayState extends MusicBeatState
 			default:
 				var timei:String;
 
-				if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "/credits")))
+				if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "data/credits.json")))
 				{
-					timei = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("TIME")[1];
+					timei = File.getContent((Paths.json(curSong.toLowerCase() + "data/credits"))).split("TIME")[1];
 				}
 				else
 				{
