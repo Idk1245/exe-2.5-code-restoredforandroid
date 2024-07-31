@@ -3207,10 +3207,10 @@ class PlayState extends MusicBeatState
 				var texti:String;
 				var size:String;
 
-				if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "/credits")))
+				if (FileSystem.exists(Paths.json(curSong.toLowerCase() + "credits")))
 				{
-					texti = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("TIME")[0];
-					size = File.getContent((Paths.json(curSong.toLowerCase() + "/credits"))).split("SIZE")[1];
+					texti = File.getContent((Paths.json(curSong.toLowerCase() + "credits"))).split("TIME")[0];
+					size = File.getContent((Paths.json(curSong.toLowerCase() + "credits"))).split("SIZE")[1];
 				}
 				else
 				{
