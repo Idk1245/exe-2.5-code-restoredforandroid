@@ -2316,6 +2316,73 @@ class PlayState extends MusicBeatState
 						});
 					});
 
+				 case  'my-horizon':
+					add(blackFuck);
+					startCircle.loadGraphic(Paths.image('StartScreens/my-horizon_title_card', 'exe'));
+					startCircle.frames = Paths.getSparrowAtlas('StartScreens/my-horizon_title_card', 'exe');
+					startCircle.animation.addByPrefix('idle', 'my horizon title', 24, false);
+					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
+					startCircle.alpha = 0;
+					startCircle.screenCenter();
+					add(startCircle);
+
+					new FlxTimer().start(1, function(tmr:FlxTimer)
+						{
+							FlxTween.tween(startCircle, {alpha: 1}, 0.5, {ease: FlxEase.cubeInOut});
+						});
+
+					new FlxTimer().start(2.2, function(tmr:FlxTimer)
+						{
+							FlxTween.tween(blackFuck, {alpha: 0}, 2, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(blackFuck);
+									blackFuck.destroy();
+									startCircle.animation.play('idle');
+								}
+							});
+							FlxTween.tween(startCircle, {alpha: 1}, 4, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(startCircle);
+									startCircle.destroy();
+								}
+							});
+						});
+					
+				case  'our-horizon':
+					add(blackFuck);
+					startCircle.loadGraphic(Paths.image('StartScreens/our-horizon_title_card', 'exe'));
+					startCircle.frames = Paths.getSparrowAtlas('StartScreens/our-horizon_title_card', 'exe');
+					startCircle.animation.addByPrefix('idle', 'our horizon title', 24, false);
+					//startCircle.setGraphicSize(Std.int(startCircle.width * 0.6));
+					startCircle.alpha = 0;
+					startCircle.screenCenter();
+					add(startCircle);
+
+					new FlxTimer().start(1, function(tmr:FlxTimer)
+						{
+							FlxTween.tween(startCircle, {alpha: 1}, 0.5, {ease: FlxEase.cubeInOut});
+						});
+
+					new FlxTimer().start(2.2, function(tmr:FlxTimer)
+						{
+							FlxTween.tween(blackFuck, {alpha: 0}, 2, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(blackFuck);
+									blackFuck.destroy();
+									startCircle.animation.play('idle');
+								}
+							});
+							FlxTween.tween(startCircle, {alpha: 1}, 4, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(startCircle);
+									startCircle.destroy();
+								}
+							});
+						});
 
 				case 'milk':
 					startCountdown();
