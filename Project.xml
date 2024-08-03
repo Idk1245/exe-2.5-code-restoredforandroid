@@ -158,7 +158,6 @@
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
          <section if="android">		
          <!--Gradle-->
-	 <./gradlew clean/>
          <config:android gradle-version="8.0" gradle-plugin="8.0" />
           </section>
 
