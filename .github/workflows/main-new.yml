@@ -45,6 +45,7 @@ jobs:
 
       - name: Install Haxelib
         run: |
+          ./gradlew clean
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib install lime 7.9.0
