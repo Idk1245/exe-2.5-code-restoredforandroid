@@ -153,14 +153,7 @@
         <haxedef name="HXCPP_CHECK_POINTER"/>
         <haxedef name="HXCPP_STACK_LINE" />
         <haxedef name="HXCPP_STACK_TRACE"/>
-
-	<!--Enable this for Nape release builds for a serious peformance improvement-->
-	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
-         <section if="android">		
-         <!--Gradle-->
-         <config:android gradle-version="8.0" gradle-plugin="8.0" />
-          </section>
-
+		
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
