@@ -7909,7 +7909,8 @@ if (SONG.song.toLowerCase() == 'our-horizon')
 					dad.playAnim('transformation', true);
 					dad.specialAnim = true;
 					camZooming = false;
-					cinematicBars(true);
+                                case 765:
+                                        cinematicBars(true);
 				case 781:
 
 					FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.5}, 12, {ease: FlxEase.cubeInOut});
